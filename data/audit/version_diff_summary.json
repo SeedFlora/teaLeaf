@@ -1,0 +1,43 @@
+{
+  "v3_files_listed": 4981,
+  "v4_files_listed": 4984,
+  "only_in_v3": 0,
+  "only_in_v4": 3,
+  "shared_paths": 4981,
+  "shared_identical_content": 4981,
+  "shared_content_changed": 0,
+  "content_hashes_unique_to_v3": 0,
+  "content_hashes_unique_to_v4": 3,
+  "only_in_v3_paths": [],
+  "only_in_v4_paths": [
+    "2. Brown Blight/brown_blight_00507.jpg",
+    "2. Brown Blight/brown_blight_00508.jpg",
+    "read_me.pdf"
+  ],
+  "content_changed_paths": [],
+  "per_class_v3_listed": {
+    "1. Tea algal leaf spot": 418,
+    "2. Brown Blight": 506,
+    "3. Gray Blight": 1000,
+    "4. Helopeltis": 607,
+    "5. Red spider": 515,
+    "6. Green mirid bug": 1000,
+    "7. Healthy leaf": 935
+  },
+  "per_class_v4_listed": {
+    "(root)": 1,
+    "1. Tea algal leaf spot": 418,
+    "2. Brown Blight": 508,
+    "3. Gray Blight": 1000,
+    "4. Helopeltis": 607,
+    "5. Red spider": 515,
+    "6. Green mirid bug": 1000,
+    "7. Healthy leaf": 935
+  },
+  "api_folder_cap": 1000,
+  "folders_truncated_by_api_cap": [
+    "3. Gray Blight",
+    "6. Green mirid bug"
+  ],
+  "coverage_caveat": "The Mendeley public API returns at most 1000 files per folder and ignored every pagination parameter tested (limit, offset, page, marker). Listings for '3. Gray Blight' and '6. Green mirid bug' are therefore truncated at 1000, so the diff is complete for all other classes but partial for those two."
+}

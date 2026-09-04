@@ -1,0 +1,2870 @@
+{
+  "temperature": 1.7661661650791607,
+  "temperature_fit": {
+    "grid_best_T": 1.7559978765038198,
+    "grid_best_nll": 0.2570824497037001,
+    "refined_T": 1.7661661650791607,
+    "refined_nll": 0.2570757761832544
+  },
+  "fitted_on": "validation partition only",
+  "validation_uncalibrated": {
+    "tag": "validation uncalibrated",
+    "nll": 0.3156136221575135,
+    "ece": 0.04758357116304962,
+    "brier": 0.13655422149766624,
+    "accuracy": 0.9190897597977244,
+    "mean_confidence": 0.9567216611767538
+  },
+  "validation_calibrated": {
+    "tag": "validation calibrated",
+    "nll": 0.2570757761832544,
+    "ece": 0.021880546199287188,
+    "brier": 0.1306554087852735,
+    "accuracy": 0.9190897597977244,
+    "mean_confidence": 0.9124387852292928
+  },
+  "test_uncalibrated": {
+    "tag": "test uncalibrated",
+    "nll": 0.3893760495665453,
+    "ece": 0.05865412426808693,
+    "brier": 0.15916669521587967,
+    "accuracy": 0.8988621997471555,
+    "mean_confidence": 0.9539603339661238
+  },
+  "test_calibrated": {
+    "tag": "test calibrated",
+    "nll": 0.30540831788986333,
+    "ece": 0.02544431809458257,
+    "brier": 0.1494762174288086,
+    "accuracy": 0.8988621997471555,
+    "mean_confidence": 0.9058886689682414
+  },
+  "abstention_policy": {
+    "target_selective_risk": 0.05,
+    "min_coverage": 0.7,
+    "threshold": 0.6984924623115578,
+    "basis": "risk target met",
+    "coverage": 0.8811630847029077,
+    "selective_risk": 0.045911047345767564,
+    "selective_accuracy": 0.9540889526542324,
+    "selected_on": "validation risk-coverage curve"
+  },
+  "test_selective_performance": {
+    "threshold_applied": 0.6984924623115578,
+    "coverage": 0.8748419721871049,
+    "n_answered": 692,
+    "n_abstained": 99,
+    "selective_accuracy": 0.9479768786127167,
+    "selective_risk": 0.052023121387283267,
+    "full_coverage_accuracy": 0.8988621997471555,
+    "accuracy_on_abstained": 0.5555555555555556
+  },
+  "risk_coverage_validation": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.005025125628140704,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.010050251256281407,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.01507537688442211,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.020100502512562814,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.02512562814070352,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.03015075376884422,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.035175879396984924,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.04020100502512563,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.04522613065326633,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.05025125628140704,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.05527638190954774,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.06030150753768844,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.06532663316582915,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.07035175879396985,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.07537688442211056,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.08040201005025126,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.08542713567839195,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.09045226130653267,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.09547738693467336,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.10050251256281408,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.10552763819095477,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.11055276381909548,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.11557788944723618,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.12060301507537688,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.12562814070351758,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.1306532663316583,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.135678391959799,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.1407035175879397,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.1457286432160804,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.15075376884422112,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.15577889447236182,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.16080402010050251,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.1658291457286432,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.1708542713567839,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.17587939698492464,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.18090452261306533,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.18592964824120603,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.19095477386934673,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.19597989949748745,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.20100502512562815,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.20603015075376885,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.21105527638190955,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.21608040201005024,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.22110552763819097,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.22613065326633167,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.23115577889447236,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.23618090452261306,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.24120603015075376,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.24623115577889448,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.25125628140703515,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.2562814070351759,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.2613065326633166,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.2663316582914573,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.271356783919598,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.2763819095477387,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.2814070351758794,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.2864321608040201,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.2914572864321608,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.2964824120603015,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.30150753768844224,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9190897597977244,
+      "selective_risk": 0.08091024020227555,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.3065326633165829,
+      "coverage": 0.9987357774968394,
+      "selective_accuracy": 0.9189873417721519,
+      "selective_risk": 0.08101265822784809,
+      "n_kept": 790
+    },
+    {
+      "threshold": 0.31155778894472363,
+      "coverage": 0.9987357774968394,
+      "selective_accuracy": 0.9189873417721519,
+      "selective_risk": 0.08101265822784809,
+      "n_kept": 790
+    },
+    {
+      "threshold": 0.3165829145728643,
+      "coverage": 0.9987357774968394,
+      "selective_accuracy": 0.9189873417721519,
+      "selective_risk": 0.08101265822784809,
+      "n_kept": 790
+    },
+    {
+      "threshold": 0.32160804020100503,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.9201520912547528,
+      "selective_risk": 0.07984790874524716,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.32663316582914576,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.9201520912547528,
+      "selective_risk": 0.07984790874524716,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.3316582914572864,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.9201520912547528,
+      "selective_risk": 0.07984790874524716,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.33668341708542715,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.9201520912547528,
+      "selective_risk": 0.07984790874524716,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.3417085427135678,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.9201520912547528,
+      "selective_risk": 0.07984790874524716,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.34673366834170855,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.9201520912547528,
+      "selective_risk": 0.07984790874524716,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.35175879396984927,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.9201520912547528,
+      "selective_risk": 0.07984790874524716,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.35678391959798994,
+      "coverage": 0.9962073324905183,
+      "selective_accuracy": 0.9213197969543148,
+      "selective_risk": 0.07868020304568524,
+      "n_kept": 788
+    },
+    {
+      "threshold": 0.36180904522613067,
+      "coverage": 0.9962073324905183,
+      "selective_accuracy": 0.9213197969543148,
+      "selective_risk": 0.07868020304568524,
+      "n_kept": 788
+    },
+    {
+      "threshold": 0.36683417085427134,
+      "coverage": 0.9949431099873578,
+      "selective_accuracy": 0.9224904701397713,
+      "selective_risk": 0.07750952986022874,
+      "n_kept": 787
+    },
+    {
+      "threshold": 0.37185929648241206,
+      "coverage": 0.9949431099873578,
+      "selective_accuracy": 0.9224904701397713,
+      "selective_risk": 0.07750952986022874,
+      "n_kept": 787
+    },
+    {
+      "threshold": 0.3768844221105528,
+      "coverage": 0.9949431099873578,
+      "selective_accuracy": 0.9224904701397713,
+      "selective_risk": 0.07750952986022874,
+      "n_kept": 787
+    },
+    {
+      "threshold": 0.38190954773869346,
+      "coverage": 0.9949431099873578,
+      "selective_accuracy": 0.9224904701397713,
+      "selective_risk": 0.07750952986022874,
+      "n_kept": 787
+    },
+    {
+      "threshold": 0.3869346733668342,
+      "coverage": 0.9949431099873578,
+      "selective_accuracy": 0.9224904701397713,
+      "selective_risk": 0.07750952986022874,
+      "n_kept": 787
+    },
+    {
+      "threshold": 0.3919597989949749,
+      "coverage": 0.9949431099873578,
+      "selective_accuracy": 0.9224904701397713,
+      "selective_risk": 0.07750952986022874,
+      "n_kept": 787
+    },
+    {
+      "threshold": 0.3969849246231156,
+      "coverage": 0.9936788874841972,
+      "selective_accuracy": 0.9223918575063613,
+      "selective_risk": 0.07760814249363868,
+      "n_kept": 786
+    },
+    {
+      "threshold": 0.4020100502512563,
+      "coverage": 0.9911504424778761,
+      "selective_accuracy": 0.9221938775510204,
+      "selective_risk": 0.07780612244897955,
+      "n_kept": 784
+    },
+    {
+      "threshold": 0.40703517587939697,
+      "coverage": 0.9911504424778761,
+      "selective_accuracy": 0.9221938775510204,
+      "selective_risk": 0.07780612244897955,
+      "n_kept": 784
+    },
+    {
+      "threshold": 0.4120603015075377,
+      "coverage": 0.9911504424778761,
+      "selective_accuracy": 0.9221938775510204,
+      "selective_risk": 0.07780612244897955,
+      "n_kept": 784
+    },
+    {
+      "threshold": 0.4170854271356784,
+      "coverage": 0.9898862199747156,
+      "selective_accuracy": 0.9220945083014048,
+      "selective_risk": 0.07790549169859518,
+      "n_kept": 783
+    },
+    {
+      "threshold": 0.4221105527638191,
+      "coverage": 0.9898862199747156,
+      "selective_accuracy": 0.9220945083014048,
+      "selective_risk": 0.07790549169859518,
+      "n_kept": 783
+    },
+    {
+      "threshold": 0.4271356783919598,
+      "coverage": 0.9873577749683944,
+      "selective_accuracy": 0.9231754161331626,
+      "selective_risk": 0.07682458386683744,
+      "n_kept": 781
+    },
+    {
+      "threshold": 0.4321608040201005,
+      "coverage": 0.9848293299620733,
+      "selective_accuracy": 0.9242618741976893,
+      "selective_risk": 0.07573812580231065,
+      "n_kept": 779
+    },
+    {
+      "threshold": 0.4371859296482412,
+      "coverage": 0.9848293299620733,
+      "selective_accuracy": 0.9242618741976893,
+      "selective_risk": 0.07573812580231065,
+      "n_kept": 779
+    },
+    {
+      "threshold": 0.44221105527638194,
+      "coverage": 0.9835651074589128,
+      "selective_accuracy": 0.9241645244215938,
+      "selective_risk": 0.0758354755784062,
+      "n_kept": 778
+    },
+    {
+      "threshold": 0.4472361809045226,
+      "coverage": 0.9835651074589128,
+      "selective_accuracy": 0.9241645244215938,
+      "selective_risk": 0.0758354755784062,
+      "n_kept": 778
+    },
+    {
+      "threshold": 0.45226130653266333,
+      "coverage": 0.9835651074589128,
+      "selective_accuracy": 0.9241645244215938,
+      "selective_risk": 0.0758354755784062,
+      "n_kept": 778
+    },
+    {
+      "threshold": 0.457286432160804,
+      "coverage": 0.9835651074589128,
+      "selective_accuracy": 0.9241645244215938,
+      "selective_risk": 0.0758354755784062,
+      "n_kept": 778
+    },
+    {
+      "threshold": 0.4623115577889447,
+      "coverage": 0.9823008849557522,
+      "selective_accuracy": 0.924066924066924,
+      "selective_risk": 0.07593307593307597,
+      "n_kept": 777
+    },
+    {
+      "threshold": 0.46733668341708545,
+      "coverage": 0.9823008849557522,
+      "selective_accuracy": 0.924066924066924,
+      "selective_risk": 0.07593307593307597,
+      "n_kept": 777
+    },
+    {
+      "threshold": 0.4723618090452261,
+      "coverage": 0.9810366624525917,
+      "selective_accuracy": 0.9239690721649485,
+      "selective_risk": 0.0760309278350515,
+      "n_kept": 776
+    },
+    {
+      "threshold": 0.47738693467336685,
+      "coverage": 0.9810366624525917,
+      "selective_accuracy": 0.9239690721649485,
+      "selective_risk": 0.0760309278350515,
+      "n_kept": 776
+    },
+    {
+      "threshold": 0.4824120603015075,
+      "coverage": 0.9797724399494311,
+      "selective_accuracy": 0.9251612903225807,
+      "selective_risk": 0.07483870967741935,
+      "n_kept": 775
+    },
+    {
+      "threshold": 0.48743718592964824,
+      "coverage": 0.97724399494311,
+      "selective_accuracy": 0.926261319534282,
+      "selective_risk": 0.07373868046571797,
+      "n_kept": 773
+    },
+    {
+      "threshold": 0.49246231155778897,
+      "coverage": 0.9759797724399494,
+      "selective_accuracy": 0.9261658031088082,
+      "selective_risk": 0.07383419689119175,
+      "n_kept": 772
+    },
+    {
+      "threshold": 0.49748743718592964,
+      "coverage": 0.9759797724399494,
+      "selective_accuracy": 0.9261658031088082,
+      "selective_risk": 0.07383419689119175,
+      "n_kept": 772
+    },
+    {
+      "threshold": 0.5025125628140703,
+      "coverage": 0.9759797724399494,
+      "selective_accuracy": 0.9261658031088082,
+      "selective_risk": 0.07383419689119175,
+      "n_kept": 772
+    },
+    {
+      "threshold": 0.507537688442211,
+      "coverage": 0.9734513274336283,
+      "selective_accuracy": 0.9285714285714286,
+      "selective_risk": 0.0714285714285714,
+      "n_kept": 770
+    },
+    {
+      "threshold": 0.5125628140703518,
+      "coverage": 0.9696586599241467,
+      "selective_accuracy": 0.9295958279009127,
+      "selective_risk": 0.07040417209908734,
+      "n_kept": 767
+    },
+    {
+      "threshold": 0.5175879396984925,
+      "coverage": 0.9696586599241467,
+      "selective_accuracy": 0.9295958279009127,
+      "selective_risk": 0.07040417209908734,
+      "n_kept": 767
+    },
+    {
+      "threshold": 0.5226130653266332,
+      "coverage": 0.965865992414665,
+      "selective_accuracy": 0.9319371727748691,
+      "selective_risk": 0.0680628272251309,
+      "n_kept": 764
+    },
+    {
+      "threshold": 0.5276381909547738,
+      "coverage": 0.9620733249051833,
+      "selective_accuracy": 0.9316688567674113,
+      "selective_risk": 0.06833114323258871,
+      "n_kept": 761
+    },
+    {
+      "threshold": 0.5326633165829145,
+      "coverage": 0.9608091024020228,
+      "selective_accuracy": 0.9328947368421052,
+      "selective_risk": 0.06710526315789478,
+      "n_kept": 760
+    },
+    {
+      "threshold": 0.5376884422110553,
+      "coverage": 0.9595448798988622,
+      "selective_accuracy": 0.932806324110672,
+      "selective_risk": 0.06719367588932801,
+      "n_kept": 759
+    },
+    {
+      "threshold": 0.542713567839196,
+      "coverage": 0.9582806573957017,
+      "selective_accuracy": 0.9340369393139841,
+      "selective_risk": 0.06596306068601587,
+      "n_kept": 758
+    },
+    {
+      "threshold": 0.5477386934673367,
+      "coverage": 0.9582806573957017,
+      "selective_accuracy": 0.9340369393139841,
+      "selective_risk": 0.06596306068601587,
+      "n_kept": 758
+    },
+    {
+      "threshold": 0.5527638190954774,
+      "coverage": 0.9570164348925411,
+      "selective_accuracy": 0.9339498018494056,
+      "selective_risk": 0.06605019815059443,
+      "n_kept": 757
+    },
+    {
+      "threshold": 0.5577889447236181,
+      "coverage": 0.9557522123893806,
+      "selective_accuracy": 0.9351851851851852,
+      "selective_risk": 0.06481481481481477,
+      "n_kept": 756
+    },
+    {
+      "threshold": 0.5628140703517588,
+      "coverage": 0.9519595448798989,
+      "selective_accuracy": 0.9349269588313412,
+      "selective_risk": 0.06507304116865875,
+      "n_kept": 753
+    },
+    {
+      "threshold": 0.5678391959798995,
+      "coverage": 0.9506953223767383,
+      "selective_accuracy": 0.9348404255319149,
+      "selective_risk": 0.06515957446808507,
+      "n_kept": 752
+    },
+    {
+      "threshold": 0.5728643216080402,
+      "coverage": 0.9494310998735778,
+      "selective_accuracy": 0.9360852197070573,
+      "selective_risk": 0.06391478029294273,
+      "n_kept": 751
+    },
+    {
+      "threshold": 0.577889447236181,
+      "coverage": 0.9469026548672567,
+      "selective_accuracy": 0.9372496662216289,
+      "selective_risk": 0.06275033377837114,
+      "n_kept": 749
+    },
+    {
+      "threshold": 0.5829145728643216,
+      "coverage": 0.9443742098609356,
+      "selective_accuracy": 0.9384203480589023,
+      "selective_risk": 0.06157965194109771,
+      "n_kept": 747
+    },
+    {
+      "threshold": 0.5879396984924623,
+      "coverage": 0.9405815423514539,
+      "selective_accuracy": 0.9395161290322581,
+      "selective_risk": 0.06048387096774188,
+      "n_kept": 744
+    },
+    {
+      "threshold": 0.592964824120603,
+      "coverage": 0.9380530973451328,
+      "selective_accuracy": 0.9393530997304582,
+      "selective_risk": 0.06064690026954178,
+      "n_kept": 742
+    },
+    {
+      "threshold": 0.5979899497487438,
+      "coverage": 0.9367888748419722,
+      "selective_accuracy": 0.9392712550607287,
+      "selective_risk": 0.06072874493927127,
+      "n_kept": 741
+    },
+    {
+      "threshold": 0.6030150753768845,
+      "coverage": 0.934260429835651,
+      "selective_accuracy": 0.939106901217862,
+      "selective_risk": 0.060893098782138,
+      "n_kept": 739
+    },
+    {
+      "threshold": 0.6080402010050251,
+      "coverage": 0.93173198482933,
+      "selective_accuracy": 0.9402985074626866,
+      "selective_risk": 0.05970149253731338,
+      "n_kept": 737
+    },
+    {
+      "threshold": 0.6130653266331658,
+      "coverage": 0.9292035398230089,
+      "selective_accuracy": 0.9401360544217687,
+      "selective_risk": 0.05986394557823127,
+      "n_kept": 735
+    },
+    {
+      "threshold": 0.6180904522613065,
+      "coverage": 0.9279393173198482,
+      "selective_accuracy": 0.94141689373297,
+      "selective_risk": 0.058583106267030005,
+      "n_kept": 734
+    },
+    {
+      "threshold": 0.6231155778894473,
+      "coverage": 0.9216182048040455,
+      "selective_accuracy": 0.9423868312757202,
+      "selective_risk": 0.057613168724279795,
+      "n_kept": 729
+    },
+    {
+      "threshold": 0.628140703517588,
+      "coverage": 0.9190897597977244,
+      "selective_accuracy": 0.9436038514442916,
+      "selective_risk": 0.0563961485557084,
+      "n_kept": 727
+    },
+    {
+      "threshold": 0.6331658291457286,
+      "coverage": 0.9190897597977244,
+      "selective_accuracy": 0.9436038514442916,
+      "selective_risk": 0.0563961485557084,
+      "n_kept": 727
+    },
+    {
+      "threshold": 0.6381909547738693,
+      "coverage": 0.9178255372945638,
+      "selective_accuracy": 0.9449035812672176,
+      "selective_risk": 0.05509641873278237,
+      "n_kept": 726
+    },
+    {
+      "threshold": 0.6432160804020101,
+      "coverage": 0.9140328697850821,
+      "selective_accuracy": 0.946058091286307,
+      "selective_risk": 0.053941908713692976,
+      "n_kept": 723
+    },
+    {
+      "threshold": 0.6482412060301508,
+      "coverage": 0.9089759797724399,
+      "selective_accuracy": 0.9457579972183588,
+      "selective_risk": 0.05424200278164115,
+      "n_kept": 719
+    },
+    {
+      "threshold": 0.6532663316582915,
+      "coverage": 0.9039190897597977,
+      "selective_accuracy": 0.9468531468531468,
+      "selective_risk": 0.05314685314685319,
+      "n_kept": 715
+    },
+    {
+      "threshold": 0.6582914572864321,
+      "coverage": 0.9039190897597977,
+      "selective_accuracy": 0.9468531468531468,
+      "selective_risk": 0.05314685314685319,
+      "n_kept": 715
+    },
+    {
+      "threshold": 0.6633165829145728,
+      "coverage": 0.9013906447534766,
+      "selective_accuracy": 0.9467040673211781,
+      "selective_risk": 0.05329593267882193,
+      "n_kept": 713
+    },
+    {
+      "threshold": 0.6683417085427136,
+      "coverage": 0.9013906447534766,
+      "selective_accuracy": 0.9467040673211781,
+      "selective_risk": 0.05329593267882193,
+      "n_kept": 713
+    },
+    {
+      "threshold": 0.6733668341708543,
+      "coverage": 0.8988621997471555,
+      "selective_accuracy": 0.9479606188466948,
+      "selective_risk": 0.0520393811533052,
+      "n_kept": 711
+    },
+    {
+      "threshold": 0.678391959798995,
+      "coverage": 0.8938053097345132,
+      "selective_accuracy": 0.9476661951909476,
+      "selective_risk": 0.052333804809052364,
+      "n_kept": 707
+    },
+    {
+      "threshold": 0.6834170854271356,
+      "coverage": 0.8925410872313527,
+      "selective_accuracy": 0.9475920679886686,
+      "selective_risk": 0.052407932011331426,
+      "n_kept": 706
+    },
+    {
+      "threshold": 0.6884422110552764,
+      "coverage": 0.888748419721871,
+      "selective_accuracy": 0.9487908961593172,
+      "selective_risk": 0.05120910384068278,
+      "n_kept": 703
+    },
+    {
+      "threshold": 0.6934673366834171,
+      "coverage": 0.888748419721871,
+      "selective_accuracy": 0.9487908961593172,
+      "selective_risk": 0.05120910384068278,
+      "n_kept": 703
+    },
+    {
+      "threshold": 0.6984924623115578,
+      "coverage": 0.8811630847029077,
+      "selective_accuracy": 0.9540889526542324,
+      "selective_risk": 0.045911047345767564,
+      "n_kept": 697
+    },
+    {
+      "threshold": 0.7035175879396985,
+      "coverage": 0.8798988621997471,
+      "selective_accuracy": 0.9540229885057471,
+      "selective_risk": 0.04597701149425293,
+      "n_kept": 696
+    },
+    {
+      "threshold": 0.7085427135678392,
+      "coverage": 0.8786346396965866,
+      "selective_accuracy": 0.9539568345323741,
+      "selective_risk": 0.04604316546762588,
+      "n_kept": 695
+    },
+    {
+      "threshold": 0.7135678391959799,
+      "coverage": 0.8748419721871049,
+      "selective_accuracy": 0.953757225433526,
+      "selective_risk": 0.046242774566473965,
+      "n_kept": 692
+    },
+    {
+      "threshold": 0.7185929648241206,
+      "coverage": 0.8748419721871049,
+      "selective_accuracy": 0.953757225433526,
+      "selective_risk": 0.046242774566473965,
+      "n_kept": 692
+    },
+    {
+      "threshold": 0.7236180904522613,
+      "coverage": 0.8723135271807838,
+      "selective_accuracy": 0.9565217391304348,
+      "selective_risk": 0.04347826086956519,
+      "n_kept": 690
+    },
+    {
+      "threshold": 0.7286432160804021,
+      "coverage": 0.8697850821744627,
+      "selective_accuracy": 0.9563953488372093,
+      "selective_risk": 0.043604651162790664,
+      "n_kept": 688
+    },
+    {
+      "threshold": 0.7336683417085427,
+      "coverage": 0.865992414664981,
+      "selective_accuracy": 0.9576642335766423,
+      "selective_risk": 0.04233576642335768,
+      "n_kept": 685
+    },
+    {
+      "threshold": 0.7386934673366834,
+      "coverage": 0.8621997471554994,
+      "selective_accuracy": 0.9589442815249267,
+      "selective_risk": 0.04105571847507328,
+      "n_kept": 682
+    },
+    {
+      "threshold": 0.7437185929648241,
+      "coverage": 0.8596713021491783,
+      "selective_accuracy": 0.9588235294117647,
+      "selective_risk": 0.04117647058823526,
+      "n_kept": 680
+    },
+    {
+      "threshold": 0.7487437185929648,
+      "coverage": 0.8596713021491783,
+      "selective_accuracy": 0.9588235294117647,
+      "selective_risk": 0.04117647058823526,
+      "n_kept": 680
+    },
+    {
+      "threshold": 0.7537688442211056,
+      "coverage": 0.8584070796460177,
+      "selective_accuracy": 0.9587628865979382,
+      "selective_risk": 0.04123711340206182,
+      "n_kept": 679
+    },
+    {
+      "threshold": 0.7587939698492463,
+      "coverage": 0.854614412136536,
+      "selective_accuracy": 0.9615384615384616,
+      "selective_risk": 0.038461538461538436,
+      "n_kept": 676
+    },
+    {
+      "threshold": 0.7638190954773869,
+      "coverage": 0.854614412136536,
+      "selective_accuracy": 0.9615384615384616,
+      "selective_risk": 0.038461538461538436,
+      "n_kept": 676
+    },
+    {
+      "threshold": 0.7688442211055276,
+      "coverage": 0.8495575221238938,
+      "selective_accuracy": 0.9627976190476191,
+      "selective_risk": 0.03720238095238093,
+      "n_kept": 672
+    },
+    {
+      "threshold": 0.7738693467336684,
+      "coverage": 0.8482932996207333,
+      "selective_accuracy": 0.9642324888226528,
+      "selective_risk": 0.03576751117734722,
+      "n_kept": 671
+    },
+    {
+      "threshold": 0.7788944723618091,
+      "coverage": 0.8457648546144121,
+      "selective_accuracy": 0.9656203288490284,
+      "selective_risk": 0.034379671150971625,
+      "n_kept": 669
+    },
+    {
+      "threshold": 0.7839195979899498,
+      "coverage": 0.8419721871049305,
+      "selective_accuracy": 0.9654654654654654,
+      "selective_risk": 0.03453453453453459,
+      "n_kept": 666
+    },
+    {
+      "threshold": 0.7889447236180904,
+      "coverage": 0.8407079646017699,
+      "selective_accuracy": 0.9669172932330827,
+      "selective_risk": 0.03308270676691727,
+      "n_kept": 665
+    },
+    {
+      "threshold": 0.7939698492462312,
+      "coverage": 0.8407079646017699,
+      "selective_accuracy": 0.9669172932330827,
+      "selective_risk": 0.03308270676691727,
+      "n_kept": 665
+    },
+    {
+      "threshold": 0.7989949748743719,
+      "coverage": 0.8369152970922883,
+      "selective_accuracy": 0.9682779456193353,
+      "selective_risk": 0.031722054380664666,
+      "n_kept": 662
+    },
+    {
+      "threshold": 0.8040201005025126,
+      "coverage": 0.8331226295828066,
+      "selective_accuracy": 0.9681335356600911,
+      "selective_risk": 0.03186646433990892,
+      "n_kept": 659
+    },
+    {
+      "threshold": 0.8090452261306533,
+      "coverage": 0.8293299620733249,
+      "selective_accuracy": 0.9679878048780488,
+      "selective_risk": 0.03201219512195119,
+      "n_kept": 656
+    },
+    {
+      "threshold": 0.8140703517587939,
+      "coverage": 0.8255372945638433,
+      "selective_accuracy": 0.9678407350689127,
+      "selective_risk": 0.03215926493108734,
+      "n_kept": 653
+    },
+    {
+      "threshold": 0.8190954773869347,
+      "coverage": 0.8242730720606827,
+      "selective_accuracy": 0.9677914110429447,
+      "selective_risk": 0.03220858895705525,
+      "n_kept": 652
+    },
+    {
+      "threshold": 0.8241206030150754,
+      "coverage": 0.8217446270543616,
+      "selective_accuracy": 0.9676923076923077,
+      "selective_risk": 0.03230769230769226,
+      "n_kept": 650
+    },
+    {
+      "threshold": 0.8291457286432161,
+      "coverage": 0.8154235145385588,
+      "selective_accuracy": 0.9689922480620154,
+      "selective_risk": 0.03100775193798455,
+      "n_kept": 645
+    },
+    {
+      "threshold": 0.8341708542713568,
+      "coverage": 0.8141592920353983,
+      "selective_accuracy": 0.968944099378882,
+      "selective_risk": 0.03105590062111796,
+      "n_kept": 644
+    },
+    {
+      "threshold": 0.8391959798994975,
+      "coverage": 0.809102402022756,
+      "selective_accuracy": 0.9703125,
+      "selective_risk": 0.029687499999999978,
+      "n_kept": 640
+    },
+    {
+      "threshold": 0.8442211055276382,
+      "coverage": 0.8053097345132744,
+      "selective_accuracy": 0.9701726844583988,
+      "selective_risk": 0.02982731554160123,
+      "n_kept": 637
+    },
+    {
+      "threshold": 0.8492462311557789,
+      "coverage": 0.8027812895069533,
+      "selective_accuracy": 0.9700787401574803,
+      "selective_risk": 0.0299212598425197,
+      "n_kept": 635
+    },
+    {
+      "threshold": 0.8542713567839196,
+      "coverage": 0.8015170670037927,
+      "selective_accuracy": 0.9700315457413249,
+      "selective_risk": 0.029968454258675115,
+      "n_kept": 634
+    },
+    {
+      "threshold": 0.8592964824120604,
+      "coverage": 0.7964601769911505,
+      "selective_accuracy": 0.9714285714285714,
+      "selective_risk": 0.02857142857142858,
+      "n_kept": 630
+    },
+    {
+      "threshold": 0.864321608040201,
+      "coverage": 0.7951959544879899,
+      "selective_accuracy": 0.9713831478537361,
+      "selective_risk": 0.02861685214626386,
+      "n_kept": 629
+    },
+    {
+      "threshold": 0.8693467336683417,
+      "coverage": 0.7914032869785083,
+      "selective_accuracy": 0.9728434504792333,
+      "selective_risk": 0.027156549520766737,
+      "n_kept": 626
+    },
+    {
+      "threshold": 0.8743718592964824,
+      "coverage": 0.7876106194690266,
+      "selective_accuracy": 0.9727126805778491,
+      "selective_risk": 0.027287319422150902,
+      "n_kept": 623
+    },
+    {
+      "threshold": 0.8793969849246231,
+      "coverage": 0.7800252844500632,
+      "selective_accuracy": 0.9724473257698542,
+      "selective_risk": 0.027552674230145846,
+      "n_kept": 617
+    },
+    {
+      "threshold": 0.8844221105527639,
+      "coverage": 0.7711757269279393,
+      "selective_accuracy": 0.9737704918032787,
+      "selective_risk": 0.02622950819672132,
+      "n_kept": 610
+    },
+    {
+      "threshold": 0.8894472361809045,
+      "coverage": 0.7610619469026548,
+      "selective_accuracy": 0.9767441860465116,
+      "selective_risk": 0.023255813953488413,
+      "n_kept": 602
+    },
+    {
+      "threshold": 0.8944723618090452,
+      "coverage": 0.7572692793931732,
+      "selective_accuracy": 0.9782971619365609,
+      "selective_risk": 0.02170283806343909,
+      "n_kept": 599
+    },
+    {
+      "threshold": 0.8994974874371859,
+      "coverage": 0.7496839443742098,
+      "selective_accuracy": 0.9780775716694773,
+      "selective_risk": 0.021922428330522714,
+      "n_kept": 593
+    },
+    {
+      "threshold": 0.9045226130653267,
+      "coverage": 0.7446270543615676,
+      "selective_accuracy": 0.9779286926994907,
+      "selective_risk": 0.022071307300509324,
+      "n_kept": 589
+    },
+    {
+      "threshold": 0.9095477386934674,
+      "coverage": 0.7408343868520859,
+      "selective_accuracy": 0.9795221843003413,
+      "selective_risk": 0.020477815699658675,
+      "n_kept": 586
+    },
+    {
+      "threshold": 0.914572864321608,
+      "coverage": 0.7307206068268015,
+      "selective_accuracy": 0.9792387543252595,
+      "selective_risk": 0.02076124567474047,
+      "n_kept": 578
+    },
+    {
+      "threshold": 0.9195979899497487,
+      "coverage": 0.7243994943109987,
+      "selective_accuracy": 0.9808027923211169,
+      "selective_risk": 0.01919720767888311,
+      "n_kept": 573
+    },
+    {
+      "threshold": 0.9246231155778895,
+      "coverage": 0.7155499367888748,
+      "selective_accuracy": 0.9823321554770318,
+      "selective_risk": 0.017667844522968212,
+      "n_kept": 566
+    },
+    {
+      "threshold": 0.9296482412060302,
+      "coverage": 0.7079646017699115,
+      "selective_accuracy": 0.9839285714285714,
+      "selective_risk": 0.016071428571428625,
+      "n_kept": 560
+    },
+    {
+      "threshold": 0.9346733668341709,
+      "coverage": 0.6978508217446271,
+      "selective_accuracy": 0.9836956521739131,
+      "selective_risk": 0.016304347826086918,
+      "n_kept": 552
+    },
+    {
+      "threshold": 0.9396984924623115,
+      "coverage": 0.683944374209861,
+      "selective_accuracy": 0.9852125693160814,
+      "selective_risk": 0.014787430683918634,
+      "n_kept": 541
+    },
+    {
+      "threshold": 0.9447236180904522,
+      "coverage": 0.6776232616940582,
+      "selective_accuracy": 0.9850746268656716,
+      "selective_risk": 0.014925373134328401,
+      "n_kept": 536
+    },
+    {
+      "threshold": 0.949748743718593,
+      "coverage": 0.6624525916561315,
+      "selective_accuracy": 0.9866412213740458,
+      "selective_risk": 0.013358778625954248,
+      "n_kept": 524
+    },
+    {
+      "threshold": 0.9547738693467337,
+      "coverage": 0.6472819216182049,
+      "selective_accuracy": 0.986328125,
+      "selective_risk": 0.013671875,
+      "n_kept": 512
+    },
+    {
+      "threshold": 0.9597989949748744,
+      "coverage": 0.6333754740834386,
+      "selective_accuracy": 0.9860279441117764,
+      "selective_risk": 0.013972055888223589,
+      "n_kept": 501
+    },
+    {
+      "threshold": 0.964824120603015,
+      "coverage": 0.6194690265486725,
+      "selective_accuracy": 0.9857142857142858,
+      "selective_risk": 0.014285714285714235,
+      "n_kept": 490
+    },
+    {
+      "threshold": 0.9698492462311558,
+      "coverage": 0.5865992414664981,
+      "selective_accuracy": 0.9870689655172413,
+      "selective_risk": 0.012931034482758674,
+      "n_kept": 464
+    },
+    {
+      "threshold": 0.9748743718592965,
+      "coverage": 0.5689001264222503,
+      "selective_accuracy": 0.9866666666666667,
+      "selective_risk": 0.013333333333333308,
+      "n_kept": 450
+    },
+    {
+      "threshold": 0.9798994974874372,
+      "coverage": 0.5372945638432364,
+      "selective_accuracy": 0.9858823529411764,
+      "selective_risk": 0.014117647058823568,
+      "n_kept": 425
+    },
+    {
+      "threshold": 0.9849246231155779,
+      "coverage": 0.48419721871049304,
+      "selective_accuracy": 0.9895561357702349,
+      "selective_risk": 0.010443864229765065,
+      "n_kept": 383
+    },
+    {
+      "threshold": 0.9899497487437187,
+      "coverage": 0.42604298356510745,
+      "selective_accuracy": 0.9940652818991098,
+      "selective_risk": 0.005934718100890191,
+      "n_kept": 337
+    },
+    {
+      "threshold": 0.9949748743718593,
+      "coverage": 0.33375474083438683,
+      "selective_accuracy": 0.9962121212121212,
+      "selective_risk": 0.0037878787878787845,
+      "n_kept": 264
+    },
+    {
+      "threshold": 1.0,
+      "coverage": 0.0,
+      "selective_accuracy": null,
+      "selective_risk": null,
+      "n_kept": 0
+    }
+  ],
+  "risk_coverage_test": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.005025125628140704,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.010050251256281407,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.01507537688442211,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.020100502512562814,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.02512562814070352,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.03015075376884422,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.035175879396984924,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.04020100502512563,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.04522613065326633,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.05025125628140704,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.05527638190954774,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.06030150753768844,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.06532663316582915,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.07035175879396985,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.07537688442211056,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.08040201005025126,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.08542713567839195,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.09045226130653267,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.09547738693467336,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.10050251256281408,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.10552763819095477,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.11055276381909548,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.11557788944723618,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.12060301507537688,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.12562814070351758,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.1306532663316583,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.135678391959799,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.1407035175879397,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.1457286432160804,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.15075376884422112,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.15577889447236182,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.16080402010050251,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.1658291457286432,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.1708542713567839,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.17587939698492464,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.18090452261306533,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.18592964824120603,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.19095477386934673,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.19597989949748745,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.20100502512562815,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.20603015075376885,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.21105527638190955,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.21608040201005024,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.22110552763819097,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.22613065326633167,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.23115577889447236,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.23618090452261306,
+      "coverage": 1.0,
+      "selective_accuracy": 0.8988621997471555,
+      "selective_risk": 0.10113780025284447,
+      "n_kept": 791
+    },
+    {
+      "threshold": 0.24120603015075376,
+      "coverage": 0.9987357774968394,
+      "selective_accuracy": 0.8987341772151899,
+      "selective_risk": 0.10126582278481011,
+      "n_kept": 790
+    },
+    {
+      "threshold": 0.24623115577889448,
+      "coverage": 0.9987357774968394,
+      "selective_accuracy": 0.8987341772151899,
+      "selective_risk": 0.10126582278481011,
+      "n_kept": 790
+    },
+    {
+      "threshold": 0.25125628140703515,
+      "coverage": 0.9987357774968394,
+      "selective_accuracy": 0.8987341772151899,
+      "selective_risk": 0.10126582278481011,
+      "n_kept": 790
+    },
+    {
+      "threshold": 0.2562814070351759,
+      "coverage": 0.9987357774968394,
+      "selective_accuracy": 0.8987341772151899,
+      "selective_risk": 0.10126582278481011,
+      "n_kept": 790
+    },
+    {
+      "threshold": 0.2613065326633166,
+      "coverage": 0.9987357774968394,
+      "selective_accuracy": 0.8987341772151899,
+      "selective_risk": 0.10126582278481011,
+      "n_kept": 790
+    },
+    {
+      "threshold": 0.2663316582914573,
+      "coverage": 0.9987357774968394,
+      "selective_accuracy": 0.8987341772151899,
+      "selective_risk": 0.10126582278481011,
+      "n_kept": 790
+    },
+    {
+      "threshold": 0.271356783919598,
+      "coverage": 0.9987357774968394,
+      "selective_accuracy": 0.8987341772151899,
+      "selective_risk": 0.10126582278481011,
+      "n_kept": 790
+    },
+    {
+      "threshold": 0.2763819095477387,
+      "coverage": 0.9987357774968394,
+      "selective_accuracy": 0.8987341772151899,
+      "selective_risk": 0.10126582278481011,
+      "n_kept": 790
+    },
+    {
+      "threshold": 0.2814070351758794,
+      "coverage": 0.9987357774968394,
+      "selective_accuracy": 0.8987341772151899,
+      "selective_risk": 0.10126582278481011,
+      "n_kept": 790
+    },
+    {
+      "threshold": 0.2864321608040201,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.8986058301647655,
+      "selective_risk": 0.10139416983523453,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.2914572864321608,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.8986058301647655,
+      "selective_risk": 0.10139416983523453,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.2964824120603015,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.8986058301647655,
+      "selective_risk": 0.10139416983523453,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.30150753768844224,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.8986058301647655,
+      "selective_risk": 0.10139416983523453,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.3065326633165829,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.8986058301647655,
+      "selective_risk": 0.10139416983523453,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.31155778894472363,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.8986058301647655,
+      "selective_risk": 0.10139416983523453,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.3165829145728643,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.8986058301647655,
+      "selective_risk": 0.10139416983523453,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.32160804020100503,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.8986058301647655,
+      "selective_risk": 0.10139416983523453,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.32663316582914576,
+      "coverage": 0.9974715549936789,
+      "selective_accuracy": 0.8986058301647655,
+      "selective_risk": 0.10139416983523453,
+      "n_kept": 789
+    },
+    {
+      "threshold": 0.3316582914572864,
+      "coverage": 0.9962073324905183,
+      "selective_accuracy": 0.899746192893401,
+      "selective_risk": 0.10025380710659904,
+      "n_kept": 788
+    },
+    {
+      "threshold": 0.33668341708542715,
+      "coverage": 0.9962073324905183,
+      "selective_accuracy": 0.899746192893401,
+      "selective_risk": 0.10025380710659904,
+      "n_kept": 788
+    },
+    {
+      "threshold": 0.3417085427135678,
+      "coverage": 0.9962073324905183,
+      "selective_accuracy": 0.899746192893401,
+      "selective_risk": 0.10025380710659904,
+      "n_kept": 788
+    },
+    {
+      "threshold": 0.34673366834170855,
+      "coverage": 0.9962073324905183,
+      "selective_accuracy": 0.899746192893401,
+      "selective_risk": 0.10025380710659904,
+      "n_kept": 788
+    },
+    {
+      "threshold": 0.35175879396984927,
+      "coverage": 0.9962073324905183,
+      "selective_accuracy": 0.899746192893401,
+      "selective_risk": 0.10025380710659904,
+      "n_kept": 788
+    },
+    {
+      "threshold": 0.35678391959798994,
+      "coverage": 0.9962073324905183,
+      "selective_accuracy": 0.899746192893401,
+      "selective_risk": 0.10025380710659904,
+      "n_kept": 788
+    },
+    {
+      "threshold": 0.36180904522613067,
+      "coverage": 0.9962073324905183,
+      "selective_accuracy": 0.899746192893401,
+      "selective_risk": 0.10025380710659904,
+      "n_kept": 788
+    },
+    {
+      "threshold": 0.36683417085427134,
+      "coverage": 0.9949431099873578,
+      "selective_accuracy": 0.9008894536213469,
+      "selective_risk": 0.09911054637865313,
+      "n_kept": 787
+    },
+    {
+      "threshold": 0.37185929648241206,
+      "coverage": 0.9949431099873578,
+      "selective_accuracy": 0.9008894536213469,
+      "selective_risk": 0.09911054637865313,
+      "n_kept": 787
+    },
+    {
+      "threshold": 0.3768844221105528,
+      "coverage": 0.9949431099873578,
+      "selective_accuracy": 0.9008894536213469,
+      "selective_risk": 0.09911054637865313,
+      "n_kept": 787
+    },
+    {
+      "threshold": 0.38190954773869346,
+      "coverage": 0.9949431099873578,
+      "selective_accuracy": 0.9008894536213469,
+      "selective_risk": 0.09911054637865313,
+      "n_kept": 787
+    },
+    {
+      "threshold": 0.3869346733668342,
+      "coverage": 0.9949431099873578,
+      "selective_accuracy": 0.9008894536213469,
+      "selective_risk": 0.09911054637865313,
+      "n_kept": 787
+    },
+    {
+      "threshold": 0.3919597989949749,
+      "coverage": 0.9936788874841972,
+      "selective_accuracy": 0.9020356234096693,
+      "selective_risk": 0.09796437659033075,
+      "n_kept": 786
+    },
+    {
+      "threshold": 0.3969849246231156,
+      "coverage": 0.9924146649810367,
+      "selective_accuracy": 0.9019108280254777,
+      "selective_risk": 0.09808917197452227,
+      "n_kept": 785
+    },
+    {
+      "threshold": 0.4020100502512563,
+      "coverage": 0.9911504424778761,
+      "selective_accuracy": 0.9030612244897959,
+      "selective_risk": 0.09693877551020413,
+      "n_kept": 784
+    },
+    {
+      "threshold": 0.40703517587939697,
+      "coverage": 0.9911504424778761,
+      "selective_accuracy": 0.9030612244897959,
+      "selective_risk": 0.09693877551020413,
+      "n_kept": 784
+    },
+    {
+      "threshold": 0.4120603015075377,
+      "coverage": 0.9911504424778761,
+      "selective_accuracy": 0.9030612244897959,
+      "selective_risk": 0.09693877551020413,
+      "n_kept": 784
+    },
+    {
+      "threshold": 0.4170854271356784,
+      "coverage": 0.9911504424778761,
+      "selective_accuracy": 0.9030612244897959,
+      "selective_risk": 0.09693877551020413,
+      "n_kept": 784
+    },
+    {
+      "threshold": 0.4221105527638191,
+      "coverage": 0.9898862199747156,
+      "selective_accuracy": 0.9042145593869731,
+      "selective_risk": 0.09578544061302685,
+      "n_kept": 783
+    },
+    {
+      "threshold": 0.4271356783919598,
+      "coverage": 0.988621997471555,
+      "selective_accuracy": 0.9040920716112532,
+      "selective_risk": 0.09590792838874684,
+      "n_kept": 782
+    },
+    {
+      "threshold": 0.4321608040201005,
+      "coverage": 0.988621997471555,
+      "selective_accuracy": 0.9040920716112532,
+      "selective_risk": 0.09590792838874684,
+      "n_kept": 782
+    },
+    {
+      "threshold": 0.4371859296482412,
+      "coverage": 0.9873577749683944,
+      "selective_accuracy": 0.9052496798975672,
+      "selective_risk": 0.09475032010243278,
+      "n_kept": 781
+    },
+    {
+      "threshold": 0.44221105527638194,
+      "coverage": 0.9860935524652339,
+      "selective_accuracy": 0.9064102564102564,
+      "selective_risk": 0.09358974358974359,
+      "n_kept": 780
+    },
+    {
+      "threshold": 0.4472361809045226,
+      "coverage": 0.9848293299620733,
+      "selective_accuracy": 0.9075738125802311,
+      "selective_risk": 0.09242618741976893,
+      "n_kept": 779
+    },
+    {
+      "threshold": 0.45226130653266333,
+      "coverage": 0.9835651074589128,
+      "selective_accuracy": 0.9087403598971723,
+      "selective_risk": 0.09125964010282772,
+      "n_kept": 778
+    },
+    {
+      "threshold": 0.457286432160804,
+      "coverage": 0.9797724399494311,
+      "selective_accuracy": 0.9109677419354839,
+      "selective_risk": 0.08903225806451609,
+      "n_kept": 775
+    },
+    {
+      "threshold": 0.4623115577889447,
+      "coverage": 0.9785082174462706,
+      "selective_accuracy": 0.9121447028423773,
+      "selective_risk": 0.08785529715762275,
+      "n_kept": 774
+    },
+    {
+      "threshold": 0.46733668341708545,
+      "coverage": 0.9785082174462706,
+      "selective_accuracy": 0.9121447028423773,
+      "selective_risk": 0.08785529715762275,
+      "n_kept": 774
+    },
+    {
+      "threshold": 0.4723618090452261,
+      "coverage": 0.9785082174462706,
+      "selective_accuracy": 0.9121447028423773,
+      "selective_risk": 0.08785529715762275,
+      "n_kept": 774
+    },
+    {
+      "threshold": 0.47738693467336685,
+      "coverage": 0.9785082174462706,
+      "selective_accuracy": 0.9121447028423773,
+      "selective_risk": 0.08785529715762275,
+      "n_kept": 774
+    },
+    {
+      "threshold": 0.4824120603015075,
+      "coverage": 0.9785082174462706,
+      "selective_accuracy": 0.9121447028423773,
+      "selective_risk": 0.08785529715762275,
+      "n_kept": 774
+    },
+    {
+      "threshold": 0.48743718592964824,
+      "coverage": 0.97724399494311,
+      "selective_accuracy": 0.9133247089262613,
+      "selective_risk": 0.08667529107373872,
+      "n_kept": 773
+    },
+    {
+      "threshold": 0.49246231155778897,
+      "coverage": 0.9759797724399494,
+      "selective_accuracy": 0.9145077720207254,
+      "selective_risk": 0.08549222797927458,
+      "n_kept": 772
+    },
+    {
+      "threshold": 0.49748743718592964,
+      "coverage": 0.9734513274336283,
+      "selective_accuracy": 0.9168831168831169,
+      "selective_risk": 0.08311688311688314,
+      "n_kept": 770
+    },
+    {
+      "threshold": 0.5025125628140703,
+      "coverage": 0.9734513274336283,
+      "selective_accuracy": 0.9168831168831169,
+      "selective_risk": 0.08311688311688314,
+      "n_kept": 770
+    },
+    {
+      "threshold": 0.507537688442211,
+      "coverage": 0.9709228824273072,
+      "selective_accuracy": 0.91796875,
+      "selective_risk": 0.08203125,
+      "n_kept": 768
+    },
+    {
+      "threshold": 0.5125628140703518,
+      "coverage": 0.9683944374209861,
+      "selective_accuracy": 0.9177545691906005,
+      "selective_risk": 0.0822454308093995,
+      "n_kept": 766
+    },
+    {
+      "threshold": 0.5175879396984925,
+      "coverage": 0.9671302149178256,
+      "selective_accuracy": 0.9176470588235294,
+      "selective_risk": 0.08235294117647063,
+      "n_kept": 765
+    },
+    {
+      "threshold": 0.5226130653266332,
+      "coverage": 0.9633375474083439,
+      "selective_accuracy": 0.9186351706036745,
+      "selective_risk": 0.0813648293963255,
+      "n_kept": 762
+    },
+    {
+      "threshold": 0.5276381909547738,
+      "coverage": 0.9620733249051833,
+      "selective_accuracy": 0.9185282522996058,
+      "selective_risk": 0.08147174770039423,
+      "n_kept": 761
+    },
+    {
+      "threshold": 0.5326633165829145,
+      "coverage": 0.9620733249051833,
+      "selective_accuracy": 0.9185282522996058,
+      "selective_risk": 0.08147174770039423,
+      "n_kept": 761
+    },
+    {
+      "threshold": 0.5376884422110553,
+      "coverage": 0.9595448798988622,
+      "selective_accuracy": 0.9209486166007905,
+      "selective_risk": 0.07905138339920947,
+      "n_kept": 759
+    },
+    {
+      "threshold": 0.542713567839196,
+      "coverage": 0.9595448798988622,
+      "selective_accuracy": 0.9209486166007905,
+      "selective_risk": 0.07905138339920947,
+      "n_kept": 759
+    },
+    {
+      "threshold": 0.5477386934673367,
+      "coverage": 0.9582806573957017,
+      "selective_accuracy": 0.9221635883905013,
+      "selective_risk": 0.07783641160949872,
+      "n_kept": 758
+    },
+    {
+      "threshold": 0.5527638190954774,
+      "coverage": 0.9570164348925411,
+      "selective_accuracy": 0.9220607661822986,
+      "selective_risk": 0.0779392338177014,
+      "n_kept": 757
+    },
+    {
+      "threshold": 0.5577889447236181,
+      "coverage": 0.95448798988622,
+      "selective_accuracy": 0.9245033112582781,
+      "selective_risk": 0.07549668874172188,
+      "n_kept": 755
+    },
+    {
+      "threshold": 0.5628140703517588,
+      "coverage": 0.9519595448798989,
+      "selective_accuracy": 0.9243027888446215,
+      "selective_risk": 0.07569721115537853,
+      "n_kept": 753
+    },
+    {
+      "threshold": 0.5678391959798995,
+      "coverage": 0.9494310998735778,
+      "selective_accuracy": 0.9254327563249002,
+      "selective_risk": 0.07456724367509981,
+      "n_kept": 751
+    },
+    {
+      "threshold": 0.5728643216080402,
+      "coverage": 0.9481668773704172,
+      "selective_accuracy": 0.9266666666666666,
+      "selective_risk": 0.07333333333333336,
+      "n_kept": 750
+    },
+    {
+      "threshold": 0.577889447236181,
+      "coverage": 0.9456384323640961,
+      "selective_accuracy": 0.9278074866310161,
+      "selective_risk": 0.07219251336898391,
+      "n_kept": 748
+    },
+    {
+      "threshold": 0.5829145728643216,
+      "coverage": 0.943109987357775,
+      "selective_accuracy": 0.9289544235924933,
+      "selective_risk": 0.07104557640750675,
+      "n_kept": 746
+    },
+    {
+      "threshold": 0.5879396984924623,
+      "coverage": 0.9393173198482933,
+      "selective_accuracy": 0.9300134589502019,
+      "selective_risk": 0.06998654104979807,
+      "n_kept": 743
+    },
+    {
+      "threshold": 0.592964824120603,
+      "coverage": 0.9367888748419722,
+      "selective_accuracy": 0.9298245614035088,
+      "selective_risk": 0.07017543859649122,
+      "n_kept": 741
+    },
+    {
+      "threshold": 0.5979899497487438,
+      "coverage": 0.93173198482933,
+      "selective_accuracy": 0.932157394843962,
+      "selective_risk": 0.06784260515603802,
+      "n_kept": 737
+    },
+    {
+      "threshold": 0.6030150753768845,
+      "coverage": 0.9279393173198482,
+      "selective_accuracy": 0.9318801089918256,
+      "selective_risk": 0.0681198910081744,
+      "n_kept": 734
+    },
+    {
+      "threshold": 0.6080402010050251,
+      "coverage": 0.9241466498103666,
+      "selective_accuracy": 0.9343365253077975,
+      "selective_risk": 0.06566347469220246,
+      "n_kept": 731
+    },
+    {
+      "threshold": 0.6130653266331658,
+      "coverage": 0.9190897597977244,
+      "selective_accuracy": 0.9353507565337001,
+      "selective_risk": 0.06464924346629985,
+      "n_kept": 727
+    },
+    {
+      "threshold": 0.6180904522613065,
+      "coverage": 0.9165613147914032,
+      "selective_accuracy": 0.9351724137931035,
+      "selective_risk": 0.06482758620689655,
+      "n_kept": 725
+    },
+    {
+      "threshold": 0.6231155778894473,
+      "coverage": 0.9152970922882427,
+      "selective_accuracy": 0.93646408839779,
+      "selective_risk": 0.06353591160220995,
+      "n_kept": 724
+    },
+    {
+      "threshold": 0.628140703517588,
+      "coverage": 0.9127686472819216,
+      "selective_accuracy": 0.9390581717451524,
+      "selective_risk": 0.06094182825484762,
+      "n_kept": 722
+    },
+    {
+      "threshold": 0.6331658291457286,
+      "coverage": 0.9127686472819216,
+      "selective_accuracy": 0.9390581717451524,
+      "selective_risk": 0.06094182825484762,
+      "n_kept": 722
+    },
+    {
+      "threshold": 0.6381909547738693,
+      "coverage": 0.911504424778761,
+      "selective_accuracy": 0.9389736477115118,
+      "selective_risk": 0.061026352288488184,
+      "n_kept": 721
+    },
+    {
+      "threshold": 0.6432160804020101,
+      "coverage": 0.9064475347661188,
+      "selective_accuracy": 0.9386331938633193,
+      "selective_risk": 0.06136680613668066,
+      "n_kept": 717
+    },
+    {
+      "threshold": 0.6482412060301508,
+      "coverage": 0.9051833122629582,
+      "selective_accuracy": 0.9385474860335196,
+      "selective_risk": 0.06145251396648044,
+      "n_kept": 716
+    },
+    {
+      "threshold": 0.6532663316582915,
+      "coverage": 0.900126422250316,
+      "selective_accuracy": 0.9410112359550562,
+      "selective_risk": 0.0589887640449438,
+      "n_kept": 712
+    },
+    {
+      "threshold": 0.6582914572864321,
+      "coverage": 0.8950695322376738,
+      "selective_accuracy": 0.942090395480226,
+      "selective_risk": 0.057909604519774005,
+      "n_kept": 708
+    },
+    {
+      "threshold": 0.6633165829145728,
+      "coverage": 0.8925410872313527,
+      "selective_accuracy": 0.9447592067988668,
+      "selective_risk": 0.055240793201133176,
+      "n_kept": 706
+    },
+    {
+      "threshold": 0.6683417085427136,
+      "coverage": 0.8912768647281921,
+      "selective_accuracy": 0.9446808510638298,
+      "selective_risk": 0.05531914893617018,
+      "n_kept": 705
+    },
+    {
+      "threshold": 0.6733668341708543,
+      "coverage": 0.8874841972187105,
+      "selective_accuracy": 0.9458689458689459,
+      "selective_risk": 0.054131054131054124,
+      "n_kept": 702
+    },
+    {
+      "threshold": 0.678391959798995,
+      "coverage": 0.8849557522123894,
+      "selective_accuracy": 0.9457142857142857,
+      "selective_risk": 0.05428571428571427,
+      "n_kept": 700
+    },
+    {
+      "threshold": 0.6834170854271356,
+      "coverage": 0.8798988621997471,
+      "selective_accuracy": 0.9454022988505747,
+      "selective_risk": 0.054597701149425304,
+      "n_kept": 696
+    },
+    {
+      "threshold": 0.6884422110552764,
+      "coverage": 0.8786346396965866,
+      "selective_accuracy": 0.9453237410071943,
+      "selective_risk": 0.054676258992805704,
+      "n_kept": 695
+    },
+    {
+      "threshold": 0.6934673366834171,
+      "coverage": 0.8761061946902655,
+      "selective_accuracy": 0.9466089466089466,
+      "selective_risk": 0.053391053391053434,
+      "n_kept": 693
+    },
+    {
+      "threshold": 0.6984924623115578,
+      "coverage": 0.8748419721871049,
+      "selective_accuracy": 0.9479768786127167,
+      "selective_risk": 0.052023121387283267,
+      "n_kept": 692
+    },
+    {
+      "threshold": 0.7035175879396985,
+      "coverage": 0.8723135271807838,
+      "selective_accuracy": 0.9492753623188406,
+      "selective_risk": 0.050724637681159424,
+      "n_kept": 690
+    },
+    {
+      "threshold": 0.7085427135678392,
+      "coverage": 0.8697850821744627,
+      "selective_accuracy": 0.9491279069767442,
+      "selective_risk": 0.05087209302325579,
+      "n_kept": 688
+    },
+    {
+      "threshold": 0.7135678391959799,
+      "coverage": 0.8685208596713021,
+      "selective_accuracy": 0.9490538573508006,
+      "selective_risk": 0.05094614264919939,
+      "n_kept": 687
+    },
+    {
+      "threshold": 0.7185929648241206,
+      "coverage": 0.865992414664981,
+      "selective_accuracy": 0.9518248175182482,
+      "selective_risk": 0.04817518248175179,
+      "n_kept": 685
+    },
+    {
+      "threshold": 0.7236180904522613,
+      "coverage": 0.8634639696586599,
+      "selective_accuracy": 0.9516837481698389,
+      "selective_risk": 0.04831625183016108,
+      "n_kept": 683
+    },
+    {
+      "threshold": 0.7286432160804021,
+      "coverage": 0.8621997471554994,
+      "selective_accuracy": 0.9530791788856305,
+      "selective_risk": 0.04692082111436946,
+      "n_kept": 682
+    },
+    {
+      "threshold": 0.7336683417085427,
+      "coverage": 0.8596713021491783,
+      "selective_accuracy": 0.9529411764705882,
+      "selective_risk": 0.04705882352941182,
+      "n_kept": 680
+    },
+    {
+      "threshold": 0.7386934673366834,
+      "coverage": 0.8533501896333755,
+      "selective_accuracy": 0.9540740740740741,
+      "selective_risk": 0.045925925925925926,
+      "n_kept": 675
+    },
+    {
+      "threshold": 0.7437185929648241,
+      "coverage": 0.8495575221238938,
+      "selective_accuracy": 0.9538690476190477,
+      "selective_risk": 0.04613095238095233,
+      "n_kept": 672
+    },
+    {
+      "threshold": 0.7487437185929648,
+      "coverage": 0.8495575221238938,
+      "selective_accuracy": 0.9538690476190477,
+      "selective_risk": 0.04613095238095233,
+      "n_kept": 672
+    },
+    {
+      "threshold": 0.7537688442211056,
+      "coverage": 0.8482932996207333,
+      "selective_accuracy": 0.9538002980625931,
+      "selective_risk": 0.046199701937406856,
+      "n_kept": 671
+    },
+    {
+      "threshold": 0.7587939698492463,
+      "coverage": 0.8457648546144121,
+      "selective_accuracy": 0.953662182361734,
+      "selective_risk": 0.046337817638266054,
+      "n_kept": 669
+    },
+    {
+      "threshold": 0.7638190954773869,
+      "coverage": 0.8419721871049305,
+      "selective_accuracy": 0.954954954954955,
+      "selective_risk": 0.04504504504504503,
+      "n_kept": 666
+    },
+    {
+      "threshold": 0.7688442211055276,
+      "coverage": 0.8369152970922883,
+      "selective_accuracy": 0.9577039274924471,
+      "selective_risk": 0.04229607250755285,
+      "n_kept": 662
+    },
+    {
+      "threshold": 0.7738693467336684,
+      "coverage": 0.8356510745891277,
+      "selective_accuracy": 0.9576399394856279,
+      "selective_risk": 0.04236006051437213,
+      "n_kept": 661
+    },
+    {
+      "threshold": 0.7788944723618091,
+      "coverage": 0.8343868520859671,
+      "selective_accuracy": 0.9575757575757575,
+      "selective_risk": 0.042424242424242475,
+      "n_kept": 660
+    },
+    {
+      "threshold": 0.7839195979899498,
+      "coverage": 0.831858407079646,
+      "selective_accuracy": 0.958966565349544,
+      "selective_risk": 0.04103343465045595,
+      "n_kept": 658
+    },
+    {
+      "threshold": 0.7889447236180904,
+      "coverage": 0.8280657395701644,
+      "selective_accuracy": 0.9587786259541985,
+      "selective_risk": 0.04122137404580151,
+      "n_kept": 655
+    },
+    {
+      "threshold": 0.7939698492462312,
+      "coverage": 0.8217446270543616,
+      "selective_accuracy": 0.96,
+      "selective_risk": 0.040000000000000036,
+      "n_kept": 650
+    },
+    {
+      "threshold": 0.7989949748743719,
+      "coverage": 0.8192161820480405,
+      "selective_accuracy": 0.9614197530864198,
+      "selective_risk": 0.038580246913580196,
+      "n_kept": 648
+    },
+    {
+      "threshold": 0.8040201005025126,
+      "coverage": 0.8166877370417194,
+      "selective_accuracy": 0.9613003095975232,
+      "selective_risk": 0.03869969040247678,
+      "n_kept": 646
+    },
+    {
+      "threshold": 0.8090452261306533,
+      "coverage": 0.8154235145385588,
+      "selective_accuracy": 0.9612403100775194,
+      "selective_risk": 0.03875968992248058,
+      "n_kept": 645
+    },
+    {
+      "threshold": 0.8140703517587939,
+      "coverage": 0.8103666245259166,
+      "selective_accuracy": 0.9625585023400937,
+      "selective_risk": 0.03744149765990634,
+      "n_kept": 641
+    },
+    {
+      "threshold": 0.8190954773869347,
+      "coverage": 0.8053097345132744,
+      "selective_accuracy": 0.9654631083202512,
+      "selective_risk": 0.03453689167974883,
+      "n_kept": 637
+    },
+    {
+      "threshold": 0.8241206030150754,
+      "coverage": 0.8002528445006322,
+      "selective_accuracy": 0.966824644549763,
+      "selective_risk": 0.033175355450236976,
+      "n_kept": 633
+    },
+    {
+      "threshold": 0.8291457286432161,
+      "coverage": 0.7964601769911505,
+      "selective_accuracy": 0.9666666666666667,
+      "selective_risk": 0.033333333333333326,
+      "n_kept": 630
+    },
+    {
+      "threshold": 0.8341708542713568,
+      "coverage": 0.7914032869785083,
+      "selective_accuracy": 0.9680511182108626,
+      "selective_risk": 0.03194888178913735,
+      "n_kept": 626
+    },
+    {
+      "threshold": 0.8391959798994975,
+      "coverage": 0.7850821744627055,
+      "selective_accuracy": 0.9694041867954911,
+      "selective_risk": 0.03059581320450888,
+      "n_kept": 621
+    },
+    {
+      "threshold": 0.8442211055276382,
+      "coverage": 0.7787610619469026,
+      "selective_accuracy": 0.9707792207792207,
+      "selective_risk": 0.02922077922077926,
+      "n_kept": 616
+    },
+    {
+      "threshold": 0.8492462311557789,
+      "coverage": 0.7762326169405815,
+      "selective_accuracy": 0.9739413680781759,
+      "selective_risk": 0.026058631921824116,
+      "n_kept": 614
+    },
+    {
+      "threshold": 0.8542713567839196,
+      "coverage": 0.7762326169405815,
+      "selective_accuracy": 0.9739413680781759,
+      "selective_risk": 0.026058631921824116,
+      "n_kept": 614
+    },
+    {
+      "threshold": 0.8592964824120604,
+      "coverage": 0.7699115044247787,
+      "selective_accuracy": 0.9753694581280788,
+      "selective_risk": 0.024630541871921152,
+      "n_kept": 609
+    },
+    {
+      "threshold": 0.864321608040201,
+      "coverage": 0.7673830594184576,
+      "selective_accuracy": 0.9752883031301482,
+      "selective_risk": 0.02471169686985175,
+      "n_kept": 607
+    },
+    {
+      "threshold": 0.8693467336683417,
+      "coverage": 0.7597977243994943,
+      "selective_accuracy": 0.9767054908485857,
+      "selective_risk": 0.02329450915141429,
+      "n_kept": 601
+    },
+    {
+      "threshold": 0.8743718592964824,
+      "coverage": 0.7522123893805309,
+      "selective_accuracy": 0.9764705882352941,
+      "selective_risk": 0.02352941176470591,
+      "n_kept": 595
+    },
+    {
+      "threshold": 0.8793969849246231,
+      "coverage": 0.7471554993678887,
+      "selective_accuracy": 0.9780033840947546,
+      "selective_risk": 0.021996615905245376,
+      "n_kept": 591
+    },
+    {
+      "threshold": 0.8844221105527639,
+      "coverage": 0.7420986093552465,
+      "selective_accuracy": 0.9778534923339012,
+      "selective_risk": 0.022146507666098825,
+      "n_kept": 587
+    },
+    {
+      "threshold": 0.8894472361809045,
+      "coverage": 0.7307206068268015,
+      "selective_accuracy": 0.9775086505190311,
+      "selective_risk": 0.02249134948096887,
+      "n_kept": 578
+    },
+    {
+      "threshold": 0.8944723618090452,
+      "coverage": 0.7256637168141593,
+      "selective_accuracy": 0.9773519163763066,
+      "selective_risk": 0.022648083623693416,
+      "n_kept": 574
+    },
+    {
+      "threshold": 0.8994974874371859,
+      "coverage": 0.7206068268015171,
+      "selective_accuracy": 0.9789473684210527,
+      "selective_risk": 0.021052631578947323,
+      "n_kept": 570
+    },
+    {
+      "threshold": 0.9045226130653267,
+      "coverage": 0.7142857142857143,
+      "selective_accuracy": 0.9805309734513274,
+      "selective_risk": 0.019469026548672552,
+      "n_kept": 565
+    },
+    {
+      "threshold": 0.9095477386934674,
+      "coverage": 0.706700379266751,
+      "selective_accuracy": 0.9803220035778175,
+      "selective_risk": 0.019677996422182487,
+      "n_kept": 559
+    },
+    {
+      "threshold": 0.914572864321608,
+      "coverage": 0.7016434892541087,
+      "selective_accuracy": 0.9801801801801802,
+      "selective_risk": 0.01981981981981984,
+      "n_kept": 555
+    },
+    {
+      "threshold": 0.9195979899497487,
+      "coverage": 0.6902654867256637,
+      "selective_accuracy": 0.9798534798534798,
+      "selective_risk": 0.020146520146520186,
+      "n_kept": 546
+    },
+    {
+      "threshold": 0.9246231155778895,
+      "coverage": 0.6826801517067004,
+      "selective_accuracy": 0.9796296296296296,
+      "selective_risk": 0.020370370370370372,
+      "n_kept": 540
+    },
+    {
+      "threshold": 0.9296482412060302,
+      "coverage": 0.6763590391908976,
+      "selective_accuracy": 0.9794392523364486,
+      "selective_risk": 0.020560747663551426,
+      "n_kept": 535
+    },
+    {
+      "threshold": 0.9346733668341709,
+      "coverage": 0.6649810366624526,
+      "selective_accuracy": 0.9790874524714829,
+      "selective_risk": 0.020912547528517123,
+      "n_kept": 526
+    },
+    {
+      "threshold": 0.9396984924623115,
+      "coverage": 0.6510745891276865,
+      "selective_accuracy": 0.9805825242718447,
+      "selective_risk": 0.01941747572815533,
+      "n_kept": 515
+    },
+    {
+      "threshold": 0.9447236180904522,
+      "coverage": 0.6434892541087232,
+      "selective_accuracy": 0.9803536345776032,
+      "selective_risk": 0.01964636542239684,
+      "n_kept": 509
+    },
+    {
+      "threshold": 0.949748743718593,
+      "coverage": 0.6333754740834386,
+      "selective_accuracy": 0.9800399201596807,
+      "selective_risk": 0.019960079840319334,
+      "n_kept": 501
+    },
+    {
+      "threshold": 0.9547738693467337,
+      "coverage": 0.6219974715549936,
+      "selective_accuracy": 0.9796747967479674,
+      "selective_risk": 0.020325203252032575,
+      "n_kept": 492
+    },
+    {
+      "threshold": 0.9597989949748744,
+      "coverage": 0.606826801517067,
+      "selective_accuracy": 0.98125,
+      "selective_risk": 0.018750000000000044,
+      "n_kept": 480
+    },
+    {
+      "threshold": 0.964824120603015,
+      "coverage": 0.5916561314791403,
+      "selective_accuracy": 0.9850427350427351,
+      "selective_risk": 0.014957264957264904,
+      "n_kept": 468
+    },
+    {
+      "threshold": 0.9698492462311558,
+      "coverage": 0.5752212389380531,
+      "selective_accuracy": 0.9846153846153847,
+      "selective_risk": 0.01538461538461533,
+      "n_kept": 455
+    },
+    {
+      "threshold": 0.9748743718592965,
+      "coverage": 0.5562579013906448,
+      "selective_accuracy": 0.9863636363636363,
+      "selective_risk": 0.013636363636363669,
+      "n_kept": 440
+    },
+    {
+      "threshold": 0.9798994974874372,
+      "coverage": 0.5347661188369153,
+      "selective_accuracy": 0.9858156028368794,
+      "selective_risk": 0.014184397163120588,
+      "n_kept": 423
+    },
+    {
+      "threshold": 0.9849246231155779,
+      "coverage": 0.5056890012642224,
+      "selective_accuracy": 0.9875,
+      "selective_risk": 0.012499999999999956,
+      "n_kept": 400
+    },
+    {
+      "threshold": 0.9899497487437187,
+      "coverage": 0.450063211125158,
+      "selective_accuracy": 0.9915730337078652,
+      "selective_risk": 0.008426966292134797,
+      "n_kept": 356
+    },
+    {
+      "threshold": 0.9949748743718593,
+      "coverage": 0.3666245259165613,
+      "selective_accuracy": 0.996551724137931,
+      "selective_risk": 0.0034482758620689724,
+      "n_kept": 290
+    },
+    {
+      "threshold": 1.0,
+      "coverage": 0.0,
+      "selective_accuracy": null,
+      "selective_risk": null,
+      "n_kept": 0
+    }
+  ],
+  "caveats": [
+    "Temperature and threshold are fitted on validation and applied unchanged to test. Neither was tuned on test.",
+    "This is a confidence-based abstention rule, not an out-of-distribution detector: it was not evaluated against OOD inputs and must not be described as one."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "per_class": {
+    "1. Tea algal leaf spot": {
+      "actual_file_count": 418,
+      "readme_v4_count": 418,
+      "delta_vs_readme": 0,
+      "numbering_min": 1,
+      "numbering_max": 418,
+      "distinct_numbers": 418,
+      "missing_numbers_within_range": [],
+      "unparsed_filenames": []
+    },
+    "2. Brown Blight": {
+      "actual_file_count": 506,
+      "readme_v4_count": 508,
+      "delta_vs_readme": -2,
+      "numbering_min": 1,
+      "numbering_max": 506,
+      "distinct_numbers": 506,
+      "missing_numbers_within_range": [],
+      "unparsed_filenames": []
+    },
+    "3. Gray Blight": {
+      "actual_file_count": 1013,
+      "readme_v4_count": 1013,
+      "delta_vs_readme": 0,
+      "numbering_min": 1,
+      "numbering_max": 1013,
+      "distinct_numbers": 1013,
+      "missing_numbers_within_range": [],
+      "unparsed_filenames": []
+    },
+    "4. Helopeltis": {
+      "actual_file_count": 607,
+      "readme_v4_count": 607,
+      "delta_vs_readme": 0,
+      "numbering_min": 1,
+      "numbering_max": 607,
+      "distinct_numbers": 607,
+      "missing_numbers_within_range": [],
+      "unparsed_filenames": []
+    },
+    "5. Red spider": {
+      "actual_file_count": 515,
+      "readme_v4_count": 515,
+      "delta_vs_readme": 0,
+      "numbering_min": 1,
+      "numbering_max": 515,
+      "distinct_numbers": 515,
+      "missing_numbers_within_range": [],
+      "unparsed_filenames": []
+    },
+    "6. Green mirid bug": {
+      "actual_file_count": 1282,
+      "readme_v4_count": 1282,
+      "delta_vs_readme": 0,
+      "numbering_min": 1,
+      "numbering_max": 1282,
+      "distinct_numbers": 1282,
+      "missing_numbers_within_range": [],
+      "unparsed_filenames": []
+    },
+    "7. Healthy leaf": {
+      "actual_file_count": 935,
+      "readme_v4_count": 935,
+      "delta_vs_readme": 0,
+      "numbering_min": 1,
+      "numbering_max": 935,
+      "distinct_numbers": 935,
+      "missing_numbers_within_range": [],
+      "unparsed_filenames": []
+    }
+  },
+  "total_actual": 5276,
+  "total_readme_v4": 5278,
+  "delta": -2
+}

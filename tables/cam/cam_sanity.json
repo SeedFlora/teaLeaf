@@ -1,0 +1,647 @@
+{
+  "checkpoint": "<redacted-local-path>/mobilenetv3_large__primary__seed42/best.keras",
+  "checkpoint_load": {
+    "rebuilt_as_float32": true,
+    "original_policy": "<DTypePolicy \"float32\">",
+    "rebuild_max_abs_deviation": 0.013903260231018066,
+    "rebuild_top1_agreement": 1.0
+  },
+  "method": {
+    "map": "CAM_c = sum_k W[k,c] F_k on the final 7x7 feature map, for the predicted class; identical to the graph the application ships (export_with_cam.py). Equivalent to Grad-CAM here because the head is GAP + linear.",
+    "head_reproduces_classifier_max_abs_dev": 4.501856100125323e-07,
+    "graph_verification": {
+      "top1_agreement_with_stored": 1.0,
+      "max_abs_probability_deviation": 0.03803890943527222
+    },
+    "mask": "Otsu threshold on colour distance from the border-estimated backdrop (or on saturation when the border is itself saturated), opening r=2, closing r=3, hole filling, largest interior component.",
+    "flag_rule": "mask empty, area < 2% or > 45% of the frame, or mask touching the border"
+  },
+  "n_test": 791,
+  "n_usable": 764,
+  "n_flagged": 27,
+  "n_zero_map": 0,
+  "n_mask_touches_border": 25,
+  "n_flagged_border_or_large": 25,
+  "n_flagged_small": 2,
+  "n_mask_saturation_fallback": 11,
+  "overall": {
+    "n": 764,
+    "leaf_area_fraction": {
+      "mean": 0.12453592673162198,
+      "median": 0.11608139349489796,
+      "q25": 0.07859335140306123,
+      "q75": 0.16257274394132654
+    },
+    "cam_mass_on_leaf": {
+      "mean": 0.5755248387583107,
+      "median": 0.5860543549060822,
+      "q25": 0.4874298721551895,
+      "q75": 0.6669585257768631
+    },
+    "concentration_ratio": {
+      "mean": 5.443605345137011,
+      "median": 5.113170407565894,
+      "q25": 3.9674946529384667,
+      "q75": 6.6237957133524015
+    },
+    "cam_mass_on_leaf_dilated": {
+      "mean": 0.6472085842677436,
+      "median": 0.6554283499717712,
+      "q25": 0.5691682249307632,
+      "q75": 0.7307049036026001
+    },
+    "concentration_ratio_dilated": {
+      "mean": 5.047598217106277,
+      "median": 4.746195671228863,
+      "q25": 3.7174990344283327,
+      "q75": 6.129541194916028
+    },
+    "fraction_peak_on_leaf": 0.9659685863874345,
+    "fraction_peak_on_leaf_dilated": 0.9908376963350786,
+    "fraction_ratio_above_1": 0.9986910994764397,
+    "fraction_ratio_above_2": 0.9973821989528796
+  },
+  "by_correctness": {
+    "correct": {
+      "n": 686,
+      "leaf_area_fraction": {
+        "mean": 0.12377652238464629,
+        "median": 0.11494539221938777,
+        "q25": 0.0767398756377551,
+        "q75": 0.16175063775510204
+      },
+      "cam_mass_on_leaf": {
+        "mean": 0.5789545052318288,
+        "median": 0.5884400904178619,
+        "q25": 0.49294085800647736,
+        "q75": 0.6685037314891815
+      },
+      "concentration_ratio": {
+        "mean": 5.512870943236682,
+        "median": 5.203545150924133,
+        "q25": 4.027464428266365,
+        "q75": 6.670067767457287
+      },
+      "cam_mass_on_leaf_dilated": {
+        "mean": 0.6512326160255744,
+        "median": 0.6607703566551208,
+        "q25": 0.5767925083637238,
+        "q75": 0.7315378487110138
+      },
+      "concentration_ratio_dilated": {
+        "mean": 5.110157349718245,
+        "median": 4.850392989414576,
+        "q25": 3.764691559179973,
+        "q75": 6.18152938579191
+      },
+      "fraction_peak_on_leaf": 0.9650145772594753
+    },
+    "incorrect": {
+      "n": 78,
+      "leaf_area_fraction": {
+        "mean": 0.1312147906037415,
+        "median": 0.11989795918367346,
+        "q25": 0.08873266103316327,
+        "q75": 0.16722138073979592
+      },
+      "cam_mass_on_leaf": {
+        "mean": 0.5453613618245492,
+        "median": 0.5398194491863251,
+        "q25": 0.4527968391776085,
+        "q75": 0.6499936580657959
+      },
+      "concentration_ratio": {
+        "mean": 4.834423290055296,
+        "median": 4.464993327486412,
+        "q25": 3.392663653504314,
+        "q75": 5.6316673346356625
+      },
+      "cam_mass_on_leaf_dilated": {
+        "mean": 0.6118177408591295,
+        "median": 0.6125925481319427,
+        "q25": 0.5236616134643555,
+        "q75": 0.7164380252361298
+      },
+      "concentration_ratio_dilated": {
+        "mean": 4.497398666185637,
+        "median": 4.153330464300439,
+        "q25": 3.1765231534833314,
+        "q75": 5.2112544014947675
+      },
+      "fraction_peak_on_leaf": 0.9743589743589743
+    }
+  },
+  "by_abstention": {
+    "answered": {
+      "n": 667,
+      "leaf_area_fraction": {
+        "mean": 0.12444324911842547,
+        "median": 0.11537388392857142,
+        "q25": 0.07789580676020408,
+        "q75": 0.1629165338010204
+      },
+      "cam_mass_on_leaf": {
+        "mean": 0.5795564313699817,
+        "median": 0.5887330174446106,
+        "q25": 0.4948810786008835,
+        "q75": 0.6684837937355042
+      },
+      "concentration_ratio": {
+        "mean": 5.48722127898624,
+        "median": 5.191407567626864,
+        "q25": 4.031502907394951,
+        "q75": 6.661346709855945
+      },
+      "cam_mass_on_leaf_dilated": {
+        "mean": 0.6517955602734521,
+        "median": 0.660507082939148,
+        "q25": 0.5768445134162903,
+        "q75": 0.7317012548446655
+      },
+      "concentration_ratio_dilated": {
+        "mean": 5.088460013123747,
+        "median": 4.801404155939069,
+        "q25": 3.7661240713375403,
+        "q75": 6.16417317627828
+      },
+      "fraction_peak_on_leaf": 0.967016491754123
+    },
+    "abstained": {
+      "n": 97,
+      "leaf_area_fraction": {
+        "mean": 0.12517320475226174,
+        "median": 0.1162109375,
+        "q25": 0.08729272959183673,
+        "q75": 0.15644929846938777
+      },
+      "cam_mass_on_leaf": {
+        "mean": 0.5478024442017693,
+        "median": 0.5416264533996582,
+        "q25": 0.4581791162490845,
+        "q75": 0.6516275405883789
+      },
+      "concentration_ratio": {
+        "mean": 5.143689593823237,
+        "median": 4.587572626706932,
+        "q25": 3.552096933720869,
+        "q75": 5.956838350183824
+      },
+      "cam_mass_on_leaf_dilated": {
+        "mean": 0.6156672131769436,
+        "median": 0.6202954053878784,
+        "q25": 0.5331250429153442,
+        "q75": 0.7191888093948364
+      },
+      "concentration_ratio_dilated": {
+        "mean": 4.766620712532537,
+        "median": 4.3126358717175695,
+        "q25": 3.362732167848811,
+        "q75": 5.5884389459532935
+      },
+      "fraction_peak_on_leaf": 0.9587628865979382
+    }
+  },
+  "by_true_class": {
+    "1. Tea algal leaf spot": {
+      "n": 60,
+      "leaf_area_fraction": {
+        "mean": 0.13974908322704085,
+        "median": 0.13612085459183673,
+        "q25": 0.10593211894132654,
+        "q75": 0.17347437021683673
+      },
+      "cam_mass_on_leaf": {
+        "mean": 0.5577818223585685,
+        "median": 0.5850839018821716,
+        "q25": 0.485866941511631,
+        "q75": 0.633302628993988
+      },
+      "concentration_ratio": {
+        "mean": 4.245534109471229,
+        "median": 4.360397477337141,
+        "q25": 3.465094888087091,
+        "q75": 4.861071547528027
+      },
+      "cam_mass_on_leaf_dilated": {
+        "mean": 0.6202958750228087,
+        "median": 0.6500883400440216,
+        "q25": 0.5633912533521652,
+        "q75": 0.6904291361570358
+      },
+      "concentration_ratio_dilated": {
+        "mean": 3.9725223976335093,
+        "median": 4.068987577643445,
+        "q25": 3.212691120692411,
+        "q75": 4.54329661362849
+      },
+      "fraction_peak_on_leaf": 0.95
+    },
+    "2. Brown Blight": {
+      "n": 71,
+      "leaf_area_fraction": {
+        "mean": 0.15724031690140844,
+        "median": 0.15178571428571427,
+        "q25": 0.10728236607142858,
+        "q75": 0.19365832270408162
+      },
+      "cam_mass_on_leaf": {
+        "mean": 0.6107832012881695,
+        "median": 0.6202585697174072,
+        "q25": 0.5463074743747711,
+        "q75": 0.6853733360767365
+      },
+      "concentration_ratio": {
+        "mean": 4.582113098022984,
+        "median": 4.153585448985624,
+        "q25": 3.3366473674433252,
+        "q75": 5.134436750315656
+      },
+      "cam_mass_on_leaf_dilated": {
+        "mean": 0.6772890766741524,
+        "median": 0.6822391152381897,
+        "q25": 0.6327902972698212,
+        "q75": 0.7474231719970703
+      },
+      "concentration_ratio_dilated": {
+        "mean": 4.251479493648505,
+        "median": 3.808549272147304,
+        "q25": 3.1609327500580946,
+        "q75": 4.746319937030318
+      },
+      "fraction_peak_on_leaf": 1.0
+    },
+    "3. Gray Blight": {
+      "n": 141,
+      "leaf_area_fraction": {
+        "mean": 0.14780864972318716,
+        "median": 0.13538345025510204,
+        "q25": 0.10301737882653061,
+        "q75": 0.1720344387755102
+      },
+      "cam_mass_on_leaf": {
+        "mean": 0.6620047866029942,
+        "median": 0.6690120100975037,
+        "q25": 0.5829688310623169,
+        "q75": 0.7385514974594116
+      },
+      "concentration_ratio": {
+        "mean": 5.002922064517722,
+        "median": 4.686012329955202,
+        "q25": 3.9230387944528893,
+        "q75": 5.749909750198278
+      },
+      "cam_mass_on_leaf_dilated": {
+        "mean": 0.7270751289019348,
+        "median": 0.7336339950561523,
+        "q25": 0.6601700186729431,
+        "q75": 0.7981845736503601
+      },
+      "concentration_ratio_dilated": {
+        "mean": 4.614731229521968,
+        "median": 4.392598565396596,
+        "q25": 3.6912865239194423,
+        "q75": 5.29183744542739
+      },
+      "fraction_peak_on_leaf": 0.950354609929078
+    },
+    "4. Helopeltis": {
+      "n": 88,
+      "leaf_area_fraction": {
+        "mean": 0.06971845467590446,
+        "median": 0.06069634885204081,
+        "q25": 0.04520587531887755,
+        "q75": 0.08684430803571427
+      },
+      "cam_mass_on_leaf": {
+        "mean": 0.4534410797059536,
+        "median": 0.43868768215179443,
+        "q25": 0.3751284033060074,
+        "q75": 0.5254459232091904
+      },
+      "concentration_ratio": {
+        "mean": 7.406622990219813,
+        "median": 7.620482676881927,
+        "q25": 5.841860909024712,
+        "q75": 8.653002137725531
+      },
+      "cam_mass_on_leaf_dilated": {
+        "mean": 0.5383164559236981,
+        "median": 0.5310348272323608,
+        "q25": 0.4640233591198921,
+        "q75": 0.6062110066413879
+      },
+      "concentration_ratio_dilated": {
+        "mean": 6.827984154312079,
+        "median": 7.06710365602126,
+        "q25": 5.37033638118701,
+        "q75": 7.879863370939567
+      },
+      "fraction_peak_on_leaf": 0.9772727272727273
+    },
+    "5. Red spider": {
+      "n": 75,
+      "leaf_area_fraction": {
+        "mean": 0.12752019557823127,
+        "median": 0.11623086734693877,
+        "q25": 0.09526466836734694,
+        "q75": 0.16083386479591838
+      },
+      "cam_mass_on_leaf": {
+        "mean": 0.6108817327022552,
+        "median": 0.6462541818618774,
+        "q25": 0.5190925598144531,
+        "q75": 0.6995642185211182
+      },
+      "concentration_ratio": {
+        "mean": 5.3765761015033195,
+        "median": 5.2446640057337,
+        "q25": 4.054320094494068,
+        "q75": 6.3766515448728525
+      },
+      "cam_mass_on_leaf_dilated": {
+        "mean": 0.6749319207668304,
+        "median": 0.7097195982933044,
+        "q25": 0.601041853427887,
+        "q75": 0.7607743442058563
+      },
+      "concentration_ratio_dilated": {
+        "mean": 4.967291689703741,
+        "median": 4.777438490400431,
+        "q25": 3.7738208671609916,
+        "q75": 5.8123997496735775
+      },
+      "fraction_peak_on_leaf": 0.96
+    },
+    "6. Green mirid bug": {
+      "n": 190,
+      "leaf_area_fraction": {
+        "mean": 0.10633097811493017,
+        "median": 0.09156768176020408,
+        "q25": 0.0660076530612245,
+        "q75": 0.136653977997449
+      },
+      "cam_mass_on_leaf": {
+        "mean": 0.5442701302076641,
+        "median": 0.5472579002380371,
+        "q25": 0.47162555158138275,
+        "q75": 0.6219767332077026
+      },
+      "concentration_ratio": {
+        "mean": 6.04046497588903,
+        "median": 5.942382032179275,
+        "q25": 4.545244599398973,
+        "q75": 7.356293759400456
+      },
+      "cam_mass_on_leaf_dilated": {
+        "mean": 0.6264623695298245,
+        "median": 0.6360339522361755,
+        "q25": 0.56196129322052,
+        "q75": 0.6978890150785446
+      },
+      "concentration_ratio_dilated": {
+        "mean": 5.616350120657891,
+        "median": 5.4763139085919175,
+        "q25": 4.290559212267307,
+        "q75": 6.822634110078377
+      },
+      "fraction_peak_on_leaf": 0.9473684210526315
+    },
+    "7. Healthy leaf": {
+      "n": 139,
+      "leaf_area_fraction": {
+        "mean": 0.13563522587542212,
+        "median": 0.1311981823979592,
+        "q25": 0.09215561224489796,
+        "q75": 0.16979233099489796
+      },
+      "cam_mass_on_leaf": {
+        "mean": 0.5783850040367181,
+        "median": 0.5891067981719971,
+        "q25": 0.4984941780567169,
+        "q75": 0.6499594748020172
+      },
+      "concentration_ratio": {
+        "mean": 4.825367049559454,
+        "median": 4.451960568311738,
+        "q25": 3.7199606850471643,
+        "q75": 5.538203365124241
+      },
+      "cam_mass_on_leaf_dilated": {
+        "mean": 0.6447834235301121,
+        "median": 0.6582640409469604,
+        "q25": 0.577065646648407,
+        "q75": 0.7086451649665833
+      },
+      "concentration_ratio_dilated": {
+        "mean": 4.4961549738654725,
+        "median": 4.181142727692233,
+        "q25": 3.489566707475938,
+        "q75": 5.116987056159208
+      },
+      "fraction_peak_on_leaf": 0.9928057553956835
+    }
+  },
+  "counterfactuals": {
+    "background_only": {
+      "description": "leaf painted out with the backdrop median colour",
+      "n": 764,
+      "prediction_survives": 0.2054973821989529,
+      "accuracy": 0.18193717277486912,
+      "accuracy_original_same_images": 0.8979057591623036,
+      "mean_calibrated_confidence": 0.5563805247678765,
+      "mean_calibrated_confidence_original": 0.9059973938006989,
+      "coverage_at_deployed_threshold": 0.19240837696335078,
+      "coverage_original": 0.8730366492146597,
+      "predicted_class_histogram": {
+        "1. Tea algal leaf spot": 111,
+        "2. Brown Blight": 0,
+        "3. Gray Blight": 6,
+        "4. Helopeltis": 4,
+        "5. Red spider": 86,
+        "6. Green mirid bug": 23,
+        "7. Healthy leaf": 534
+      }
+    },
+    "leaf_only": {
+      "description": "backdrop replaced by its median colour, leaf untouched",
+      "n": 764,
+      "prediction_survives": 0.8743455497382199,
+      "accuracy": 0.8534031413612565,
+      "accuracy_original_same_images": 0.8979057591623036,
+      "mean_calibrated_confidence": 0.8598605058933119,
+      "mean_calibrated_confidence_original": 0.9059973938006989,
+      "coverage_at_deployed_threshold": 0.8049738219895288,
+      "coverage_original": 0.8730366492146597,
+      "predicted_class_histogram": {
+        "1. Tea algal leaf spot": 53,
+        "2. Brown Blight": 67,
+        "3. Gray Blight": 144,
+        "4. Helopeltis": 76,
+        "5. Red spider": 82,
+        "6. Green mirid bug": 193,
+        "7. Healthy leaf": 149
+      }
+    },
+    "leaf_crop": {
+      "description": "tight crop around the leaf (8% margin) rescaled to 224 px",
+      "n": 764,
+      "prediction_survives": 0.8167539267015707,
+      "accuracy": 0.8102094240837696,
+      "accuracy_original_same_images": 0.8979057591623036,
+      "mean_calibrated_confidence": 0.8411994763619441,
+      "mean_calibrated_confidence_original": 0.9059973938006989,
+      "coverage_at_deployed_threshold": 0.7643979057591623,
+      "coverage_original": 0.8730366492146597,
+      "predicted_class_histogram": {
+        "1. Tea algal leaf spot": 39,
+        "2. Brown Blight": 64,
+        "3. Gray Blight": 224,
+        "4. Helopeltis": 72,
+        "5. Red spider": 52,
+        "6. Green mirid bug": 159,
+        "7. Healthy leaf": 154
+      }
+    }
+  },
+  "abstention": {
+    "temperature": 1.7661661650791607,
+    "threshold": 0.6984924623115578
+  },
+  "figures": {
+    "cam_panel": {
+      "correct": [
+        3,
+        125,
+        368,
+        404
+      ],
+      "wrong": [
+        124,
+        362,
+        408,
+        117
+      ],
+      "items": [
+        {
+          "test_index": 3,
+          "true": "1. Tea algal leaf spot",
+          "pred": "1. Tea algal leaf spot",
+          "confidence_calibrated": 0.9995805626454157,
+          "concentration_ratio": 4.729394831133716
+        },
+        {
+          "test_index": 125,
+          "true": "2. Brown Blight",
+          "pred": "2. Brown Blight",
+          "confidence_calibrated": 0.41266284371054995,
+          "concentration_ratio": 3.8275233054345894
+        },
+        {
+          "test_index": 368,
+          "true": "4. Helopeltis",
+          "pred": "4. Helopeltis",
+          "confidence_calibrated": 0.9999882990528366,
+          "concentration_ratio": 7.6880863996102535
+        },
+        {
+          "test_index": 404,
+          "true": "5. Red spider",
+          "pred": "5. Red spider",
+          "confidence_calibrated": 0.8896813360509446,
+          "concentration_ratio": 6.661144171960058
+        },
+        {
+          "test_index": 124,
+          "true": "2. Brown Blight",
+          "pred": "1. Tea algal leaf spot",
+          "confidence_calibrated": 0.9969537247257709,
+          "concentration_ratio": 5.5016274678799455
+        },
+        {
+          "test_index": 362,
+          "true": "4. Helopeltis",
+          "pred": "7. Healthy leaf",
+          "confidence_calibrated": 0.9916726118540838,
+          "concentration_ratio": 4.722924083489898
+        },
+        {
+          "test_index": 408,
+          "true": "5. Red spider",
+          "pred": "7. Healthy leaf",
+          "confidence_calibrated": 0.9852225929705354,
+          "concentration_ratio": 2.6254676928656497
+        },
+        {
+          "test_index": 117,
+          "true": "2. Brown Blight",
+          "pred": "3. Gray Blight",
+          "confidence_calibrated": 0.9817360663192982,
+          "concentration_ratio": 4.8886682686570015
+        }
+      ]
+    },
+    "cam_examples_by_class": [
+      {
+        "class": "1. Tea algal leaf spot",
+        "correct_index": 39,
+        "error_index": 25
+      },
+      {
+        "class": "2. Brown Blight",
+        "correct_index": 78,
+        "error_index": 124
+      },
+      {
+        "class": "3. Gray Blight",
+        "correct_index": 256,
+        "error_index": 229
+      },
+      {
+        "class": "4. Helopeltis",
+        "correct_index": 356,
+        "error_index": 362
+      },
+      {
+        "class": "5. Red spider",
+        "correct_index": 412,
+        "error_index": 408
+      },
+      {
+        "class": "6. Green mirid bug",
+        "correct_index": 472,
+        "error_index": 523
+      },
+      {
+        "class": "7. Healthy leaf",
+        "correct_index": 786,
+        "error_index": null
+      }
+    ],
+    "mask_qa": [
+      67,
+      565,
+      101,
+      69,
+      599,
+      786,
+      341,
+      765,
+      412,
+      336,
+      405,
+      73,
+      578,
+      507,
+      668,
+      157,
+      544,
+      620,
+      310,
+      487,
+      305,
+      174,
+      173,
+      11
+    ]
+  }
+}

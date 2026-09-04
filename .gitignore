@@ -1,0 +1,91 @@
+# Raw dataset images are not redistributed here — see LICENSES/DATASET_LICENSE.txt.
+# Manifests, checksums, split definitions and download instructions are committed instead.
+data/raw/**/*.jpg
+data/raw/**/*.jpeg
+data/raw/**/*.png
+!data/raw/v4/*.jpg
+data/representative_quantization/*.npy
+data/cache/
+
+# Training byproducts
+runs/**/checkpoints/
+runs/**/*.keras
+runs/**/*.h5
+models/checkpoints/*.keras
+models/checkpoints/*.h5
+*.tfrecord
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local environment and API credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+secrets.properties
+google-services.json
+.playwright-mcp/
+
+# Local AI-assistant configuration
+.claude/
+.claude.json
+CLAUDE.md
+
+# Local paper, submission, and author-identifying material
+manuscript/
+RESUME.md
+references/
+data/audit/external_dataset_candidates.csv
+data/audit/external_dataset_recommendation.md
+reports/G0_environment_audit.md
+reports/G1_novelty_audit.md
+reports/G1_reference_verification_quality.json
+reports/_g1_*
+reports/claim_evidence_ledger.csv
+runs/G0_template_check/
+src/audit/extract_external_dataset_search.py
+src/audit/extract_g1_outputs.py
+src/evaluation/build_claim_ledger.py
+src/evaluation/make_camera_ready.py
+src/evaluation/make_tables.py
+src/evaluation/manuscript_qa.py
+third_party/ios_template/
+
+# Private local captures
+reports/device_screenshots/03_camera_live.png
+
+# LaTeX byproducts
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+*.iml
+# Signing material must never be committed
+*.jks
+*.keystore
+keystore.properties
+
+# OS
+Thumbs.db
+.DS_Store

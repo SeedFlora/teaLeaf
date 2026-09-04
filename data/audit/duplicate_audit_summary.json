@@ -1,0 +1,357 @@
+{
+  "images": 5276,
+  "exact_duplicate_groups": 1,
+  "exact_duplicate_files": 2,
+  "exact_duplicate_extra_copies": 1,
+  "pairs_screened_at_loose_distance": 3872,
+  "pairs_passing_pixel_confirmation_only": 98,
+  "duplicate_pairs_used_for_grouping": 43,
+  "cross_label_pairs_rejected_as_background_similarity": 51,
+  "total_groups": 5233,
+  "multi_image_groups": 43,
+  "largest_group_size": 2,
+  "images_in_multi_image_groups": 86,
+  "cross_label_groups": 0,
+  "thresholds": {
+    "phash_operative_hamming_of_256": 32,
+    "phash_screen_hamming_of_256": 64,
+    "dhash_confirm_hamming_of_256": 48,
+    "ssim_confirm": 0.9
+  },
+  "group_size_histogram": {
+    "1": 5190,
+    "2": 43
+  },
+  "threshold_sensitivity": [
+    {
+      "phash_threshold": 0,
+      "threshold_fraction_of_256_bits": 0.0,
+      "confirmed_pairs_linked": 1,
+      "total_groups": 5275,
+      "multi_image_groups": 1,
+      "images_in_multi_image_groups": 2,
+      "pct_images_grouped": 0.038,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 2,
+      "threshold_fraction_of_256_bits": 0.0078,
+      "confirmed_pairs_linked": 1,
+      "total_groups": 5275,
+      "multi_image_groups": 1,
+      "images_in_multi_image_groups": 2,
+      "pct_images_grouped": 0.038,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 4,
+      "threshold_fraction_of_256_bits": 0.0156,
+      "confirmed_pairs_linked": 4,
+      "total_groups": 5272,
+      "multi_image_groups": 4,
+      "images_in_multi_image_groups": 8,
+      "pct_images_grouped": 0.152,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 6,
+      "threshold_fraction_of_256_bits": 0.0234,
+      "confirmed_pairs_linked": 7,
+      "total_groups": 5269,
+      "multi_image_groups": 7,
+      "images_in_multi_image_groups": 14,
+      "pct_images_grouped": 0.265,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 8,
+      "threshold_fraction_of_256_bits": 0.0312,
+      "confirmed_pairs_linked": 8,
+      "total_groups": 5268,
+      "multi_image_groups": 8,
+      "images_in_multi_image_groups": 16,
+      "pct_images_grouped": 0.303,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 10,
+      "threshold_fraction_of_256_bits": 0.0391,
+      "confirmed_pairs_linked": 15,
+      "total_groups": 5261,
+      "multi_image_groups": 15,
+      "images_in_multi_image_groups": 30,
+      "pct_images_grouped": 0.569,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 12,
+      "threshold_fraction_of_256_bits": 0.0469,
+      "confirmed_pairs_linked": 17,
+      "total_groups": 5259,
+      "multi_image_groups": 17,
+      "images_in_multi_image_groups": 34,
+      "pct_images_grouped": 0.644,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 14,
+      "threshold_fraction_of_256_bits": 0.0547,
+      "confirmed_pairs_linked": 22,
+      "total_groups": 5254,
+      "multi_image_groups": 22,
+      "images_in_multi_image_groups": 44,
+      "pct_images_grouped": 0.834,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 16,
+      "threshold_fraction_of_256_bits": 0.0625,
+      "confirmed_pairs_linked": 24,
+      "total_groups": 5252,
+      "multi_image_groups": 24,
+      "images_in_multi_image_groups": 48,
+      "pct_images_grouped": 0.91,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 18,
+      "threshold_fraction_of_256_bits": 0.0703,
+      "confirmed_pairs_linked": 30,
+      "total_groups": 5246,
+      "multi_image_groups": 30,
+      "images_in_multi_image_groups": 60,
+      "pct_images_grouped": 1.137,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 20,
+      "threshold_fraction_of_256_bits": 0.0781,
+      "confirmed_pairs_linked": 33,
+      "total_groups": 5243,
+      "multi_image_groups": 33,
+      "images_in_multi_image_groups": 66,
+      "pct_images_grouped": 1.251,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 22,
+      "threshold_fraction_of_256_bits": 0.0859,
+      "confirmed_pairs_linked": 35,
+      "total_groups": 5241,
+      "multi_image_groups": 35,
+      "images_in_multi_image_groups": 70,
+      "pct_images_grouped": 1.327,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 24,
+      "threshold_fraction_of_256_bits": 0.0938,
+      "confirmed_pairs_linked": 38,
+      "total_groups": 5238,
+      "multi_image_groups": 38,
+      "images_in_multi_image_groups": 76,
+      "pct_images_grouped": 1.44,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 26,
+      "threshold_fraction_of_256_bits": 0.1016,
+      "confirmed_pairs_linked": 39,
+      "total_groups": 5237,
+      "multi_image_groups": 39,
+      "images_in_multi_image_groups": 78,
+      "pct_images_grouped": 1.478,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 28,
+      "threshold_fraction_of_256_bits": 0.1094,
+      "confirmed_pairs_linked": 40,
+      "total_groups": 5236,
+      "multi_image_groups": 40,
+      "images_in_multi_image_groups": 80,
+      "pct_images_grouped": 1.516,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 30,
+      "threshold_fraction_of_256_bits": 0.1172,
+      "confirmed_pairs_linked": 43,
+      "total_groups": 5233,
+      "multi_image_groups": 43,
+      "images_in_multi_image_groups": 86,
+      "pct_images_grouped": 1.63,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 32,
+      "threshold_fraction_of_256_bits": 0.125,
+      "confirmed_pairs_linked": 43,
+      "total_groups": 5233,
+      "multi_image_groups": 43,
+      "images_in_multi_image_groups": 86,
+      "pct_images_grouped": 1.63,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 34,
+      "threshold_fraction_of_256_bits": 0.1328,
+      "confirmed_pairs_linked": 43,
+      "total_groups": 5233,
+      "multi_image_groups": 43,
+      "images_in_multi_image_groups": 86,
+      "pct_images_grouped": 1.63,
+      "largest_group_size": 2
+    },
+    {
+      "phash_threshold": 36,
+      "threshold_fraction_of_256_bits": 0.1406,
+      "confirmed_pairs_linked": 48,
+      "total_groups": 5228,
+      "multi_image_groups": 47,
+      "images_in_multi_image_groups": 95,
+      "pct_images_grouped": 1.801,
+      "largest_group_size": 3
+    },
+    {
+      "phash_threshold": 38,
+      "threshold_fraction_of_256_bits": 0.1484,
+      "confirmed_pairs_linked": 48,
+      "total_groups": 5228,
+      "multi_image_groups": 47,
+      "images_in_multi_image_groups": 95,
+      "pct_images_grouped": 1.801,
+      "largest_group_size": 3
+    },
+    {
+      "phash_threshold": 40,
+      "threshold_fraction_of_256_bits": 0.1562,
+      "confirmed_pairs_linked": 50,
+      "total_groups": 5226,
+      "multi_image_groups": 49,
+      "images_in_multi_image_groups": 99,
+      "pct_images_grouped": 1.876,
+      "largest_group_size": 3
+    },
+    {
+      "phash_threshold": 42,
+      "threshold_fraction_of_256_bits": 0.1641,
+      "confirmed_pairs_linked": 53,
+      "total_groups": 5223,
+      "multi_image_groups": 52,
+      "images_in_multi_image_groups": 105,
+      "pct_images_grouped": 1.99,
+      "largest_group_size": 3
+    },
+    {
+      "phash_threshold": 44,
+      "threshold_fraction_of_256_bits": 0.1719,
+      "confirmed_pairs_linked": 56,
+      "total_groups": 5220,
+      "multi_image_groups": 54,
+      "images_in_multi_image_groups": 110,
+      "pct_images_grouped": 2.085,
+      "largest_group_size": 3
+    },
+    {
+      "phash_threshold": 46,
+      "threshold_fraction_of_256_bits": 0.1797,
+      "confirmed_pairs_linked": 60,
+      "total_groups": 5216,
+      "multi_image_groups": 58,
+      "images_in_multi_image_groups": 118,
+      "pct_images_grouped": 2.237,
+      "largest_group_size": 3
+    },
+    {
+      "phash_threshold": 48,
+      "threshold_fraction_of_256_bits": 0.1875,
+      "confirmed_pairs_linked": 64,
+      "total_groups": 5212,
+      "multi_image_groups": 61,
+      "images_in_multi_image_groups": 125,
+      "pct_images_grouped": 2.369,
+      "largest_group_size": 3
+    },
+    {
+      "phash_threshold": 50,
+      "threshold_fraction_of_256_bits": 0.1953,
+      "confirmed_pairs_linked": 69,
+      "total_groups": 5208,
+      "multi_image_groups": 63,
+      "images_in_multi_image_groups": 131,
+      "pct_images_grouped": 2.483,
+      "largest_group_size": 4
+    },
+    {
+      "phash_threshold": 52,
+      "threshold_fraction_of_256_bits": 0.2031,
+      "confirmed_pairs_linked": 79,
+      "total_groups": 5198,
+      "multi_image_groups": 67,
+      "images_in_multi_image_groups": 145,
+      "pct_images_grouped": 2.748,
+      "largest_group_size": 6
+    },
+    {
+      "phash_threshold": 54,
+      "threshold_fraction_of_256_bits": 0.2109,
+      "confirmed_pairs_linked": 90,
+      "total_groups": 5188,
+      "multi_image_groups": 70,
+      "images_in_multi_image_groups": 158,
+      "pct_images_grouped": 2.995,
+      "largest_group_size": 6
+    },
+    {
+      "phash_threshold": 56,
+      "threshold_fraction_of_256_bits": 0.2188,
+      "confirmed_pairs_linked": 102,
+      "total_groups": 5176,
+      "multi_image_groups": 76,
+      "images_in_multi_image_groups": 176,
+      "pct_images_grouped": 3.336,
+      "largest_group_size": 8
+    },
+    {
+      "phash_threshold": 58,
+      "threshold_fraction_of_256_bits": 0.2266,
+      "confirmed_pairs_linked": 112,
+      "total_groups": 5168,
+      "multi_image_groups": 79,
+      "images_in_multi_image_groups": 187,
+      "pct_images_grouped": 3.544,
+      "largest_group_size": 9
+    },
+    {
+      "phash_threshold": 60,
+      "threshold_fraction_of_256_bits": 0.2344,
+      "confirmed_pairs_linked": 118,
+      "total_groups": 5162,
+      "multi_image_groups": 82,
+      "images_in_multi_image_groups": 196,
+      "pct_images_grouped": 3.715,
+      "largest_group_size": 10
+    },
+    {
+      "phash_threshold": 62,
+      "threshold_fraction_of_256_bits": 0.2422,
+      "confirmed_pairs_linked": 127,
+      "total_groups": 5155,
+      "multi_image_groups": 84,
+      "images_in_multi_image_groups": 205,
+      "pct_images_grouped": 3.886,
+      "largest_group_size": 12
+    },
+    {
+      "phash_threshold": 64,
+      "threshold_fraction_of_256_bits": 0.25,
+      "confirmed_pairs_linked": 141,
+      "total_groups": 5142,
+      "multi_image_groups": 89,
+      "images_in_multi_image_groups": 223,
+      "pct_images_grouped": 4.227,
+      "largest_group_size": 12
+    }
+  ]
+}

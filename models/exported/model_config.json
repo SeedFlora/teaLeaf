@@ -1,0 +1,73 @@
+{
+  "model_asset": "tealeaf_fp16_cam.tflite",
+  "model_sha256": "b6eb456498e0dd8242ce8f73b1496e3a42ac91826e1b4527a4a1102a29f80dd2",
+  "variant": "fp16",
+  "version": "1.0.0",
+  "input_size": 224,
+  "input_convention": "raw [0,255] float32 RGB; normalization embedded in the graph",
+  "class_order": [
+    "tea_algal_leaf_spot",
+    "brown_blight",
+    "gray_blight",
+    "helopeltis_damage",
+    "red_spider_mite_damage",
+    "green_mirid_bug_damage",
+    "healthy_leaf"
+  ],
+  "dataset_class_folders": [
+    "1. Tea algal leaf spot",
+    "2. Brown Blight",
+    "3. Gray Blight",
+    "4. Helopeltis",
+    "5. Red spider",
+    "6. Green mirid bug",
+    "7. Healthy leaf"
+  ],
+  "display_labels_en": [
+    "Tea algal leaf spot",
+    "Brown blight",
+    "Gray blight",
+    "Helopeltis damage",
+    "Red spider mite damage",
+    "Green mirid bug damage",
+    "Healthy leaf"
+  ],
+  "display_labels_id": [
+    "Bercak daun alga",
+    "Hawar coklat",
+    "Hawar kelabu",
+    "Kerusakan Helopeltis",
+    "Kerusakan tungau merah",
+    "Kerusakan kepik hijau",
+    "Daun sehat"
+  ],
+  "temperature": 1.7661661650791607,
+  "abstention_threshold": 0.6984924623115578,
+  "target_selective_risk": 0.05,
+  "min_coverage": 0.7,
+  "num_threads": 4,
+  "use_xnnpack": true,
+  "cam": {
+    "available": true,
+    "output_shape": [
+      1,
+      7,
+      7,
+      7
+    ],
+    "method": "Class Activation Mapping (Zhou et al. style), computed inside the graph",
+    "interpretation": "Shows WHERE evidence for the predicted class is concentrated. It does not explain WHY in biological terms, and a heatmap over a lesion is not proof the network reasoned about lesion morphology.",
+    "diagnostic_use": "Attention on the plain background rather than the leaf would indicate shortcut learning, which is a real risk on a studio dataset."
+  },
+  "export_verification": {
+    "keras_top1_agreement": 0.9987357774968394,
+    "max_abs_probability_deviation": 0.03662388190142141,
+    "test_macro_f1": 0.8744661905531471,
+    "checkpoint_load": {
+      "rebuilt_as_float32": true,
+      "original_policy": "<DTypePolicy \"float32\">",
+      "rebuild_max_abs_deviation": 0.00858849287033081,
+      "rebuild_top1_agreement": 1.0
+    }
+  }
+}

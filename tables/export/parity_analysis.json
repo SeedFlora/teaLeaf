@@ -1,0 +1,838 @@
+{
+  "reference": {
+    "source": "<redacted-local-path>/mobilenetv3_large__primary__seed42/predictions_primary_test.npz",
+    "macro_f1": 0.8744661905531471,
+    "accuracy": 0.8988621997471555,
+    "per_class_recall": {
+      "1. Tea algal leaf spot": 0.8253968253968254,
+      "2. Brown Blight": 0.6710526315789473,
+      "3. Gray Blight": 0.9276315789473685,
+      "4. Helopeltis": 0.8351648351648352,
+      "5. Red spider": 0.8311688311688312,
+      "6. Green mirid bug": 0.9739583333333334,
+      "7. Healthy leaf": 1.0
+    },
+    "per_class_f1": {
+      "1. Tea algal leaf spot": 0.8,
+      "2. Brown Blight": 0.7727272727272728,
+      "3. Gray Blight": 0.9038461538461539,
+      "4. Helopeltis": 0.888888888888889,
+      "5. Red spider": 0.8533333333333334,
+      "6. Green mirid bug": 0.9565217391304348,
+      "7. Healthy leaf": 0.945945945945946
+    },
+    "confusion_matrix": [
+      [
+        52,
+        4,
+        2,
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        11,
+        51,
+        10,
+        0,
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        141,
+        0,
+        6,
+        1,
+        2
+      ],
+      [
+        2,
+        0,
+        3,
+        76,
+        0,
+        6,
+        4
+      ],
+      [
+        0,
+        0,
+        4,
+        1,
+        64,
+        1,
+        7
+      ],
+      [
+        1,
+        0,
+        0,
+        2,
+        1,
+        187,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        140
+      ]
+    ]
+  },
+  "class_order": [
+    "1. Tea algal leaf spot",
+    "2. Brown Blight",
+    "3. Gray Blight",
+    "4. Helopeltis",
+    "5. Red spider",
+    "6. Green mirid bug",
+    "7. Healthy leaf"
+  ],
+  "n_test": 791,
+  "variants": {
+    "fp32": {
+      "file": "tealeaf_fp32.tflite",
+      "sha256": "ff5aeaf26102489cef6761c4d427bc83bd27cfe3754df20a341793149cc95457",
+      "mb": 11.928,
+      "interpreter": {
+        "runtime": "ai_edge_litert",
+        "delegate": "xnnpack (default)",
+        "input_dtype": "float32",
+        "output_dtype": "float32"
+      },
+      "macro_f1": 0.8744661905531471,
+      "accuracy": 0.8988621997471555,
+      "delta_macro_f1_points_vs_reference": 0.0,
+      "top1_agreement_with_reference": 1.0,
+      "n_disagreements": 0,
+      "disagreement_transitions": {},
+      "per_class": {
+        "1. Tea algal leaf spot": {
+          "support": 63,
+          "precision": 0.7761194029850746,
+          "recall": 0.8253968253968254,
+          "f1": 0.8,
+          "recall_drop_points_vs_reference": 0.0
+        },
+        "2. Brown Blight": {
+          "support": 76,
+          "precision": 0.9107142857142857,
+          "recall": 0.6710526315789473,
+          "f1": 0.7727272727272728,
+          "recall_drop_points_vs_reference": 0.0
+        },
+        "3. Gray Blight": {
+          "support": 152,
+          "precision": 0.88125,
+          "recall": 0.9276315789473685,
+          "f1": 0.9038461538461539,
+          "recall_drop_points_vs_reference": 0.0
+        },
+        "4. Helopeltis": {
+          "support": 91,
+          "precision": 0.95,
+          "recall": 0.8351648351648352,
+          "f1": 0.888888888888889,
+          "recall_drop_points_vs_reference": 0.0
+        },
+        "5. Red spider": {
+          "support": 77,
+          "precision": 0.8767123287671232,
+          "recall": 0.8311688311688312,
+          "f1": 0.8533333333333334,
+          "recall_drop_points_vs_reference": 0.0
+        },
+        "6. Green mirid bug": {
+          "support": 192,
+          "precision": 0.9396984924623115,
+          "recall": 0.9739583333333334,
+          "f1": 0.9565217391304348,
+          "recall_drop_points_vs_reference": 0.0
+        },
+        "7. Healthy leaf": {
+          "support": 140,
+          "precision": 0.8974358974358975,
+          "recall": 1.0,
+          "f1": 0.945945945945946,
+          "recall_drop_points_vs_reference": 0.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          52,
+          4,
+          2,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          11,
+          51,
+          10,
+          0,
+          1,
+          3,
+          0
+        ],
+        [
+          1,
+          1,
+          141,
+          0,
+          6,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          3,
+          76,
+          0,
+          6,
+          4
+        ],
+        [
+          0,
+          0,
+          4,
+          1,
+          64,
+          1,
+          7
+        ],
+        [
+          1,
+          0,
+          0,
+          2,
+          1,
+          187,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          140
+        ]
+      ],
+      "paired_bootstrap": {
+        "n_bootstrap": 2000,
+        "seed": 12345,
+        "delta_macro_f1": {
+          "mean_points": 0.0,
+          "ci95_low_points": 0.0,
+          "ci95_high_points": 0.0,
+          "ci_includes_zero": true,
+          "fraction_positive": 0.0
+        },
+        "delta_accuracy": {
+          "mean_points": 0.0,
+          "ci95_low_points": 0.0,
+          "ci95_high_points": 0.0,
+          "ci_includes_zero": true,
+          "fraction_positive": 0.0
+        },
+        "note": "A single index vector is drawn per replicate and applied to both systems, so the interval describes the paired difference on shared images."
+      },
+      "mcnemar_vs_reference": {
+        "a_right_b_wrong": 0,
+        "a_wrong_b_right": 0,
+        "discordant": 0,
+        "p_value_exact_binomial": 1.0
+      },
+      "worst_class": {
+        "name": "1. Tea algal leaf spot",
+        "reference_recall": 0.8253968253968254,
+        "variant_recall": 0.8253968253968254,
+        "recall_drop_points": 0.0,
+        "support": 63,
+        "retained": 52,
+        "where_its_images_went": {
+          "2. Brown Blight": 4,
+          "3. Gray Blight": 2,
+          "7. Healthy leaf": 2,
+          "4. Helopeltis": 1,
+          "5. Red spider": 1,
+          "6. Green mirid bug": 1
+        }
+      }
+    },
+    "fp16": {
+      "file": "tealeaf_fp16.tflite",
+      "sha256": "49121f45948937d288d7187c1d756c97920f5169a8669575016a5853e2046bf6",
+      "mb": 6.009,
+      "interpreter": {
+        "runtime": "ai_edge_litert",
+        "delegate": "xnnpack (default)",
+        "input_dtype": "float32",
+        "output_dtype": "float32"
+      },
+      "macro_f1": 0.8744661905531471,
+      "accuracy": 0.8988621997471555,
+      "delta_macro_f1_points_vs_reference": 0.0,
+      "top1_agreement_with_reference": 1.0,
+      "n_disagreements": 0,
+      "disagreement_transitions": {},
+      "per_class": {
+        "1. Tea algal leaf spot": {
+          "support": 63,
+          "precision": 0.7761194029850746,
+          "recall": 0.8253968253968254,
+          "f1": 0.8,
+          "recall_drop_points_vs_reference": 0.0
+        },
+        "2. Brown Blight": {
+          "support": 76,
+          "precision": 0.9107142857142857,
+          "recall": 0.6710526315789473,
+          "f1": 0.7727272727272728,
+          "recall_drop_points_vs_reference": 0.0
+        },
+        "3. Gray Blight": {
+          "support": 152,
+          "precision": 0.88125,
+          "recall": 0.9276315789473685,
+          "f1": 0.9038461538461539,
+          "recall_drop_points_vs_reference": 0.0
+        },
+        "4. Helopeltis": {
+          "support": 91,
+          "precision": 0.95,
+          "recall": 0.8351648351648352,
+          "f1": 0.888888888888889,
+          "recall_drop_points_vs_reference": 0.0
+        },
+        "5. Red spider": {
+          "support": 77,
+          "precision": 0.8767123287671232,
+          "recall": 0.8311688311688312,
+          "f1": 0.8533333333333334,
+          "recall_drop_points_vs_reference": 0.0
+        },
+        "6. Green mirid bug": {
+          "support": 192,
+          "precision": 0.9396984924623115,
+          "recall": 0.9739583333333334,
+          "f1": 0.9565217391304348,
+          "recall_drop_points_vs_reference": 0.0
+        },
+        "7. Healthy leaf": {
+          "support": 140,
+          "precision": 0.8974358974358975,
+          "recall": 1.0,
+          "f1": 0.945945945945946,
+          "recall_drop_points_vs_reference": 0.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          52,
+          4,
+          2,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          11,
+          51,
+          10,
+          0,
+          1,
+          3,
+          0
+        ],
+        [
+          1,
+          1,
+          141,
+          0,
+          6,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          3,
+          76,
+          0,
+          6,
+          4
+        ],
+        [
+          0,
+          0,
+          4,
+          1,
+          64,
+          1,
+          7
+        ],
+        [
+          1,
+          0,
+          0,
+          2,
+          1,
+          187,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          140
+        ]
+      ],
+      "paired_bootstrap": {
+        "n_bootstrap": 2000,
+        "seed": 12345,
+        "delta_macro_f1": {
+          "mean_points": 0.0,
+          "ci95_low_points": 0.0,
+          "ci95_high_points": 0.0,
+          "ci_includes_zero": true,
+          "fraction_positive": 0.0
+        },
+        "delta_accuracy": {
+          "mean_points": 0.0,
+          "ci95_low_points": 0.0,
+          "ci95_high_points": 0.0,
+          "ci_includes_zero": true,
+          "fraction_positive": 0.0
+        },
+        "note": "A single index vector is drawn per replicate and applied to both systems, so the interval describes the paired difference on shared images."
+      },
+      "mcnemar_vs_reference": {
+        "a_right_b_wrong": 0,
+        "a_wrong_b_right": 0,
+        "discordant": 0,
+        "p_value_exact_binomial": 1.0
+      },
+      "worst_class": {
+        "name": "1. Tea algal leaf spot",
+        "reference_recall": 0.8253968253968254,
+        "variant_recall": 0.8253968253968254,
+        "recall_drop_points": 0.0,
+        "support": 63,
+        "retained": 52,
+        "where_its_images_went": {
+          "2. Brown Blight": 4,
+          "3. Gray Blight": 2,
+          "7. Healthy leaf": 2,
+          "4. Helopeltis": 1,
+          "5. Red spider": 1,
+          "6. Green mirid bug": 1
+        }
+      }
+    },
+    "int8": {
+      "file": "tealeaf_int8.tflite",
+      "sha256": "e783047640d5ccdf1808f8ab395db9e943b4dff3e77d92f0e3aa9a84b69be172",
+      "mb": 3.502,
+      "interpreter": {
+        "runtime": "tf.lite",
+        "delegate": "none (XNNPACK disabled)",
+        "input_dtype": "float32",
+        "output_dtype": "float32"
+      },
+      "macro_f1": 0.6333837215818752,
+      "accuracy": 0.6649810366624526,
+      "delta_macro_f1_points_vs_reference": -24.108,
+      "top1_agreement_with_reference": 0.6561314791403287,
+      "n_disagreements": 272,
+      "disagreement_transitions": {
+        "3. Gray Blight -> 2. Brown Blight": 100,
+        "1. Tea algal leaf spot -> 2. Brown Blight": 33,
+        "5. Red spider -> 2. Brown Blight": 24,
+        "4. Helopeltis -> 6. Green mirid bug": 21,
+        "7. Healthy leaf -> 6. Green mirid bug": 13,
+        "6. Green mirid bug -> 2. Brown Blight": 13,
+        "3. Gray Blight -> 6. Green mirid bug": 7,
+        "6. Green mirid bug -> 4. Helopeltis": 7,
+        "7. Healthy leaf -> 2. Brown Blight": 6,
+        "4. Helopeltis -> 2. Brown Blight": 6,
+        "7. Healthy leaf -> 5. Red spider": 6,
+        "7. Healthy leaf -> 1. Tea algal leaf spot": 4,
+        "3. Gray Blight -> 5. Red spider": 4,
+        "6. Green mirid bug -> 1. Tea algal leaf spot": 4,
+        "1. Tea algal leaf spot -> 6. Green mirid bug": 3,
+        "4. Helopeltis -> 7. Healthy leaf": 3,
+        "5. Red spider -> 1. Tea algal leaf spot": 3,
+        "1. Tea algal leaf spot -> 5. Red spider": 2,
+        "4. Helopeltis -> 1. Tea algal leaf spot": 2,
+        "4. Helopeltis -> 5. Red spider": 2,
+        "5. Red spider -> 6. Green mirid bug": 2,
+        "7. Healthy leaf -> 4. Helopeltis": 2,
+        "2. Brown Blight -> 6. Green mirid bug": 1,
+        "2. Brown Blight -> 1. Tea algal leaf spot": 1,
+        "3. Gray Blight -> 1. Tea algal leaf spot": 1,
+        "1. Tea algal leaf spot -> 4. Helopeltis": 1,
+        "3. Gray Blight -> 4. Helopeltis": 1
+      },
+      "per_class": {
+        "1. Tea algal leaf spot": {
+          "support": 63,
+          "precision": 0.627906976744186,
+          "recall": 0.42857142857142855,
+          "f1": 0.5094339622641509,
+          "recall_drop_points_vs_reference": 39.683
+        },
+        "2. Brown Blight": {
+          "support": 76,
+          "precision": 0.2923728813559322,
+          "recall": 0.9078947368421053,
+          "f1": 0.44230769230769235,
+          "recall_drop_points_vs_reference": -23.684
+        },
+        "3. Gray Blight": {
+          "support": 152,
+          "precision": 0.9574468085106383,
+          "recall": 0.29605263157894735,
+          "f1": 0.4522613065326633,
+          "recall_drop_points_vs_reference": 63.158
+        },
+        "4. Helopeltis": {
+          "support": 91,
+          "precision": 0.8421052631578947,
+          "recall": 0.5274725274725275,
+          "f1": 0.6486486486486487,
+          "recall_drop_points_vs_reference": 30.769
+        },
+        "5. Red spider": {
+          "support": 77,
+          "precision": 0.7413793103448276,
+          "recall": 0.5584415584415584,
+          "f1": 0.6370370370370371,
+          "recall_drop_points_vs_reference": 27.273
+        },
+        "6. Green mirid bug": {
+          "support": 192,
+          "precision": 0.7702702702702703,
+          "recall": 0.890625,
+          "f1": 0.8260869565217391,
+          "recall_drop_points_vs_reference": 8.333
+        },
+        "7. Healthy leaf": {
+          "support": 140,
+          "precision": 0.9609375,
+          "recall": 0.8785714285714286,
+          "f1": 0.917910447761194,
+          "recall_drop_points_vs_reference": 12.143
+        }
+      },
+      "confusion_matrix": [
+        [
+          27,
+          27,
+          0,
+          0,
+          3,
+          6,
+          0
+        ],
+        [
+          4,
+          69,
+          1,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          91,
+          45,
+          0,
+          8,
+          6,
+          0
+        ],
+        [
+          2,
+          7,
+          1,
+          48,
+          2,
+          26,
+          5
+        ],
+        [
+          3,
+          28,
+          0,
+          1,
+          43,
+          2,
+          0
+        ],
+        [
+          3,
+          12,
+          0,
+          6,
+          0,
+          171,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          2,
+          2,
+          9,
+          123
+        ]
+      ],
+      "paired_bootstrap": {
+        "n_bootstrap": 2000,
+        "seed": 12345,
+        "delta_macro_f1": {
+          "mean_points": -24.15,
+          "ci95_low_points": -28.136,
+          "ci95_high_points": -20.414,
+          "ci_includes_zero": false,
+          "fraction_positive": 0.0
+        },
+        "delta_accuracy": {
+          "mean_points": -23.384,
+          "ci95_low_points": -26.928,
+          "ci95_high_points": -19.975,
+          "ci_includes_zero": false,
+          "fraction_positive": 0.0
+        },
+        "note": "A single index vector is drawn per replicate and applied to both systems, so the interval describes the paired difference on shared images."
+      },
+      "mcnemar_vs_reference": {
+        "a_right_b_wrong": 31,
+        "a_wrong_b_right": 216,
+        "discordant": 247,
+        "p_value_exact_binomial": 2.619504952467778e-35
+      },
+      "worst_class": {
+        "name": "3. Gray Blight",
+        "reference_recall": 0.9276315789473685,
+        "variant_recall": 0.29605263157894735,
+        "recall_drop_points": 63.158,
+        "support": 152,
+        "retained": 45,
+        "where_its_images_went": {
+          "2. Brown Blight": 91,
+          "5. Red spider": 8,
+          "6. Green mirid bug": 6,
+          "1. Tea algal leaf spot": 2
+        }
+      }
+    },
+    "int8_dynamic_range": {
+      "file": "tealeaf_int8_dynamic_range.tflite",
+      "sha256": "cad162e4d2ae5b3deb9f0ca03a83cdbb38e4229439cf01ce661e2876281b1b09",
+      "mb": 3.293,
+      "interpreter": {
+        "runtime": "ai_edge_litert",
+        "delegate": "xnnpack (default)",
+        "input_dtype": "float32",
+        "output_dtype": "float32"
+      },
+      "macro_f1": 0.882681674671166,
+      "accuracy": 0.9039190897597977,
+      "delta_macro_f1_points_vs_reference": 0.822,
+      "top1_agreement_with_reference": 0.9721871049304678,
+      "n_disagreements": 22,
+      "disagreement_transitions": {
+        "1. Tea algal leaf spot -> 2. Brown Blight": 4,
+        "5. Red spider -> 3. Gray Blight": 3,
+        "3. Gray Blight -> 2. Brown Blight": 2,
+        "3. Gray Blight -> 6. Green mirid bug": 2,
+        "7. Healthy leaf -> 3. Gray Blight": 2,
+        "7. Healthy leaf -> 6. Green mirid bug": 2,
+        "2. Brown Blight -> 1. Tea algal leaf spot": 1,
+        "1. Tea algal leaf spot -> 6. Green mirid bug": 1,
+        "6. Green mirid bug -> 3. Gray Blight": 1,
+        "4. Helopeltis -> 7. Healthy leaf": 1,
+        "7. Healthy leaf -> 4. Helopeltis": 1,
+        "4. Helopeltis -> 6. Green mirid bug": 1,
+        "6. Green mirid bug -> 4. Helopeltis": 1
+      },
+      "per_class": {
+        "1. Tea algal leaf spot": {
+          "support": 63,
+          "precision": 0.8095238095238095,
+          "recall": 0.8095238095238095,
+          "f1": 0.8095238095238095,
+          "recall_drop_points_vs_reference": 1.587
+        },
+        "2. Brown Blight": {
+          "support": 76,
+          "precision": 0.9180327868852459,
+          "recall": 0.7368421052631579,
+          "f1": 0.8175182481751824,
+          "recall_drop_points_vs_reference": -6.579
+        },
+        "3. Gray Blight": {
+          "support": 152,
+          "precision": 0.8950617283950617,
+          "recall": 0.9539473684210527,
+          "f1": 0.9235668789808917,
+          "recall_drop_points_vs_reference": -2.632
+        },
+        "4. Helopeltis": {
+          "support": 91,
+          "precision": 0.9375,
+          "recall": 0.8241758241758241,
+          "f1": 0.8771929824561403,
+          "recall_drop_points_vs_reference": 1.099
+        },
+        "5. Red spider": {
+          "support": 77,
+          "precision": 0.9,
+          "recall": 0.8181818181818182,
+          "f1": 0.8571428571428572,
+          "recall_drop_points_vs_reference": 1.299
+        },
+        "6. Green mirid bug": {
+          "support": 192,
+          "precision": 0.916256157635468,
+          "recall": 0.96875,
+          "f1": 0.9417721518987342,
+          "recall_drop_points_vs_reference": 0.521
+        },
+        "7. Healthy leaf": {
+          "support": 140,
+          "precision": 0.9144736842105263,
+          "recall": 0.9928571428571429,
+          "f1": 0.952054794520548,
+          "recall_drop_points_vs_reference": 0.714
+        }
+      },
+      "confusion_matrix": [
+        [
+          51,
+          4,
+          2,
+          1,
+          1,
+          2,
+          2
+        ],
+        [
+          8,
+          56,
+          7,
+          0,
+          1,
+          4,
+          0
+        ],
+        [
+          1,
+          1,
+          145,
+          0,
+          4,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          3,
+          75,
+          0,
+          7,
+          4
+        ],
+        [
+          0,
+          0,
+          5,
+          1,
+          63,
+          2,
+          6
+        ],
+        [
+          1,
+          0,
+          0,
+          3,
+          1,
+          186,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          139
+        ]
+      ],
+      "paired_bootstrap": {
+        "n_bootstrap": 2000,
+        "seed": 12345,
+        "delta_macro_f1": {
+          "mean_points": 0.826,
+          "ci95_low_points": -0.458,
+          "ci95_high_points": 2.15,
+          "ci_includes_zero": true,
+          "fraction_positive": 0.891
+        },
+        "delta_accuracy": {
+          "mean_points": 0.511,
+          "ci95_low_points": -0.506,
+          "ci95_high_points": 1.517,
+          "ci_includes_zero": true,
+          "fraction_positive": 0.783
+        },
+        "note": "A single index vector is drawn per replicate and applied to both systems, so the interval describes the paired difference on shared images."
+      },
+      "mcnemar_vs_reference": {
+        "a_right_b_wrong": 12,
+        "a_wrong_b_right": 8,
+        "discordant": 20,
+        "p_value_exact_binomial": 0.5034446716308594
+      },
+      "worst_class": {
+        "name": "1. Tea algal leaf spot",
+        "reference_recall": 0.8253968253968254,
+        "variant_recall": 0.8095238095238095,
+        "recall_drop_points": 1.587,
+        "support": 63,
+        "retained": 51,
+        "where_its_images_went": {
+          "2. Brown Blight": 4,
+          "3. Gray Blight": 2,
+          "6. Green mirid bug": 2,
+          "7. Healthy leaf": 2,
+          "4. Helopeltis": 1,
+          "5. Red spider": 1
+        }
+      }
+    }
+  }
+}

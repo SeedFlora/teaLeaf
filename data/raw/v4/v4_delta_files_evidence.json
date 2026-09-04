@@ -1,0 +1,28 @@
+[
+  {
+    "filename": "brown_blight_00507.jpg",
+    "bytes": 193136,
+    "sha256_downloaded": "a17c03ef190ddcc71f2d4b5ea43eed88e17787b1891dae19442ca18a1b84ff87",
+    "sha256_official": "a17c03ef190ddcc71f2d4b5ea43eed88e17787b1891dae19442ca18a1b84ff87",
+    "hash_match": true,
+    "jpeg_soi": true,
+    "jpeg_eoi": true,
+    "width": 1200,
+    "height": 1594,
+    "content_type": "image/jpeg",
+    "created_date": "2025-04-11T11:44:58.251Z"
+  },
+  {
+    "filename": "brown_blight_00508.jpg",
+    "bytes": 186516,
+    "sha256_downloaded": "56a8ddb44f5bc0302f977d47408e2c4eae073214802b5bc1e70742288f3c9918",
+    "sha256_official": "56a8ddb44f5bc0302f977d47408e2c4eae073214802b5bc1e70742288f3c9918",
+    "hash_match": true,
+    "jpeg_soi": true,
+    "jpeg_eoi": true,
+    "width": 1200,
+    "height": 1594,
+    "content_type": "image/jpeg",
+    "created_date": "2025-04-11T11:44:58.298Z"
+  }
+]

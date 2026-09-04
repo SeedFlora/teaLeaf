@@ -1,0 +1,8 @@
+class_folder_raw,n,distinct_resolutions,most_common_resolution,most_common_resolution_pct,median_bytes,median_blur_laplacian_var,median_brightness,median_contrast
+1. Tea algal leaf spot,418,4,1200x1600,57.89,291216,111.5,177.8,48.1
+2. Brown Blight,506,4,1200x1600,47.23,264691,139.9,175.0,47.9
+3. Gray Blight,1013,4,1200x1600,57.65,285679,87.0,177.2,44.5
+4. Helopeltis,607,4,1200x1600,45.63,237625,58.6,177.2,30.4
+5. Red spider,515,4,1200x1600,57.86,279259,81.9,179.4,43.8
+6. Green mirid bug,1282,4,1200x1600,40.48,260105,90.8,175.4,39.3
+7. Healthy leaf,935,4,1200x1600,51.66,273543,49.2,177.0,38.3

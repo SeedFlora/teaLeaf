@@ -1,0 +1,67 @@
+{
+  "operative_phash_threshold": 32,
+  "operative": {
+    "tag": "confirmed pairs with pHash <= 32",
+    "pairs": 43,
+    "same_class_pairs": 43,
+    "cross_class_pairs": 0,
+    "same_class_with_sequence_gap_1": 41,
+    "same_class_with_sequence_gap_le_5": 43,
+    "pct_same_class_adjacent": 95.35,
+    "pct_same_class_within_5": 100.0,
+    "expected_adjacent_if_random": 0.127,
+    "observed_over_expected": 323.5,
+    "gap_histogram": {
+      "1": 41,
+      "2": 2
+    },
+    "per_class_same_class_pairs": {
+      "1. Tea algal leaf spot": 2,
+      "2. Brown Blight": 10,
+      "3. Gray Blight": 5,
+      "4. Helopeltis": 10,
+      "5. Red spider": 4,
+      "6. Green mirid bug": 11,
+      "7. Healthy leaf": 1
+    }
+  },
+  "full_screen": {
+    "tag": "all confirmed pairs within the loose screen",
+    "pairs": 141,
+    "same_class_pairs": 90,
+    "cross_class_pairs": 51,
+    "same_class_with_sequence_gap_1": 60,
+    "same_class_with_sequence_gap_le_5": 70,
+    "pct_same_class_adjacent": 66.67,
+    "pct_same_class_within_5": 77.78,
+    "expected_adjacent_if_random": 0.244,
+    "observed_over_expected": 245.5,
+    "gap_histogram": {
+      "1": 60,
+      "2": 9,
+      "4": 1,
+      "6": 3,
+      "7": 2,
+      "8": 1,
+      "10": 1,
+      "11": 1,
+      "21": 1,
+      "25": 1,
+      "36": 1,
+      "73": 1,
+      "90": 1,
+      "111": 1,
+      "122": 1
+    },
+    "per_class_same_class_pairs": {
+      "1. Tea algal leaf spot": 2,
+      "2. Brown Blight": 11,
+      "3. Gray Blight": 7,
+      "4. Helopeltis": 25,
+      "5. Red spider": 9,
+      "6. Green mirid bug": 29,
+      "7. Healthy leaf": 7
+    }
+  },
+  "interpretation": "Sequence adjacency is independent of the perceptual-hash threshold: a hash cannot observe filename order. An adjacency rate far above the random-placement expectation therefore indicates the flagged pairs are consecutive captures of the same subject, not coincidental visual similarity between distinct leaves."
+}

@@ -1,0 +1,57 @@
+{
+  "backbone": "mobilenetv3_large",
+  "keras_application": "MobileNetV3Large",
+  "split_prefix": "primary",
+  "seed": 2026,
+  "img_size": 224,
+  "batch_size": 32,
+  "warmup_epochs": 5,
+  "finetune_epochs_max": 35,
+  "warmup_lr": 0.001,
+  "finetune_lr": 0.0001,
+  "dropout": 0.3,
+  "label_smoothing": 0.0,
+  "early_stopping_patience": 8,
+  "class_weight": "none",
+  "mixed_precision": true,
+  "optimizer": "Adam",
+  "loss": "SparseCategoricalCrossentropy",
+  "checkpoint_selection": "max validation macro-F1",
+  "pretrained_weights": "ImageNet (keras.applications)",
+  "input_convention": "raw [0,255] float32; normalization embedded in the backbone graph",
+  "augmentation": [
+    "RandomFlip horizontal",
+    "RandomRotation 0.05",
+    "RandomZoom 0.15",
+    "RandomTranslation 0.08",
+    "RandomBrightness 0.15",
+    "RandomContrast 0.15",
+    "Resizing to 224 bilinear"
+  ],
+  "augmentation_excluded": [
+    "vertical flip (leaves have consistent tip-to-base orientation)",
+    "strong color jitter (lesion hue is class-discriminative)"
+  ],
+  "best_val_macro_f1": 0.8631873255720219,
+  "best_epoch": 12,
+  "warmup_stage_best_val_macro_f1": 0.7151293037155158,
+  "epochs_run": 26,
+  "wall_clock_seconds": 554.8,
+  "total_params": 3003079,
+  "tensorflow": "2.20.0",
+  "python": "3.12.3",
+  "gpus": [
+    "/physical_device:GPU:0"
+  ],
+  "train_n": 3694,
+  "val_n": 791,
+  "class_order": [
+    "1. Tea algal leaf spot",
+    "2. Brown Blight",
+    "3. Gray Blight",
+    "4. Helopeltis",
+    "5. Red spider",
+    "6. Green mirid bug",
+    "7. Healthy leaf"
+  ]
+}

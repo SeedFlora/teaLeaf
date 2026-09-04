@@ -1,0 +1,392 @@
+{
+  "device_model": "SM-S916B",
+  "device_product": "dm2qxxx",
+  "android_release": "16",
+  "api_level": 36,
+  "supported_abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "armeabi"
+  ],
+  "hardware": "qcom",
+  "warmup_iterations": 30,
+  "measured_iterations_per_repeat": 200,
+  "repeats": 3,
+  "models_found": 5,
+  "protocol": {
+    "clock": "SystemClock.elapsedRealtimeNanos (monotonic)",
+    "input": "fixed deterministic buffer reused across all iterations",
+    "excludes": "bitmap decode, rotation and resize; those are timed by the app separately",
+    "thermal": "PowerManager.getCurrentThermalStatus read before and after each variant"
+  },
+  "results": [
+    {
+      "model_file": "tealeaf_fp16.tflite",
+      "model_bytes": 6009364,
+      "num_threads": 4,
+      "requested_xnnpack": true,
+      "thermal_before": 2,
+      "cold_start_load_ms": 33.289635,
+      "usable": true,
+      "input_shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "output_shape": [
+        1,
+        7
+      ],
+      "output_count": 1,
+      "input_bytes": 602112,
+      "repeats": [
+        {
+          "repeat": 0,
+          "n": 200,
+          "median_ms": 14.291407,
+          "mean_ms": 14.257121354999995,
+          "stdev_ms": 0.23201354296969173,
+          "p90_ms": 14.450938,
+          "p95_ms": 14.520313,
+          "min_ms": 13.652916,
+          "max_ms": 15.35323,
+          "thermal_after_repeat": 2
+        },
+        {
+          "repeat": 1,
+          "n": 200,
+          "median_ms": 14.183281,
+          "mean_ms": 14.225243244999996,
+          "stdev_ms": 0.43855380261871524,
+          "p90_ms": 14.676302,
+          "p95_ms": 14.994844,
+          "min_ms": 13.681511,
+          "max_ms": 16.408802,
+          "thermal_after_repeat": 2
+        },
+        {
+          "repeat": 2,
+          "n": 200,
+          "median_ms": 14.364792,
+          "mean_ms": 14.485034370000001,
+          "stdev_ms": 0.5143101225888065,
+          "p90_ms": 14.972656,
+          "p95_ms": 15.742136,
+          "min_ms": 13.726823,
+          "max_ms": 16.608803,
+          "thermal_after_repeat": 2
+        }
+      ],
+      "pooled": {
+        "n": 600,
+        "median_ms": 14.291302,
+        "mean_ms": 14.32246632333332,
+        "stdev_ms": 0.4284955409157746,
+        "p90_ms": 14.722709,
+        "p95_ms": 15.081667,
+        "p99_ms": 16.024844,
+        "min_ms": 13.652916,
+        "max_ms": 16.608803
+      },
+      "thermal_after": 2,
+      "last_native_inference_ms": 14.207187,
+      "delegate_used": "xnnpack"
+    },
+    {
+      "model_file": "tealeaf_fp16_cam.tflite",
+      "model_bytes": 5997332,
+      "num_threads": 4,
+      "requested_xnnpack": true,
+      "thermal_before": 2,
+      "cold_start_load_ms": 43.539896,
+      "usable": true,
+      "input_shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "output_shape": [
+        1,
+        7,
+        7,
+        7
+      ],
+      "output_count": 2,
+      "input_bytes": 602112,
+      "repeats": [
+        {
+          "repeat": 0,
+          "n": 200,
+          "median_ms": 14.155,
+          "mean_ms": 14.404520870000004,
+          "stdev_ms": 1.1956460588986662,
+          "p90_ms": 14.766719,
+          "p95_ms": 15.065469,
+          "min_ms": 13.733802,
+          "max_ms": 28.161615,
+          "thermal_after_repeat": 2
+        },
+        {
+          "repeat": 1,
+          "n": 200,
+          "median_ms": 13.924896,
+          "mean_ms": 13.946982244999989,
+          "stdev_ms": 0.16069604479670616,
+          "p90_ms": 14.12125,
+          "p95_ms": 14.236719,
+          "min_ms": 13.720781,
+          "max_ms": 14.808958,
+          "thermal_after_repeat": 2
+        },
+        {
+          "repeat": 2,
+          "n": 200,
+          "median_ms": 14.08052,
+          "mean_ms": 14.270529915000006,
+          "stdev_ms": 0.4566486652798603,
+          "p90_ms": 14.929166,
+          "p95_ms": 15.24849,
+          "min_ms": 13.738333,
+          "max_ms": 15.978698,
+          "thermal_after_repeat": 2
+        }
+      ],
+      "pooled": {
+        "n": 600,
+        "median_ms": 14.019479,
+        "mean_ms": 14.207344343333338,
+        "stdev_ms": 0.7691077388460835,
+        "p90_ms": 14.648437,
+        "p95_ms": 14.942188,
+        "p99_ms": 16.314948,
+        "min_ms": 13.720781,
+        "max_ms": 28.161615
+      },
+      "thermal_after": 2,
+      "last_native_inference_ms": 14.15875,
+      "delegate_used": "xnnpack"
+    },
+    {
+      "model_file": "tealeaf_fp32.tflite",
+      "model_bytes": 11927532,
+      "num_threads": 4,
+      "requested_xnnpack": true,
+      "thermal_before": 2,
+      "cold_start_load_ms": 68.719739,
+      "usable": true,
+      "input_shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "output_shape": [
+        1,
+        7
+      ],
+      "output_count": 1,
+      "input_bytes": 602112,
+      "repeats": [
+        {
+          "repeat": 0,
+          "n": 200,
+          "median_ms": 13.946146,
+          "mean_ms": 14.04647421000001,
+          "stdev_ms": 0.32127345912242106,
+          "p90_ms": 14.462865,
+          "p95_ms": 14.664271,
+          "min_ms": 13.68276,
+          "max_ms": 15.379844,
+          "thermal_after_repeat": 2
+        },
+        {
+          "repeat": 1,
+          "n": 200,
+          "median_ms": 13.855729,
+          "mean_ms": 13.875693719999994,
+          "stdev_ms": 0.15770990613195995,
+          "p90_ms": 14.004011,
+          "p95_ms": 14.173906,
+          "min_ms": 13.671355,
+          "max_ms": 14.859011,
+          "thermal_after_repeat": 2
+        },
+        {
+          "repeat": 2,
+          "n": 200,
+          "median_ms": 13.889062,
+          "mean_ms": 14.324621614999998,
+          "stdev_ms": 0.8164780653753146,
+          "p90_ms": 15.780261,
+          "p95_ms": 15.813542,
+          "min_ms": 13.660416,
+          "max_ms": 15.914739,
+          "thermal_after_repeat": 2
+        }
+      ],
+      "pooled": {
+        "n": 600,
+        "median_ms": 13.887135,
+        "mean_ms": 14.082263181666667,
+        "stdev_ms": 0.5469353662184883,
+        "p90_ms": 14.671562,
+        "p95_ms": 15.688333,
+        "p99_ms": 15.825677,
+        "min_ms": 13.660416,
+        "max_ms": 15.914739
+      },
+      "thermal_after": 2,
+      "last_native_inference_ms": 15.699375,
+      "delegate_used": "xnnpack"
+    },
+    {
+      "model_file": "tealeaf_int8.tflite",
+      "model_bytes": 3502432,
+      "num_threads": 4,
+      "requested_xnnpack": false,
+      "thermal_before": 2,
+      "cold_start_load_ms": 1.582187,
+      "usable": true,
+      "input_shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "output_shape": [
+        1,
+        7
+      ],
+      "output_count": 1,
+      "input_bytes": 602112,
+      "repeats": [
+        {
+          "repeat": 0,
+          "n": 200,
+          "median_ms": 5.234167,
+          "mean_ms": 5.268237180000001,
+          "stdev_ms": 0.12528709626812176,
+          "p90_ms": 5.375312,
+          "p95_ms": 5.566145,
+          "min_ms": 5.158646,
+          "max_ms": 5.961823,
+          "thermal_after_repeat": 2
+        },
+        {
+          "repeat": 1,
+          "n": 200,
+          "median_ms": 5.231823,
+          "mean_ms": 5.2766513,
+          "stdev_ms": 0.1781847180018814,
+          "p90_ms": 5.365625,
+          "p95_ms": 5.468438,
+          "min_ms": 5.117084,
+          "max_ms": 6.818438,
+          "thermal_after_repeat": 2
+        },
+        {
+          "repeat": 2,
+          "n": 200,
+          "median_ms": 5.244323,
+          "mean_ms": 5.325237985000001,
+          "stdev_ms": 0.341430591065175,
+          "p90_ms": 5.416562,
+          "p95_ms": 5.781459,
+          "min_ms": 5.146875,
+          "max_ms": 8.60198,
+          "thermal_after_repeat": 2
+        }
+      ],
+      "pooled": {
+        "n": 600,
+        "median_ms": 5.234479,
+        "mean_ms": 5.290042155000002,
+        "stdev_ms": 0.23517016329854498,
+        "p90_ms": 5.382864,
+        "p95_ms": 5.597083,
+        "p99_ms": 6.483125,
+        "min_ms": 5.117084,
+        "max_ms": 8.60198
+      },
+      "thermal_after": 2,
+      "last_native_inference_ms": 5.178073,
+      "xnnpack_failed_error": "IllegalStateException: Internal error: Unexpected failure when preparing tensor allocations: failed to create XNNPACK runtime\nNode number 124 (TfLiteXNNPackDelegate) failed to prepare.",
+      "delegate_used": "none (XNNPACK failed to prepare)"
+    },
+    {
+      "model_file": "tealeaf_int8_dynamic_range.tflite",
+      "model_bytes": 3292744,
+      "num_threads": 4,
+      "requested_xnnpack": true,
+      "thermal_before": 2,
+      "cold_start_load_ms": 31.490261,
+      "usable": true,
+      "input_shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "output_shape": [
+        1,
+        7
+      ],
+      "output_count": 1,
+      "input_bytes": 602112,
+      "repeats": [
+        {
+          "repeat": 0,
+          "n": 200,
+          "median_ms": 9.444323,
+          "mean_ms": 9.760076549999999,
+          "stdev_ms": 0.8282049772716881,
+          "p90_ms": 10.869687,
+          "p95_ms": 11.256667,
+          "min_ms": 9.03849,
+          "max_ms": 16.672656,
+          "thermal_after_repeat": 2
+        },
+        {
+          "repeat": 1,
+          "n": 200,
+          "median_ms": 9.398802,
+          "mean_ms": 9.905447879999999,
+          "stdev_ms": 1.090862494280597,
+          "p90_ms": 11.590521,
+          "p95_ms": 11.982448,
+          "min_ms": 9.049062,
+          "max_ms": 16.015157,
+          "thermal_after_repeat": 2
+        },
+        {
+          "repeat": 2,
+          "n": 200,
+          "median_ms": 9.725417,
+          "mean_ms": 10.264962190000006,
+          "stdev_ms": 2.1272626390849068,
+          "p90_ms": 11.544271,
+          "p95_ms": 12.111875,
+          "min_ms": 9.250521,
+          "max_ms": 36.870573,
+          "thermal_after_repeat": 2
+        }
+      ],
+      "pooled": {
+        "n": 600,
+        "median_ms": 9.53776,
+        "mean_ms": 9.976828873333332,
+        "stdev_ms": 1.476058764131152,
+        "p90_ms": 11.303021,
+        "p95_ms": 11.828541,
+        "p99_ms": 13.934583,
+        "min_ms": 9.03849,
+        "max_ms": 36.870573
+      },
+      "thermal_after": 2,
+      "last_native_inference_ms": 11.299219,
+      "delegate_used": "xnnpack"
+    }
+  ]
+}

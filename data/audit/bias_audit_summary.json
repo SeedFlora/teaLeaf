@@ -1,0 +1,106 @@
+{
+  "images": 5276,
+  "classes": 7,
+  "class_counts": {
+    "1. Tea algal leaf spot": 418,
+    "2. Brown Blight": 506,
+    "3. Gray Blight": 1013,
+    "4. Helopeltis": 607,
+    "5. Red spider": 515,
+    "6. Green mirid bug": 1282,
+    "7. Healthy leaf": 935
+  },
+  "imbalance_ratio_max_over_min": 3.067,
+  "resolution": {
+    "distinct_resolutions_dataset_wide": 4,
+    "top_resolutions": {
+      "1200x1600": 2642,
+      "1200x1594": 1188,
+      "1200x900": 734,
+      "1200x904": 712
+    },
+    "readme_claimed_resolution": "1200x1600",
+    "resolution_is_label_informative": true
+  },
+  "exif": {
+    "images_with_exif": 5276,
+    "pct_with_exif": 100.0,
+    "distinct_makes": {
+      "realme": 2454,
+      "OPPO": 1543,
+      "Xiaomi": 1279
+    },
+    "distinct_models": {
+      "realme 6i": 1833,
+      "OPPO Reno8 Pro 5G": 1543,
+      "23053RN02A": 1279,
+      "narzo 50": 621
+    },
+    "orientations": {
+      "1": 5276
+    },
+    "device_label_correlation_testable": true
+  },
+  "encoding": {
+    "color_modes": {
+      "RGB": 5276
+    },
+    "formats": {
+      "JPEG": 5276
+    }
+  },
+  "quality": {
+    "sharpness_flags": {
+      "soft": 1817,
+      "blurry": 3436,
+      "sharp": 23
+    },
+    "decode_failures": 0,
+    "corrupt_or_flagged": 0
+  },
+  "per_class_device_counts": {
+    "1. Tea algal leaf spot": {
+      "23053RN02A": 84,
+      "realme 6i": 158,
+      "OPPO Reno8 Pro 5G": 139,
+      "narzo 50": 37
+    },
+    "2. Brown Blight": {
+      "23053RN02A": 58,
+      "narzo 50": 152,
+      "realme 6i": 161,
+      "OPPO Reno8 Pro 5G": 135
+    },
+    "3. Gray Blight": {
+      "23053RN02A": 200,
+      "realme 6i": 312,
+      "narzo 50": 121,
+      "OPPO Reno8 Pro 5G": 380
+    },
+    "4. Helopeltis": {
+      "23053RN02A": 114,
+      "narzo 50": 120,
+      "OPPO Reno8 Pro 5G": 153,
+      "realme 6i": 220
+    },
+    "5. Red spider": {
+      "23053RN02A": 72,
+      "narzo 50": 56,
+      "OPPO Reno8 Pro 5G": 140,
+      "realme 6i": 247
+    },
+    "6. Green mirid bug": {
+      "23053RN02A": 464,
+      "OPPO Reno8 Pro 5G": 318,
+      "narzo 50": 88,
+      "realme 6i": 412
+    },
+    "7. Healthy leaf": {
+      "23053RN02A": 287,
+      "narzo 50": 47,
+      "OPPO Reno8 Pro 5G": 278,
+      "realme 6i": 323
+    }
+  },
+  "notes": "A shortcut cue is only a threat if it varies with the label. Resolution, encoding and EXIF fields are therefore reported per class, not only dataset-wide. Where EXIF is absent the device-label correlation simply cannot be tested, and that is reported as untestable rather than as absence of bias."
+}

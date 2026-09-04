@@ -1,0 +1,75 @@
+﻿{
+    "captured_utc":  "2026-07-20T07:54:58.1104244Z",
+    "host":  {
+                 "os":  "Microsoft Windows 11 Home Single Language",
+                 "os_version":  "10.0.26200",
+                 "os_build":  "26200",
+                 "cpu":  "12th Gen Intel(R) Core(TM) i7-12700H",
+                 "physical_cores":  14,
+                 "logical_processors":  20,
+                 "total_ram_gb":  31.73,
+                 "gpus":  [
+                              {
+                                  "driver":  "5.3.57.114",
+                                  "name":  "Meta Virtual Monitor"
+                              },
+                              {
+                                  "driver":  "32.0.101.7085",
+                                  "name":  "Intel(R) Iris(R) Xe Graphics"
+                              },
+                              {
+                                  "driver":  "32.0.15.9579",
+                                  "name":  "NVIDIA GeForce RTX 3070 Ti Laptop GPU"
+                              }
+                          ]
+             },
+    "storage":  [
+                    {
+                        "used_gb":  900.21,
+                        "drive":  "C",
+                        "free_gb":  29.08
+                    },
+                    {
+                        "used_gb":  862.13,
+                        "drive":  "D",
+                        "free_gb":  89.52
+                    }
+                ],
+    "windows_toolchain":  {
+                              "python":  "Python 3.13.5",
+                              "git":  "git version 2.53.0.windows.1",
+                              "java":  "openjdk version \"21.0.11\" 2026-04-21 LTS OpenJDK Runtime Environment Temurin-21.0.11+10 (build 21.0.11+10-LTS) OpenJDK 64-Bit Server VM Temurin-21.0.11+10 (build 21.0.11+10-LTS, mixed mode, sharing)",
+                              "java_home":  "<redacted-user-profile>\\tools\\jdk-21.0.11+10",
+                              "adb":  "Android Debug Bridge version 1.0.41 Version 37.0.0-14910828 Installed under <redacted-user-profile> Running on Windows 10.0.26200",
+                              "pdflatex":  "MiKTeX-pdfTeX 4.23 (MiKTeX 25.12)",
+                              "node":  "v24.13.1"
+                          },
+    "android_sdk":  {
+                        "path":  "<redacted-user-profile>\\AppData\\Local\\Android\\Sdk",
+                        "platforms":  [
+                                          "android-35",
+                                          "android-36",
+                                          "android-36.1"
+                                      ],
+                        "build_tools":  [
+                                            "35.0.0",
+                                            "36.1.0"
+                                        ],
+                        "ndk":  [
+                                    "27.0.12077973",
+                                    "28.2.13676358"
+                                ],
+                        "cmdline_tools_present":  false,
+                        "android_studio_installed":  false
+                    },
+    "training_environment":  {
+                                 "rationale":  "TensorFlow dropped native Windows GPU support after 2.10; WSL2 provides CUDA passthrough plus a single-step Keras -\u003e TFLite export path (FP32/FP16/INT8), avoiding a fragile PyTorch -\u003e ONNX -\u003e TF conversion chain.",
+                                 "platform":  "WSL2 Ubuntu (kernel 6.6.87.2-microsoft-standard-WSL2)",
+                                 "wsl_python":  "3.12.3",
+                                 "wsl_cpus":  20,
+                                 "wsl_ram_gb":  15,
+                                 "wsl_rootfs_free_gb":  933,
+                                 "cuda_visible_in_wsl":  true
+                             },
+    "connected_android_devices":  ""
+}

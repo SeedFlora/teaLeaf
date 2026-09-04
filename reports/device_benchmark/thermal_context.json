@@ -1,0 +1,14 @@
+﻿{
+    "before":  {
+                   "thermal_status":  "Thermal Status: 2",
+                   "battery_temp_c":  40.8,
+                   "battery_level":  "72",
+                   "captured":  "2026-07-20T17:24:17.2566602Z"
+               },
+    "after":  {
+                  "thermal_status":  "Thermal Status: 2",
+                  "battery_temp_c":  41.5,
+                  "battery_level":  "72",
+                  "captured":  "2026-07-20T17:24:56.0581652Z"
+              }
+}

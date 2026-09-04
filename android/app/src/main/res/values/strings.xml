@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TeaLeaf AI</string>
+
+    <!-- Class labels. The order of these arrays MUST match model_config.json class_order;
+         a mismatch would relabel every prediction with no error anywhere. -->
+    <string-array name="class_labels_en">
+        <item>Tea algal leaf spot</item>
+        <item>Brown blight</item>
+        <item>Gray blight</item>
+        <item>Helopeltis damage</item>
+        <item>Red spider mite damage</item>
+        <item>Green mirid bug damage</item>
+        <item>Healthy leaf</item>
+    </string-array>
+
+    <string-array name="class_labels_id">
+        <item>Bercak daun alga</item>
+        <item>Hawar coklat</item>
+        <item>Hawar kelabu</item>
+        <item>Kerusakan Helopeltis</item>
+        <item>Kerusakan tungau merah</item>
+        <item>Kerusakan kepik hijau</item>
+        <item>Daun sehat</item>
+    </string-array>
+
+    <string name="result_uncertain_title">Uncertain result</string>
+    <string name="result_uncertain_body">Retake the image under better lighting, or consult a qualified agricultural specialist.</string>
+
+    <string name="disclaimer">This result is an AI screening aid, not a definitive expert diagnosis. It does not replace assessment by a qualified agricultural specialist.</string>
+    <string name="no_treatment_advice">This application does not provide pesticide, dosage, or treatment recommendations.</string>
+
+    <string name="privacy_title">Privacy</string>
+    <string name="privacy_body">All processing happens on this device. Images never leave the phone: the application declares no internet permission, so it is structurally incapable of transmitting them. Captures and any feedback you record are stored only in this app\'s own folder.</string>
+
+    <string name="attribution_title">Dataset attribution</string>
+    <string name="attribution_body">Model trained on teaLeafBD, version 3 (doi:10.17632/744vznw5k2.3) by B M Shahria Alam, Fahad Ahammed, Golam Kibria, Mohammad Tahmid Noor, Omar Faruq Shikdar, Kazi Isat Mahazabin and Md Nawab Yousuf Ali, East West University. Licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). No dataset image was altered; the model is a derived work.</string>
+
+    <string name="capture_guide_title">For a usable photograph</string>
+    <string name="capture_guide_lighting">Use adequate, even lighting</string>
+    <string name="capture_guide_single">Keep one leaf clearly visible</string>
+    <string name="capture_guide_blur">Hold steady and avoid blur</string>
+    <string name="capture_guide_shadow">Avoid harsh shadows</string>
+    <string name="capture_guide_fill">Let the leaf fill most of the frame</string>
+
+    <string name="camera_permission_title">Camera access needed</string>
+    <string name="camera_permission_body">Capturing a leaf requires camera access. You can still import an existing photograph from your gallery without granting it.</string>
+    <string name="model_load_failed_title">Model could not be loaded</string>
+
+    <string name="feedback_question">Was this classification correct?</string>
+    <string name="feedback_correct">Correct</string>
+    <string name="feedback_incorrect">Incorrect</string>
+    <string name="feedback_unsure">Not sure</string>
+    <string name="feedback_true_class">Which is it actually?</string>
+    <string name="feedback_expertise">Your familiarity with tea leaf conditions</string>
+    <string name="feedback_recorded">Recorded for research</string>
+</resources>

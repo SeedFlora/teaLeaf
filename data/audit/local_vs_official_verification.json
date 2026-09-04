@@ -1,0 +1,70 @@
+{
+  "local_file_count": 5276,
+  "v3": {
+    "official_files_listed": 4981,
+    "local_matched_by_path_and_hash": 4981,
+    "local_matched_by_hash_only": 0,
+    "local_path_present_but_hash_differs": 0,
+    "local_files_absent_from_official_listing": 295,
+    "official_files_absent_locally": 0,
+    "official_files_absent_locally_names": [],
+    "hash_mismatch_examples": [],
+    "unmatched_local_examples": [
+      "3. Gray Blight/gray_blight_01001.jpg",
+      "3. Gray Blight/gray_blight_01002.jpg",
+      "3. Gray Blight/gray_blight_01003.jpg",
+      "3. Gray Blight/gray_blight_01004.jpg",
+      "3. Gray Blight/gray_blight_01005.jpg",
+      "3. Gray Blight/gray_blight_01006.jpg",
+      "3. Gray Blight/gray_blight_01007.jpg",
+      "3. Gray Blight/gray_blight_01008.jpg",
+      "3. Gray Blight/gray_blight_01009.jpg",
+      "3. Gray Blight/gray_blight_01010.jpg",
+      "3. Gray Blight/gray_blight_01011.jpg",
+      "3. Gray Blight/gray_blight_01012.jpg",
+      "3. Gray Blight/gray_blight_01013.jpg",
+      "6. Green mirid bug/green_mirid_bug_01001.jpg",
+      "6. Green mirid bug/green_mirid_bug_01002.jpg",
+      "6. Green mirid bug/green_mirid_bug_01003.jpg",
+      "6. Green mirid bug/green_mirid_bug_01004.jpg",
+      "6. Green mirid bug/green_mirid_bug_01005.jpg",
+      "6. Green mirid bug/green_mirid_bug_01006.jpg",
+      "6. Green mirid bug/green_mirid_bug_01007.jpg"
+    ]
+  },
+  "v4": {
+    "official_files_listed": 4983,
+    "local_matched_by_path_and_hash": 4981,
+    "local_matched_by_hash_only": 0,
+    "local_path_present_but_hash_differs": 0,
+    "local_files_absent_from_official_listing": 295,
+    "official_files_absent_locally": 2,
+    "official_files_absent_locally_names": [
+      "2. Brown Blight/brown_blight_00507.jpg",
+      "2. Brown Blight/brown_blight_00508.jpg"
+    ],
+    "hash_mismatch_examples": [],
+    "unmatched_local_examples": [
+      "3. Gray Blight/gray_blight_01001.jpg",
+      "3. Gray Blight/gray_blight_01002.jpg",
+      "3. Gray Blight/gray_blight_01003.jpg",
+      "3. Gray Blight/gray_blight_01004.jpg",
+      "3. Gray Blight/gray_blight_01005.jpg",
+      "3. Gray Blight/gray_blight_01006.jpg",
+      "3. Gray Blight/gray_blight_01007.jpg",
+      "3. Gray Blight/gray_blight_01008.jpg",
+      "3. Gray Blight/gray_blight_01009.jpg",
+      "3. Gray Blight/gray_blight_01010.jpg",
+      "3. Gray Blight/gray_blight_01011.jpg",
+      "3. Gray Blight/gray_blight_01012.jpg",
+      "3. Gray Blight/gray_blight_01013.jpg",
+      "6. Green mirid bug/green_mirid_bug_01001.jpg",
+      "6. Green mirid bug/green_mirid_bug_01002.jpg",
+      "6. Green mirid bug/green_mirid_bug_01003.jpg",
+      "6. Green mirid bug/green_mirid_bug_01004.jpg",
+      "6. Green mirid bug/green_mirid_bug_01005.jpg",
+      "6. Green mirid bug/green_mirid_bug_01006.jpg",
+      "6. Green mirid bug/green_mirid_bug_01007.jpg"
+    ]
+  }
+}

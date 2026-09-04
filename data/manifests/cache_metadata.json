@@ -1,0 +1,119 @@
+{
+  "class_order": [
+    "1. Tea algal leaf spot",
+    "2. Brown Blight",
+    "3. Gray Blight",
+    "4. Helopeltis",
+    "5. Red spider",
+    "6. Green mirid bug",
+    "7. Healthy leaf"
+  ],
+  "eval_size": 224,
+  "train_size": 256,
+  "eval_preprocessing": "PIL convert('RGB') then resize((224,224), BILINEAR) applied to the original image. No crop. Pixel values stay uint8 [0,255]; the network's embedded preprocessing layer performs normalization, so the same raw pixels are fed on desktop and on Android.",
+  "train_preprocessing": "Direct resize to 256x256 as an augmentation source only; random resized crop to the eval size is applied on GPU at training time.",
+  "splits": {
+    "primary_train": {
+      "n": 3694,
+      "size": 256,
+      "x_file": "primary_train_x.npy",
+      "y_file": "primary_train_y.npy",
+      "x_sha256": "5b73b889be16c244d140040fdf2a40d3bc65fbb546ddc2fc45ab2e7db9d3de64",
+      "class_counts": {
+        "1. Tea algal leaf spot": 292,
+        "2. Brown Blight": 354,
+        "3. Gray Blight": 709,
+        "4. Helopeltis": 425,
+        "5. Red spider": 361,
+        "6. Green mirid bug": 898,
+        "7. Healthy leaf": 655
+      },
+      "bytes": 726269952
+    },
+    "primary_validation": {
+      "n": 791,
+      "size": 224,
+      "x_file": "primary_validation_x.npy",
+      "y_file": "primary_validation_y.npy",
+      "x_sha256": "8d4e83a5d811c90c7afc585a9324105bf4b560271b8e6933936c9246ccd81236",
+      "class_counts": {
+        "1. Tea algal leaf spot": 63,
+        "2. Brown Blight": 76,
+        "3. Gray Blight": 152,
+        "4. Helopeltis": 91,
+        "5. Red spider": 77,
+        "6. Green mirid bug": 192,
+        "7. Healthy leaf": 140
+      },
+      "bytes": 119067648
+    },
+    "primary_test": {
+      "n": 791,
+      "size": 224,
+      "x_file": "primary_test_x.npy",
+      "y_file": "primary_test_y.npy",
+      "x_sha256": "5a24bba0330498bba78e756f0fa95bc2cf120f1e4bbb8fd3c0e811081e716129",
+      "class_counts": {
+        "1. Tea algal leaf spot": 63,
+        "2. Brown Blight": 76,
+        "3. Gray Blight": 152,
+        "4. Helopeltis": 91,
+        "5. Red spider": 77,
+        "6. Green mirid bug": 192,
+        "7. Healthy leaf": 140
+      },
+      "bytes": 119067648
+    },
+    "naive_train": {
+      "n": 3692,
+      "size": 256,
+      "x_file": "naive_train_x.npy",
+      "y_file": "naive_train_y.npy",
+      "x_sha256": "751b8b9156b2648ddc72c4a80a25340230526c79a1b9c8a4d7a34a4c65fcff9b",
+      "class_counts": {
+        "1. Tea algal leaf spot": 293,
+        "2. Brown Blight": 354,
+        "3. Gray Blight": 709,
+        "4. Helopeltis": 425,
+        "5. Red spider": 360,
+        "6. Green mirid bug": 897,
+        "7. Healthy leaf": 654
+      },
+      "bytes": 725876736
+    },
+    "naive_validation": {
+      "n": 791,
+      "size": 224,
+      "x_file": "naive_validation_x.npy",
+      "y_file": "naive_validation_y.npy",
+      "x_sha256": "3d0757ffa1ce84b04248ac0b16cffd2d0c063889f910d4e1378a33011443c6a4",
+      "class_counts": {
+        "1. Tea algal leaf spot": 63,
+        "2. Brown Blight": 76,
+        "3. Gray Blight": 152,
+        "4. Helopeltis": 91,
+        "5. Red spider": 77,
+        "6. Green mirid bug": 192,
+        "7. Healthy leaf": 140
+      },
+      "bytes": 119067648
+    },
+    "naive_test": {
+      "n": 793,
+      "size": 224,
+      "x_file": "naive_test_x.npy",
+      "y_file": "naive_test_y.npy",
+      "x_sha256": "af3fb1c66c21a78612a812d0620759fb574989eac728ff247917c6adac90d3ec",
+      "class_counts": {
+        "1. Tea algal leaf spot": 62,
+        "2. Brown Blight": 76,
+        "3. Gray Blight": 152,
+        "4. Helopeltis": 91,
+        "5. Red spider": 78,
+        "6. Green mirid bug": 193,
+        "7. Healthy leaf": 141
+      },
+      "bytes": 119368704
+    }
+  }
+}

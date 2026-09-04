@@ -1,0 +1,105 @@
+================================================================================
+DATASET LICENSE AND ATTRIBUTION — teaLeafBD
+================================================================================
+
+DATASET TITLE
+    teaLeafBD
+
+REPOSITORY
+    Mendeley Data (repository id MENDELEY_DATA)
+    Record: https://data.mendeley.com/datasets/744vznw5k2
+
+VERSION USED IN THIS STUDY
+    Version 3
+    DOI: 10.17632/744vznw5k2.3
+    Published: 2025-01-27T07:59:39.839Z
+    Reported content: JPG images, 7 classes, 5,276 images
+
+VERSION ALSO AUDITED (evidence only; NOT used as an experiment source)
+    Version 4
+    DOI: 10.17632/744vznw5k2.4
+    Published: 2025-04-14T14:45:22.734Z
+    Reported content: JPG images, 7 classes, 5,278 images, plus a README
+
+CONTRIBUTORS (as recorded by Mendeley Data and DataCite)
+    Alam, B M Shahria      (East West University) ORCID 0009-0004-8101-9076
+    Ahammed, Fahad         (East West University)
+    Kibria, Golam          (East West University)
+    Noor, Mohammad Tahmid  (East West University)
+    Shikdar, Omar Faruq    (East West University)
+    Mahazabin, Kazi Isat   (East West University)
+    Ali, Md Nawab Yousuf   (East West University)
+
+================================================================================
+LICENSE
+================================================================================
+
+    Creative Commons Attribution 4.0 International (CC BY 4.0)
+    https://creativecommons.org/licenses/by/4.0
+
+License text as recorded in the Mendeley Data record:
+
+    "You can share, copy and modify this dataset so long as you give appropriate
+    credit, provide a link to the CC BY license, and indicate if changes were
+    made, but you may not do so in a way that suggests the rights holder has
+    endorsed you or your use of the dataset. Note that further permission may be
+    required for any content within the dataset that is identified as belonging
+    to a third party."
+
+================================================================================
+ATTRIBUTION REQUIREMENTS SATISFIED BY THIS PROJECT
+================================================================================
+
+1. CREDIT. The dataset creators are credited above, in the repository README, in
+   the manuscript, and on the Android application's "About / Attribution" screen.
+
+2. LINK TO LICENSE. The CC BY 4.0 URL is reproduced above, in the repository
+   README, and in the Android application.
+
+3. INDICATION OF CHANGES. Changes made by this project are stated explicitly:
+
+   - No image file was altered, renamed, deleted, or re-encoded. The version-3
+     archive is treated as immutable.
+   - Derived artifacts only: per-image metadata manifests, SHA-256 and perceptual
+     hashes, duplicate-cluster assignments, train/validation/test split manifests,
+     and resized preprocessing caches used for training.
+   - Original dataset folder labels are preserved verbatim in the raw manifest. A
+     separate normalized display-label mapping is provided; raw labels are never
+     overwritten.
+   - Two images belonging to version 4 (brown_blight_00507.jpg,
+     brown_blight_00508.jpg) were downloaded for version-comparison evidence and
+     are stored under data/raw/v4/. They are NOT merged into the version-3
+     experiment source.
+
+4. NO IMPLIED ENDORSEMENT. Nothing in this project states or implies that the
+   dataset creators, East West University, or Mendeley Data endorse this work.
+
+================================================================================
+CITATION
+================================================================================
+
+Dataset (exact version used):
+
+    Alam BMS, Ahammed F, Kibria G, Noor MT, Shikdar OF, Mahazabin KI, Ali MNY.
+    teaLeafBD. Version 3. Mendeley Data; 2025. doi:10.17632/744vznw5k2.3
+
+Associated data article:
+
+    Alam BMS, et al. teaLeafBD: A comprehensive image dataset to classify the
+    diseased tea leaf to automate the leaf selection process in Bangladesh.
+    Data in Brief. 2025;61:111769. doi:10.1016/j.dib.2025.111769
+
+    (Bibliographic details were verified against the publisher and DOI records.)
+
+================================================================================
+REDISTRIBUTION NOTE
+================================================================================
+
+CC BY 4.0 permits redistribution with attribution. This project nonetheless does
+NOT redistribute the dataset images, for three reasons: the archive is ~1.3 GB;
+the authoritative copy is already permanently available under a DOI; and pointing
+to the DOI preserves version provenance that a repackaged copy would weaken.
+
+Reproduction instead uses the download instructions in README.md together with the
+committed manifests and SHA-256 checksums, which allow any third party to verify
+that they obtained byte-identical data.

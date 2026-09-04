@@ -1,0 +1,15 @@
+{
+  "temperature": 1.7661661650791607,
+  "abstention_threshold": 0.6984924623115578,
+  "class_order": [
+    "1. Tea algal leaf spot",
+    "2. Brown Blight",
+    "3. Gray Blight",
+    "4. Helopeltis",
+    "5. Red spider",
+    "6. Green mirid bug",
+    "7. Healthy leaf"
+  ],
+  "target_selective_risk": 0.05,
+  "min_coverage": 0.7
+}

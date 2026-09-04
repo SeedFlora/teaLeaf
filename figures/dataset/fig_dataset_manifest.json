@@ -1,0 +1,39 @@
+{
+  "exemplars": {
+    "1. Tea algal leaf spot": "1. Tea algal leaf spot/tea_algal_leaf_spot_00036.jpg",
+    "2. Brown Blight": "2. Brown Blight/brown_blight_00377.jpg",
+    "3. Gray Blight": "3. Gray Blight/gray_blight_00658.jpg",
+    "4. Helopeltis": "4. Helopeltis/helopeltis_00273.jpg",
+    "5. Red spider": "5. Red spider/red_spider_00223.jpg",
+    "6. Green mirid bug": "6. Green mirid bug/green_mirid_bug_01102.jpg",
+    "7. Healthy leaf": "7. Healthy leaf/healthy_00085.jpg"
+  },
+  "pairs": [
+    {
+      "label": "byte-identical",
+      "a": "3. Gray Blight/gray_blight_00493.jpg",
+      "b": "3. Gray Blight/gray_blight_00494.jpg",
+      "phash": 0,
+      "dhash": 0,
+      "ssim": 1.0
+    },
+    {
+      "label": "closest near-duplicate",
+      "a": "1. Tea algal leaf spot/tea_algal_leaf_spot_00144.jpg",
+      "b": "1. Tea algal leaf spot/tea_algal_leaf_spot_00145.jpg",
+      "phash": 4,
+      "dhash": 9,
+      "ssim": 0.96216
+    },
+    {
+      "label": "at the operative boundary",
+      "a": "4. Helopeltis/helopeltis_00458.jpg",
+      "b": "4. Helopeltis/helopeltis_00459.jpg",
+      "phash": 30,
+      "dhash": 48,
+      "ssim": 0.9117
+    }
+  ],
+  "n_confirmed_pairs": 43,
+  "seed": 42
+}

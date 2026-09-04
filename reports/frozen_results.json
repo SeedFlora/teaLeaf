@@ -1,0 +1,2779 @@
+{
+  "sources": {
+    "duplicates": "data/audit/duplicate_audit_summary.json",
+    "sequence_adjacency": "data/audit/sequence_adjacency_analysis.json",
+    "version_diff": "data/audit/version_diff_summary.json",
+    "provenance": "data/audit/local_vs_official_verification.json",
+    "bias": "data/audit/bias_audit_summary.json",
+    "split": "data/splits/split_summary.json",
+    "benchmark": "tables/model_comparison.json",
+    "calibration": "tables/calibration/calibration.json",
+    "robustness": "tables/robustness/robustness.json",
+    "export": "models/exported/export_report.json",
+    "export_paired": "tables/export/parity_analysis.json",
+    "cam": "tables/cam/cam_sanity.json",
+    "device_benchmark": "reports/device_benchmark/benchmark_report.json",
+    "parity": "reports/device_benchmark/parity_comparison.json",
+    "device_inventory": "reports/device_inventory.json"
+  },
+  "dataset": {
+    "images": 5276,
+    "exact_duplicate_pairs": 1,
+    "duplicate_pairs_for_grouping": 43,
+    "images_in_duplicate_groups": 86,
+    "pct_images_in_duplicate_groups": 1.63,
+    "largest_group_size": 2,
+    "cross_label_groups": 0,
+    "operative_phash_threshold": 32,
+    "thresholds": {
+      "phash_operative_hamming_of_256": 32,
+      "phash_screen_hamming_of_256": 64,
+      "dhash_confirm_hamming_of_256": 48,
+      "ssim_confirm": 0.9
+    },
+    "pairs_screened": 3872,
+    "adjacent_pairs": 41,
+    "adjacent_pairs_total": 43,
+    "pct_adjacent": 95.35,
+    "expected_adjacent_if_random": 0.127,
+    "observed_over_expected": 323.5,
+    "cross_class_pairs_at_operative": 0,
+    "v3_files_listed": 4981,
+    "v4_files_listed": 4984,
+    "only_in_v4": [
+      "2. Brown Blight/brown_blight_00507.jpg",
+      "2. Brown Blight/brown_blight_00508.jpg",
+      "read_me.pdf"
+    ],
+    "only_in_v3": [],
+    "content_changed": [],
+    "provenance_matched_by_path_and_hash": 4981,
+    "provenance_hash_mismatches": 0,
+    "provenance_official_absent_locally": 0,
+    "class_counts": {
+      "1. Tea algal leaf spot": 418,
+      "2. Brown Blight": 506,
+      "3. Gray Blight": 1013,
+      "4. Helopeltis": 607,
+      "5. Red spider": 515,
+      "6. Green mirid bug": 1282,
+      "7. Healthy leaf": 935
+    },
+    "imbalance_ratio": 3.067,
+    "distinct_resolutions": 4,
+    "resolutions": {
+      "1200x1600": 2642,
+      "1200x1594": 1188,
+      "1200x900": 734,
+      "1200x904": 712
+    },
+    "pct_with_exif": 100.0,
+    "capture_devices": {
+      "realme 6i": 1833,
+      "OPPO Reno8 Pro 5G": 1543,
+      "23053RN02A": 1279,
+      "narzo 50": 621
+    }
+  },
+  "split": {
+    "train": {
+      "n": 3694,
+      "fraction": 0.7002,
+      "groups": 3651,
+      "per_class": {
+        "1. Tea algal leaf spot": 292,
+        "2. Brown Blight": 354,
+        "3. Gray Blight": 709,
+        "4. Helopeltis": 425,
+        "5. Red spider": 361,
+        "6. Green mirid bug": 898,
+        "7. Healthy leaf": 655
+      }
+    },
+    "validation": {
+      "n": 791,
+      "fraction": 0.1499,
+      "groups": 791,
+      "per_class": {
+        "1. Tea algal leaf spot": 63,
+        "2. Brown Blight": 76,
+        "3. Gray Blight": 152,
+        "4. Helopeltis": 91,
+        "5. Red spider": 77,
+        "6. Green mirid bug": 192,
+        "7. Healthy leaf": 140
+      }
+    },
+    "test": {
+      "n": 791,
+      "fraction": 0.1499,
+      "groups": 791,
+      "per_class": {
+        "1. Tea algal leaf spot": 63,
+        "2. Brown Blight": 76,
+        "3. Gray Blight": 152,
+        "4. Helopeltis": 91,
+        "5. Red spider": 77,
+        "6. Green mirid bug": 192,
+        "7. Healthy leaf": 140
+      }
+    },
+    "quarantined": 0,
+    "seed": 42
+  },
+  "benchmark": {
+    "runs": [
+      {
+        "run": "convnext_tiny__primary__seed2026",
+        "backbone": "convnext_tiny",
+        "split": "primary",
+        "seed": 2026,
+        "params": 27825511,
+        "epochs": 24,
+        "train_minutes": 13.8,
+        "val_macro_f1": 0.922,
+        "test_macro_f1": 0.9084,
+        "test_macro_f1_raw": 0.908374098524007,
+        "test_macro_f1_ci_low": 0.8843,
+        "test_macro_f1_ci_high": 0.9293,
+        "test_accuracy": 0.9241,
+        "test_balanced_accuracy": 0.9067,
+        "test_mcc": 0.9093,
+        "test_ece": 0.0418,
+        "test_nll": 0.2755,
+        "test_brier": 0.1227
+      },
+      {
+        "run": "convnext_tiny__primary__seed42",
+        "backbone": "convnext_tiny",
+        "split": "primary",
+        "seed": 42,
+        "params": 27825511,
+        "epochs": 23,
+        "train_minutes": 12.2,
+        "val_macro_f1": 0.9289,
+        "test_macro_f1": 0.901,
+        "test_macro_f1_raw": 0.9009526898112136,
+        "test_macro_f1_ci_low": 0.8762,
+        "test_macro_f1_ci_high": 0.923,
+        "test_accuracy": 0.9191,
+        "test_balanced_accuracy": 0.8975,
+        "test_mcc": 0.9031,
+        "test_ece": 0.0358,
+        "test_nll": 0.2519,
+        "test_brier": 0.1204
+      },
+      {
+        "run": "convnext_tiny__primary__seed123",
+        "backbone": "convnext_tiny",
+        "split": "primary",
+        "seed": 123,
+        "params": 27825511,
+        "epochs": 30,
+        "train_minutes": 15.3,
+        "val_macro_f1": 0.9247,
+        "test_macro_f1": 0.897,
+        "test_macro_f1_raw": 0.8969852709850449,
+        "test_macro_f1_ci_low": 0.8732,
+        "test_macro_f1_ci_high": 0.9197,
+        "test_accuracy": 0.9128,
+        "test_balanced_accuracy": 0.8943,
+        "test_mcc": 0.8959,
+        "test_ece": 0.0604,
+        "test_nll": 0.3344,
+        "test_brier": 0.1426
+      },
+      {
+        "run": "efficientnetv2b0__primary__seed123",
+        "backbone": "efficientnetv2b0",
+        "split": "primary",
+        "seed": 123,
+        "params": 5928279,
+        "epochs": 40,
+        "train_minutes": 27.7,
+        "val_macro_f1": 0.9021,
+        "test_macro_f1": 0.8884,
+        "test_macro_f1_raw": 0.8883928201491195,
+        "test_macro_f1_ci_low": 0.8606,
+        "test_macro_f1_ci_high": 0.9118,
+        "test_accuracy": 0.9102,
+        "test_balanced_accuracy": 0.8889,
+        "test_mcc": 0.8926,
+        "test_ece": 0.0453,
+        "test_nll": 0.3024,
+        "test_brier": 0.1419
+      },
+      {
+        "run": "mobilenetv3_large__naive__seed123",
+        "backbone": "mobilenetv3_large",
+        "split": "naive",
+        "seed": 123,
+        "params": 3003079,
+        "epochs": 37,
+        "train_minutes": 14.9,
+        "val_macro_f1": 0.9055,
+        "test_macro_f1": 0.8884,
+        "test_macro_f1_raw": 0.8883875408465828,
+        "test_macro_f1_ci_low": 0.8628,
+        "test_macro_f1_ci_high": 0.9127,
+        "test_accuracy": 0.9105,
+        "test_balanced_accuracy": 0.881,
+        "test_mcc": 0.8928,
+        "test_ece": 0.0484,
+        "test_nll": 0.3541,
+        "test_brier": 0.149
+      },
+      {
+        "run": "mobilenetv3_large__naive__seed42",
+        "backbone": "mobilenetv3_large",
+        "split": "naive",
+        "seed": 42,
+        "params": 3003079,
+        "epochs": 33,
+        "train_minutes": 16.7,
+        "val_macro_f1": 0.9056,
+        "test_macro_f1": 0.8821,
+        "test_macro_f1_raw": 0.8821137653115827,
+        "test_macro_f1_ci_low": 0.8555,
+        "test_macro_f1_ci_high": 0.906,
+        "test_accuracy": 0.9042,
+        "test_balanced_accuracy": 0.8774,
+        "test_mcc": 0.8865,
+        "test_ece": 0.0531,
+        "test_nll": 0.3425,
+        "test_brier": 0.1542
+      },
+      {
+        "run": "mobilenetv3_large__primary__seed42",
+        "backbone": "mobilenetv3_large",
+        "split": "primary",
+        "seed": 42,
+        "params": 3003079,
+        "epochs": 40,
+        "train_minutes": 13.4,
+        "val_macro_f1": 0.899,
+        "test_macro_f1": 0.8745,
+        "test_macro_f1_raw": 0.8744661905531471,
+        "test_macro_f1_ci_low": 0.8462,
+        "test_macro_f1_ci_high": 0.9002,
+        "test_accuracy": 0.8989,
+        "test_balanced_accuracy": 0.8663,
+        "test_mcc": 0.8791,
+        "test_ece": 0.0587,
+        "test_nll": 0.3894,
+        "test_brier": 0.1592
+      },
+      {
+        "run": "efficientnetv2b0__primary__seed42",
+        "backbone": "efficientnetv2b0",
+        "split": "primary",
+        "seed": 42,
+        "params": 5928279,
+        "epochs": 29,
+        "train_minutes": 14.2,
+        "val_macro_f1": 0.901,
+        "test_macro_f1": 0.8705,
+        "test_macro_f1_raw": 0.8705019299486594,
+        "test_macro_f1_ci_low": 0.844,
+        "test_macro_f1_ci_high": 0.8951,
+        "test_accuracy": 0.8887,
+        "test_balanced_accuracy": 0.8791,
+        "test_mcc": 0.8683,
+        "test_ece": 0.0533,
+        "test_nll": 0.3575,
+        "test_brier": 0.1751
+      },
+      {
+        "run": "efficientnetv2b0__primary__seed2026",
+        "backbone": "efficientnetv2b0",
+        "split": "primary",
+        "seed": 2026,
+        "params": 5928279,
+        "epochs": 31,
+        "train_minutes": 13.4,
+        "val_macro_f1": 0.8998,
+        "test_macro_f1": 0.866,
+        "test_macro_f1_raw": 0.8660458971129134,
+        "test_macro_f1_ci_low": 0.8387,
+        "test_macro_f1_ci_high": 0.8905,
+        "test_accuracy": 0.8887,
+        "test_balanced_accuracy": 0.8666,
+        "test_mcc": 0.8669,
+        "test_ece": 0.0531,
+        "test_nll": 0.352,
+        "test_brier": 0.1682
+      },
+      {
+        "run": "mobilenetv3_large__primary__seed123",
+        "backbone": "mobilenetv3_large",
+        "split": "primary",
+        "seed": 123,
+        "params": 3003079,
+        "epochs": 34,
+        "train_minutes": 11.9,
+        "val_macro_f1": 0.8838,
+        "test_macro_f1": 0.8643,
+        "test_macro_f1_raw": 0.8643016942226611,
+        "test_macro_f1_ci_low": 0.8348,
+        "test_macro_f1_ci_high": 0.8912,
+        "test_accuracy": 0.8824,
+        "test_balanced_accuracy": 0.8639,
+        "test_mcc": 0.8597,
+        "test_ece": 0.0729,
+        "test_nll": 0.4455,
+        "test_brier": 0.1882
+      },
+      {
+        "run": "mobilenetv3_small__primary__seed123",
+        "backbone": "mobilenetv3_small",
+        "split": "primary",
+        "seed": 123,
+        "params": 943159,
+        "epochs": 36,
+        "train_minutes": 8.6,
+        "val_macro_f1": 0.8781,
+        "test_macro_f1": 0.8591,
+        "test_macro_f1_raw": 0.8590621335126913,
+        "test_macro_f1_ci_low": 0.8305,
+        "test_macro_f1_ci_high": 0.8853,
+        "test_accuracy": 0.8837,
+        "test_balanced_accuracy": 0.8551,
+        "test_mcc": 0.8607,
+        "test_ece": 0.0385,
+        "test_nll": 0.3534,
+        "test_brier": 0.1758
+      },
+      {
+        "run": "mobilenetv3_small__primary__seed2026",
+        "backbone": "mobilenetv3_small",
+        "split": "primary",
+        "seed": 2026,
+        "params": 943159,
+        "epochs": 35,
+        "train_minutes": 12.9,
+        "val_macro_f1": 0.8715,
+        "test_macro_f1": 0.8571,
+        "test_macro_f1_raw": 0.8571255460996969,
+        "test_macro_f1_ci_low": 0.8282,
+        "test_macro_f1_ci_high": 0.8832,
+        "test_accuracy": 0.8799,
+        "test_balanced_accuracy": 0.8562,
+        "test_mcc": 0.8563,
+        "test_ece": 0.041,
+        "test_nll": 0.3748,
+        "test_brier": 0.1824
+      },
+      {
+        "run": "mobilenetv3_small__primary__seed42",
+        "backbone": "mobilenetv3_small",
+        "split": "primary",
+        "seed": 42,
+        "params": 943159,
+        "epochs": 34,
+        "train_minutes": 13.9,
+        "val_macro_f1": 0.8784,
+        "test_macro_f1": 0.8546,
+        "test_macro_f1_raw": 0.8545938791944719,
+        "test_macro_f1_ci_low": 0.8248,
+        "test_macro_f1_ci_high": 0.8795,
+        "test_accuracy": 0.8799,
+        "test_balanced_accuracy": 0.8508,
+        "test_mcc": 0.8564,
+        "test_ece": 0.043,
+        "test_nll": 0.376,
+        "test_brier": 0.1853
+      },
+      {
+        "run": "efficientnetb0__primary__seed42",
+        "backbone": "efficientnetb0",
+        "split": "primary",
+        "seed": 42,
+        "params": 4058538,
+        "epochs": 23,
+        "train_minutes": 10.8,
+        "val_macro_f1": 0.8904,
+        "test_macro_f1": 0.8441,
+        "test_macro_f1_raw": 0.8440554000160487,
+        "test_macro_f1_ci_low": 0.8152,
+        "test_macro_f1_ci_high": 0.8698,
+        "test_accuracy": 0.8647,
+        "test_balanced_accuracy": 0.8441,
+        "test_mcc": 0.8384,
+        "test_ece": 0.0487,
+        "test_nll": 0.3827,
+        "test_brier": 0.199
+      },
+      {
+        "run": "mobilenetv3_large__primary__seed2026",
+        "backbone": "mobilenetv3_large",
+        "split": "primary",
+        "seed": 2026,
+        "params": 3003079,
+        "epochs": 26,
+        "train_minutes": 9.2,
+        "val_macro_f1": 0.8632,
+        "test_macro_f1": 0.8439,
+        "test_macro_f1_raw": 0.8438814150283142,
+        "test_macro_f1_ci_low": 0.8136,
+        "test_macro_f1_ci_high": 0.8706,
+        "test_accuracy": 0.8698,
+        "test_balanced_accuracy": 0.8442,
+        "test_mcc": 0.8446,
+        "test_ece": 0.0654,
+        "test_nll": 0.4153,
+        "test_brier": 0.1911
+      },
+      {
+        "run": "efficientnetb0__primary__seed2026",
+        "backbone": "efficientnetb0",
+        "split": "primary",
+        "seed": 2026,
+        "params": 4058538,
+        "epochs": 23,
+        "train_minutes": 15.5,
+        "val_macro_f1": 0.8776,
+        "test_macro_f1": 0.8433,
+        "test_macro_f1_raw": 0.8432912246290833,
+        "test_macro_f1_ci_low": 0.8138,
+        "test_macro_f1_ci_high": 0.8697,
+        "test_accuracy": 0.8723,
+        "test_balanced_accuracy": 0.8454,
+        "test_mcc": 0.8478,
+        "test_ece": 0.0506,
+        "test_nll": 0.37,
+        "test_brier": 0.1868
+      },
+      {
+        "run": "efficientnetb0__primary__seed123",
+        "backbone": "efficientnetb0",
+        "split": "primary",
+        "seed": 123,
+        "params": 4058538,
+        "epochs": 28,
+        "train_minutes": 14.0,
+        "val_macro_f1": 0.8675,
+        "test_macro_f1": 0.8343,
+        "test_macro_f1_raw": 0.8342979046424083,
+        "test_macro_f1_ci_low": 0.805,
+        "test_macro_f1_ci_high": 0.8597,
+        "test_accuracy": 0.8622,
+        "test_balanced_accuracy": 0.8385,
+        "test_mcc": 0.8359,
+        "test_ece": 0.0587,
+        "test_nll": 0.4364,
+        "test_brier": 0.2084
+      },
+      {
+        "run": "mobilenetv3_large__naive__seed2026",
+        "backbone": "mobilenetv3_large",
+        "split": "naive",
+        "seed": 2026,
+        "params": 3003079,
+        "epochs": 20,
+        "train_minutes": 10.7,
+        "val_macro_f1": 0.842,
+        "test_macro_f1": 0.8124,
+        "test_macro_f1_raw": 0.8123694126615189,
+        "test_macro_f1_ci_low": 0.7797,
+        "test_macro_f1_ci_high": 0.8414,
+        "test_accuracy": 0.8487,
+        "test_balanced_accuracy": 0.8106,
+        "test_mcc": 0.8196,
+        "test_ece": 0.0745,
+        "test_nll": 0.469,
+        "test_brier": 0.2332
+      }
+    ],
+    "seed_spread": {
+      "convnext_tiny|primary": {
+        "n_seeds": 3,
+        "seeds": [
+          2026,
+          42,
+          123
+        ],
+        "test_macro_f1_values": [
+          0.9084,
+          0.901,
+          0.897
+        ],
+        "mean": 0.9021,
+        "min": 0.897,
+        "max": 0.9084,
+        "range": 0.0114,
+        "stdev": 0.0058,
+        "note": "Observed spread across independently seeded runs. With so few runs this is descriptive spread, not a confidence interval."
+      },
+      "efficientnetb0|primary": {
+        "n_seeds": 3,
+        "seeds": [
+          42,
+          2026,
+          123
+        ],
+        "test_macro_f1_values": [
+          0.8441,
+          0.8433,
+          0.8343
+        ],
+        "mean": 0.8405,
+        "min": 0.8343,
+        "max": 0.8441,
+        "range": 0.0098,
+        "stdev": 0.0054,
+        "note": "Observed spread across independently seeded runs. With so few runs this is descriptive spread, not a confidence interval."
+      },
+      "efficientnetv2b0|primary": {
+        "n_seeds": 3,
+        "seeds": [
+          123,
+          42,
+          2026
+        ],
+        "test_macro_f1_values": [
+          0.8884,
+          0.8705,
+          0.866
+        ],
+        "mean": 0.875,
+        "min": 0.866,
+        "max": 0.8884,
+        "range": 0.0223,
+        "stdev": 0.0118,
+        "note": "Observed spread across independently seeded runs. With so few runs this is descriptive spread, not a confidence interval."
+      },
+      "mobilenetv3_large|naive": {
+        "n_seeds": 3,
+        "seeds": [
+          123,
+          42,
+          2026
+        ],
+        "test_macro_f1_values": [
+          0.8884,
+          0.8821,
+          0.8124
+        ],
+        "mean": 0.861,
+        "min": 0.8124,
+        "max": 0.8884,
+        "range": 0.076,
+        "stdev": 0.0422,
+        "note": "Observed spread across independently seeded runs. With so few runs this is descriptive spread, not a confidence interval."
+      },
+      "mobilenetv3_large|primary": {
+        "n_seeds": 3,
+        "seeds": [
+          42,
+          123,
+          2026
+        ],
+        "test_macro_f1_values": [
+          0.8745,
+          0.8643,
+          0.8439
+        ],
+        "mean": 0.8609,
+        "min": 0.8439,
+        "max": 0.8745,
+        "range": 0.0306,
+        "stdev": 0.0156,
+        "note": "Observed spread across independently seeded runs. With so few runs this is descriptive spread, not a confidence interval."
+      },
+      "mobilenetv3_small|primary": {
+        "n_seeds": 3,
+        "seeds": [
+          123,
+          2026,
+          42
+        ],
+        "test_macro_f1_values": [
+          0.8591,
+          0.8571,
+          0.8546
+        ],
+        "mean": 0.8569,
+        "min": 0.8546,
+        "max": 0.8591,
+        "range": 0.0045,
+        "stdev": 0.0022,
+        "note": "Observed spread across independently seeded runs. With so few runs this is descriptive spread, not a confidence interval."
+      }
+    },
+    "multiseed": {
+      "convnext_tiny": {
+        "params": 27825511,
+        "n_seeds": 3,
+        "seeds": [
+          42,
+          123,
+          2026
+        ],
+        "test_macro_f1": {
+          "mean": 0.9021,
+          "sd": 0.0058,
+          "min": 0.897,
+          "max": 0.9084,
+          "range_points": 1.14,
+          "values": [
+            0.901,
+            0.897,
+            0.9084
+          ]
+        },
+        "test_accuracy": {
+          "mean": 0.9187,
+          "sd": 0.0057,
+          "min": 0.9128,
+          "max": 0.9241,
+          "range_points": 1.13,
+          "values": [
+            0.9191,
+            0.9128,
+            0.9241
+          ]
+        },
+        "test_mcc": {
+          "mean": 0.9028,
+          "sd": 0.0067,
+          "min": 0.8959,
+          "max": 0.9093,
+          "range_points": 1.34,
+          "values": [
+            0.9031,
+            0.8959,
+            0.9093
+          ]
+        },
+        "test_ece": {
+          "mean": 0.046,
+          "sd": 0.0128,
+          "min": 0.0358,
+          "max": 0.0604,
+          "range_points": 2.46,
+          "values": [
+            0.0358,
+            0.0604,
+            0.0418
+          ]
+        },
+        "test_nll": {
+          "mean": 0.2873,
+          "sd": 0.0425,
+          "min": 0.2519,
+          "max": 0.3344,
+          "range_points": 8.25,
+          "values": [
+            0.2519,
+            0.3344,
+            0.2755
+          ]
+        },
+        "test_per_class_f1": {
+          "1. Tea algal leaf spot": {
+            "mean": 0.8216,
+            "sd": 0.005,
+            "min": 0.816,
+            "max": 0.8254,
+            "range_points": 0.94,
+            "values": [
+              0.8254,
+              0.816,
+              0.8235
+            ]
+          },
+          "2. Brown Blight": {
+            "mean": 0.8217,
+            "sd": 0.0284,
+            "min": 0.7945,
+            "max": 0.8511,
+            "range_points": 5.66,
+            "values": [
+              0.7945,
+              0.8194,
+              0.8511
+            ]
+          },
+          "3. Gray Blight": {
+            "mean": 0.91,
+            "sd": 0.013,
+            "min": 0.8972,
+            "max": 0.9231,
+            "range_points": 2.59,
+            "values": [
+              0.9231,
+              0.8972,
+              0.9097
+            ]
+          },
+          "4. Helopeltis": {
+            "mean": 0.9022,
+            "sd": 0.0025,
+            "min": 0.8995,
+            "max": 0.9043,
+            "range_points": 0.48,
+            "values": [
+              0.9043,
+              0.8995,
+              0.9029
+            ]
+          },
+          "5. Red spider": {
+            "mean": 0.9172,
+            "sd": 0.0042,
+            "min": 0.9128,
+            "max": 0.9211,
+            "range_points": 0.83,
+            "values": [
+              0.9178,
+              0.9128,
+              0.9211
+            ]
+          },
+          "6. Green mirid bug": {
+            "mean": 0.9491,
+            "sd": 0.0105,
+            "min": 0.9412,
+            "max": 0.961,
+            "range_points": 1.98,
+            "values": [
+              0.9452,
+              0.9412,
+              0.961
+            ]
+          },
+          "7. Healthy leaf": {
+            "mean": 0.9929,
+            "sd": 0.0035,
+            "min": 0.9894,
+            "max": 0.9964,
+            "range_points": 0.7,
+            "values": [
+              0.9964,
+              0.9929,
+              0.9894
+            ]
+          }
+        }
+      },
+      "efficientnetb0": {
+        "params": 4058538,
+        "n_seeds": 3,
+        "seeds": [
+          42,
+          123,
+          2026
+        ],
+        "test_macro_f1": {
+          "mean": 0.8405,
+          "sd": 0.0054,
+          "min": 0.8343,
+          "max": 0.8441,
+          "range_points": 0.98,
+          "values": [
+            0.8441,
+            0.8343,
+            0.8433
+          ]
+        },
+        "test_accuracy": {
+          "mean": 0.8664,
+          "sd": 0.0053,
+          "min": 0.8622,
+          "max": 0.8723,
+          "range_points": 1.01,
+          "values": [
+            0.8647,
+            0.8622,
+            0.8723
+          ]
+        },
+        "test_mcc": {
+          "mean": 0.8407,
+          "sd": 0.0063,
+          "min": 0.8359,
+          "max": 0.8478,
+          "range_points": 1.19,
+          "values": [
+            0.8384,
+            0.8359,
+            0.8478
+          ]
+        },
+        "test_ece": {
+          "mean": 0.0527,
+          "sd": 0.0053,
+          "min": 0.0487,
+          "max": 0.0587,
+          "range_points": 1.0,
+          "values": [
+            0.0487,
+            0.0587,
+            0.0506
+          ]
+        },
+        "test_nll": {
+          "mean": 0.3964,
+          "sd": 0.0352,
+          "min": 0.37,
+          "max": 0.4364,
+          "range_points": 6.64,
+          "values": [
+            0.3827,
+            0.4364,
+            0.37
+          ]
+        },
+        "test_per_class_f1": {
+          "1. Tea algal leaf spot": {
+            "mean": 0.7396,
+            "sd": 0.0252,
+            "min": 0.7143,
+            "max": 0.7647,
+            "range_points": 5.04,
+            "values": [
+              0.7647,
+              0.7143,
+              0.7397
+            ]
+          },
+          "2. Brown Blight": {
+            "mean": 0.7351,
+            "sd": 0.0563,
+            "min": 0.6994,
+            "max": 0.8,
+            "range_points": 10.06,
+            "values": [
+              0.8,
+              0.6994,
+              0.7059
+            ]
+          },
+          "3. Gray Blight": {
+            "mean": 0.8623,
+            "sd": 0.0073,
+            "min": 0.8571,
+            "max": 0.8707,
+            "range_points": 1.36,
+            "values": [
+              0.8571,
+              0.8591,
+              0.8707
+            ]
+          },
+          "4. Helopeltis": {
+            "mean": 0.8098,
+            "sd": 0.019,
+            "min": 0.7955,
+            "max": 0.8313,
+            "range_points": 3.58,
+            "values": [
+              0.7955,
+              0.8025,
+              0.8313
+            ]
+          },
+          "5. Red spider": {
+            "mean": 0.8469,
+            "sd": 0.0164,
+            "min": 0.8299,
+            "max": 0.8627,
+            "range_points": 3.28,
+            "values": [
+              0.8299,
+              0.8627,
+              0.8481
+            ]
+          },
+          "6. Green mirid bug": {
+            "mean": 0.9245,
+            "sd": 0.0109,
+            "min": 0.912,
+            "max": 0.9316,
+            "range_points": 1.96,
+            "values": [
+              0.912,
+              0.9299,
+              0.9316
+            ]
+          },
+          "7. Healthy leaf": {
+            "mean": 0.9657,
+            "sd": 0.0144,
+            "min": 0.9492,
+            "max": 0.9756,
+            "range_points": 2.64,
+            "values": [
+              0.9492,
+              0.9722,
+              0.9756
+            ]
+          }
+        }
+      },
+      "efficientnetv2b0": {
+        "params": 5928279,
+        "n_seeds": 3,
+        "seeds": [
+          42,
+          123,
+          2026
+        ],
+        "test_macro_f1": {
+          "mean": 0.875,
+          "sd": 0.0118,
+          "min": 0.866,
+          "max": 0.8884,
+          "range_points": 2.23,
+          "values": [
+            0.8705,
+            0.8884,
+            0.866
+          ]
+        },
+        "test_accuracy": {
+          "mean": 0.8959,
+          "sd": 0.0124,
+          "min": 0.8887,
+          "max": 0.9102,
+          "range_points": 2.15,
+          "values": [
+            0.8887,
+            0.9102,
+            0.8887
+          ]
+        },
+        "test_mcc": {
+          "mean": 0.8759,
+          "sd": 0.0145,
+          "min": 0.8669,
+          "max": 0.8926,
+          "range_points": 2.57,
+          "values": [
+            0.8683,
+            0.8926,
+            0.8669
+          ]
+        },
+        "test_ece": {
+          "mean": 0.0506,
+          "sd": 0.0046,
+          "min": 0.0453,
+          "max": 0.0533,
+          "range_points": 0.8,
+          "values": [
+            0.0533,
+            0.0453,
+            0.0531
+          ]
+        },
+        "test_nll": {
+          "mean": 0.3373,
+          "sd": 0.0303,
+          "min": 0.3024,
+          "max": 0.3575,
+          "range_points": 5.51,
+          "values": [
+            0.3575,
+            0.3024,
+            0.352
+          ]
+        },
+        "test_per_class_f1": {
+          "1. Tea algal leaf spot": {
+            "mean": 0.797,
+            "sd": 0.006,
+            "min": 0.791,
+            "max": 0.8029,
+            "range_points": 1.19,
+            "values": [
+              0.8029,
+              0.797,
+              0.791
+            ]
+          },
+          "2. Brown Blight": {
+            "mean": 0.7599,
+            "sd": 0.0354,
+            "min": 0.719,
+            "max": 0.7808,
+            "range_points": 6.18,
+            "values": [
+              0.7799,
+              0.7808,
+              0.719
+            ]
+          },
+          "3. Gray Blight": {
+            "mean": 0.9042,
+            "sd": 0.0106,
+            "min": 0.8919,
+            "max": 0.9103,
+            "range_points": 1.84,
+            "values": [
+              0.9103,
+              0.9103,
+              0.8919
+            ]
+          },
+          "4. Helopeltis": {
+            "mean": 0.8616,
+            "sd": 0.0319,
+            "min": 0.8342,
+            "max": 0.8966,
+            "range_points": 6.24,
+            "values": [
+              0.8342,
+              0.8966,
+              0.8539
+            ]
+          },
+          "5. Red spider": {
+            "mean": 0.8848,
+            "sd": 0.0172,
+            "min": 0.8652,
+            "max": 0.8974,
+            "range_points": 3.22,
+            "values": [
+              0.8652,
+              0.8974,
+              0.8919
+            ]
+          },
+          "6. Green mirid bug": {
+            "mean": 0.9361,
+            "sd": 0.0247,
+            "min": 0.9116,
+            "max": 0.961,
+            "range_points": 4.94,
+            "values": [
+              0.9116,
+              0.961,
+              0.9357
+            ]
+          },
+          "7. Healthy leaf": {
+            "mean": 0.9813,
+            "sd": 0.0072,
+            "min": 0.9756,
+            "max": 0.9894,
+            "range_points": 1.38,
+            "values": [
+              0.9894,
+              0.9756,
+              0.9789
+            ]
+          }
+        }
+      },
+      "mobilenetv3_large": {
+        "params": 3003079,
+        "n_seeds": 3,
+        "seeds": [
+          42,
+          123,
+          2026
+        ],
+        "test_macro_f1": {
+          "mean": 0.8609,
+          "sd": 0.0156,
+          "min": 0.8439,
+          "max": 0.8745,
+          "range_points": 3.06,
+          "values": [
+            0.8745,
+            0.8643,
+            0.8439
+          ]
+        },
+        "test_accuracy": {
+          "mean": 0.8837,
+          "sd": 0.0146,
+          "min": 0.8698,
+          "max": 0.8989,
+          "range_points": 2.91,
+          "values": [
+            0.8989,
+            0.8824,
+            0.8698
+          ]
+        },
+        "test_mcc": {
+          "mean": 0.8611,
+          "sd": 0.0173,
+          "min": 0.8446,
+          "max": 0.8791,
+          "range_points": 3.45,
+          "values": [
+            0.8791,
+            0.8597,
+            0.8446
+          ]
+        },
+        "test_ece": {
+          "mean": 0.0657,
+          "sd": 0.0071,
+          "min": 0.0587,
+          "max": 0.0729,
+          "range_points": 1.42,
+          "values": [
+            0.0587,
+            0.0729,
+            0.0654
+          ]
+        },
+        "test_nll": {
+          "mean": 0.4167,
+          "sd": 0.0281,
+          "min": 0.3894,
+          "max": 0.4455,
+          "range_points": 5.61,
+          "values": [
+            0.3894,
+            0.4455,
+            0.4153
+          ]
+        },
+        "test_per_class_f1": {
+          "1. Tea algal leaf spot": {
+            "mean": 0.7809,
+            "sd": 0.0197,
+            "min": 0.7606,
+            "max": 0.8,
+            "range_points": 3.94,
+            "values": [
+              0.8,
+              0.782,
+              0.7606
+            ]
+          },
+          "2. Brown Blight": {
+            "mean": 0.7589,
+            "sd": 0.0417,
+            "min": 0.7121,
+            "max": 0.7919,
+            "range_points": 7.98,
+            "values": [
+              0.7727,
+              0.7919,
+              0.7121
+            ]
+          },
+          "3. Gray Blight": {
+            "mean": 0.9024,
+            "sd": 0.0014,
+            "min": 0.901,
+            "max": 0.9038,
+            "range_points": 0.28,
+            "values": [
+              0.9038,
+              0.901,
+              0.9024
+            ]
+          },
+          "4. Helopeltis": {
+            "mean": 0.8545,
+            "sd": 0.0341,
+            "min": 0.8208,
+            "max": 0.8889,
+            "range_points": 6.81,
+            "values": [
+              0.8889,
+              0.8537,
+              0.8208
+            ]
+          },
+          "5. Red spider": {
+            "mean": 0.8602,
+            "sd": 0.0088,
+            "min": 0.8533,
+            "max": 0.8701,
+            "range_points": 1.68,
+            "values": [
+              0.8533,
+              0.8701,
+              0.8571
+            ]
+          },
+          "6. Green mirid bug": {
+            "mean": 0.9237,
+            "sd": 0.0285,
+            "min": 0.9054,
+            "max": 0.9565,
+            "range_points": 5.11,
+            "values": [
+              0.9565,
+              0.9091,
+              0.9054
+            ]
+          },
+          "7. Healthy leaf": {
+            "mean": 0.9457,
+            "sd": 0.0032,
+            "min": 0.9424,
+            "max": 0.9488,
+            "range_points": 0.64,
+            "values": [
+              0.9459,
+              0.9424,
+              0.9488
+            ]
+          }
+        }
+      },
+      "mobilenetv3_small": {
+        "params": 943159,
+        "n_seeds": 3,
+        "seeds": [
+          42,
+          123,
+          2026
+        ],
+        "test_macro_f1": {
+          "mean": 0.8569,
+          "sd": 0.0022,
+          "min": 0.8546,
+          "max": 0.8591,
+          "range_points": 0.45,
+          "values": [
+            0.8546,
+            0.8591,
+            0.8571
+          ]
+        },
+        "test_accuracy": {
+          "mean": 0.8812,
+          "sd": 0.0022,
+          "min": 0.8799,
+          "max": 0.8837,
+          "range_points": 0.38,
+          "values": [
+            0.8799,
+            0.8837,
+            0.8799
+          ]
+        },
+        "test_mcc": {
+          "mean": 0.8578,
+          "sd": 0.0025,
+          "min": 0.8563,
+          "max": 0.8607,
+          "range_points": 0.44,
+          "values": [
+            0.8564,
+            0.8607,
+            0.8563
+          ]
+        },
+        "test_ece": {
+          "mean": 0.0408,
+          "sd": 0.0023,
+          "min": 0.0385,
+          "max": 0.043,
+          "range_points": 0.45,
+          "values": [
+            0.043,
+            0.0385,
+            0.041
+          ]
+        },
+        "test_nll": {
+          "mean": 0.3681,
+          "sd": 0.0127,
+          "min": 0.3534,
+          "max": 0.376,
+          "range_points": 2.26,
+          "values": [
+            0.376,
+            0.3534,
+            0.3748
+          ]
+        },
+        "test_per_class_f1": {
+          "1. Tea algal leaf spot": {
+            "mean": 0.755,
+            "sd": 0.0171,
+            "min": 0.736,
+            "max": 0.7692,
+            "range_points": 3.32,
+            "values": [
+              0.736,
+              0.7597,
+              0.7692
+            ]
+          },
+          "2. Brown Blight": {
+            "mean": 0.7528,
+            "sd": 0.0181,
+            "min": 0.7353,
+            "max": 0.7714,
+            "range_points": 3.61,
+            "values": [
+              0.7714,
+              0.7353,
+              0.7518
+            ]
+          },
+          "3. Gray Blight": {
+            "mean": 0.8806,
+            "sd": 0.008,
+            "min": 0.8721,
+            "max": 0.8881,
+            "range_points": 1.6,
+            "values": [
+              0.8881,
+              0.8816,
+              0.8721
+            ]
+          },
+          "4. Helopeltis": {
+            "mean": 0.8772,
+            "sd": 0.0117,
+            "min": 0.8655,
+            "max": 0.8889,
+            "range_points": 2.34,
+            "values": [
+              0.8889,
+              0.8655,
+              0.8772
+            ]
+          },
+          "5. Red spider": {
+            "mean": 0.8508,
+            "sd": 0.0272,
+            "min": 0.8272,
+            "max": 0.8805,
+            "range_points": 5.33,
+            "values": [
+              0.8272,
+              0.8805,
+              0.8447
+            ]
+          },
+          "6. Green mirid bug": {
+            "mean": 0.9298,
+            "sd": 0.001,
+            "min": 0.9289,
+            "max": 0.9309,
+            "range_points": 0.2,
+            "values": [
+              0.9309,
+              0.9289,
+              0.9295
+            ]
+          },
+          "7. Healthy leaf": {
+            "mean": 0.9523,
+            "sd": 0.0115,
+            "min": 0.9396,
+            "max": 0.9619,
+            "range_points": 2.23,
+            "values": [
+              0.9396,
+              0.9619,
+              0.9553
+            ]
+          }
+        }
+      }
+    },
+    "ranking": {
+      "by_mean_macro_f1": [
+        "convnext_tiny",
+        "efficientnetv2b0",
+        "mobilenetv3_large",
+        "mobilenetv3_small",
+        "efficientnetb0"
+      ],
+      "by_seed": {
+        "42": [
+          {
+            "backbone": "convnext_tiny",
+            "test_macro_f1": 0.901
+          },
+          {
+            "backbone": "mobilenetv3_large",
+            "test_macro_f1": 0.8745
+          },
+          {
+            "backbone": "efficientnetv2b0",
+            "test_macro_f1": 0.8705
+          },
+          {
+            "backbone": "mobilenetv3_small",
+            "test_macro_f1": 0.8546
+          },
+          {
+            "backbone": "efficientnetb0",
+            "test_macro_f1": 0.8441
+          }
+        ],
+        "123": [
+          {
+            "backbone": "convnext_tiny",
+            "test_macro_f1": 0.897
+          },
+          {
+            "backbone": "efficientnetv2b0",
+            "test_macro_f1": 0.8884
+          },
+          {
+            "backbone": "mobilenetv3_large",
+            "test_macro_f1": 0.8643
+          },
+          {
+            "backbone": "mobilenetv3_small",
+            "test_macro_f1": 0.8591
+          },
+          {
+            "backbone": "efficientnetb0",
+            "test_macro_f1": 0.8343
+          }
+        ],
+        "2026": [
+          {
+            "backbone": "convnext_tiny",
+            "test_macro_f1": 0.9084
+          },
+          {
+            "backbone": "efficientnetv2b0",
+            "test_macro_f1": 0.866
+          },
+          {
+            "backbone": "mobilenetv3_small",
+            "test_macro_f1": 0.8571
+          },
+          {
+            "backbone": "mobilenetv3_large",
+            "test_macro_f1": 0.8439
+          },
+          {
+            "backbone": "efficientnetb0",
+            "test_macro_f1": 0.8433
+          }
+        ]
+      },
+      "adjacent_mean_gaps_points": [
+        2.71,
+        1.41,
+        0.4,
+        1.64
+      ],
+      "max_within_architecture_range_points": 3.06
+    },
+    "leakage_sensitivity": {
+      "mobilenetv3_large": {
+        "primary_mean_macro_f1": 0.8609,
+        "naive_mean_macro_f1": 0.861,
+        "inflation_points": 0.007,
+        "primary_seeds": 3,
+        "naive_seeds": 3,
+        "seeds": [
+          42,
+          123,
+          2026
+        ],
+        "primary_range": [
+          0.8439,
+          0.8745
+        ],
+        "naive_range": [
+          0.8124,
+          0.8884
+        ],
+        "primary_sd": 0.0156,
+        "naive_sd": 0.0422,
+        "per_seed": {
+          "42": {
+            "primary": 0.8745,
+            "naive": 0.8821,
+            "inflation_points": 0.765
+          },
+          "123": {
+            "primary": 0.8643,
+            "naive": 0.8884,
+            "inflation_points": 2.409
+          },
+          "2026": {
+            "primary": 0.8439,
+            "naive": 0.8124,
+            "inflation_points": -3.151
+          }
+        },
+        "interpretation_guard": "The naive split carries 16 of 43 confirmed duplicate pairs across partitions, which bounds the arithmetically possible inflation at roughly 1-2 points. A materially larger measured difference indicates a bug or a confound, not a leakage discovery."
+      }
+    },
+    "pairwise_mcnemar_basis": "seed-matched at seed 42; Holm-Bonferroni across all pairs",
+    "pairwise_mcnemar": {
+      "convnext_tiny_vs_efficientnetb0": {
+        "a_right_b_wrong": 70,
+        "a_wrong_b_right": 27,
+        "p_exact": 1.476695145759083e-05,
+        "p_holm": 0.00014766951457590832
+      },
+      "convnext_tiny_vs_efficientnetv2b0": {
+        "a_right_b_wrong": 57,
+        "a_wrong_b_right": 33,
+        "p_exact": 0.014866752945626244,
+        "p_holm": 0.10406727061938371
+      },
+      "convnext_tiny_vs_mobilenetv3_large": {
+        "a_right_b_wrong": 46,
+        "a_wrong_b_right": 30,
+        "p_exact": 0.08464609267083592,
+        "p_holm": 0.4709101640341066
+      },
+      "convnext_tiny_vs_mobilenetv3_small": {
+        "a_right_b_wrong": 61,
+        "a_wrong_b_right": 30,
+        "p_exact": 0.0015165131944572215,
+        "p_holm": 0.013648618750114994
+      },
+      "efficientnetb0_vs_efficientnetv2b0": {
+        "a_right_b_wrong": 43,
+        "a_wrong_b_right": 62,
+        "p_exact": 0.07848502733901777,
+        "p_holm": 0.4709101640341066
+      },
+      "efficientnetb0_vs_mobilenetv3_large": {
+        "a_right_b_wrong": 35,
+        "a_wrong_b_right": 62,
+        "p_exact": 0.007959455422446682,
+        "p_holm": 0.06367564337957346
+      },
+      "efficientnetb0_vs_mobilenetv3_small": {
+        "a_right_b_wrong": 46,
+        "a_wrong_b_right": 58,
+        "p_exact": 0.28069032903417923,
+        "p_holm": 0.8420709871025377
+      },
+      "efficientnetv2b0_vs_mobilenetv3_large": {
+        "a_right_b_wrong": 44,
+        "a_wrong_b_right": 52,
+        "p_exact": 0.4751520499865724,
+        "p_holm": 0.9503040999731448
+      },
+      "efficientnetv2b0_vs_mobilenetv3_small": {
+        "a_right_b_wrong": 64,
+        "a_wrong_b_right": 57,
+        "p_exact": 0.5856255178555001,
+        "p_holm": 0.9503040999731448
+      },
+      "mobilenetv3_large_vs_mobilenetv3_small": {
+        "a_right_b_wrong": 45,
+        "a_wrong_b_right": 30,
+        "p_exact": 0.10534226887460488,
+        "p_holm": 0.4709101640341066
+      }
+    },
+    "seed_matched_mcnemar": {
+      "convnext_tiny_vs_efficientnetb0": {
+        "seeds": [
+          "42",
+          "123",
+          "2026"
+        ],
+        "n_seeds_significant_raw_0.05": 3,
+        "mean_macro_f1_a_minus_b_points": 6.16,
+        "sign_consistent": true,
+        "per_seed": {
+          "42": {
+            "a_right_b_wrong": 70,
+            "a_wrong_b_right": 27,
+            "p_exact": 1.476695145759083e-05,
+            "macro_f1_a_minus_b_points": 5.69
+          },
+          "123": {
+            "a_right_b_wrong": 72,
+            "a_wrong_b_right": 32,
+            "p_exact": 0.00010959860355569963,
+            "macro_f1_a_minus_b_points": 6.27
+          },
+          "2026": {
+            "a_right_b_wrong": 61,
+            "a_wrong_b_right": 20,
+            "p_exact": 5.656214894965938e-06,
+            "macro_f1_a_minus_b_points": 6.51
+          }
+        }
+      },
+      "convnext_tiny_vs_efficientnetv2b0": {
+        "seeds": [
+          "42",
+          "123",
+          "2026"
+        ],
+        "n_seeds_significant_raw_0.05": 2,
+        "mean_macro_f1_a_minus_b_points": 2.71,
+        "sign_consistent": true,
+        "per_seed": {
+          "42": {
+            "a_right_b_wrong": 57,
+            "a_wrong_b_right": 33,
+            "p_exact": 0.014866752945626244,
+            "macro_f1_a_minus_b_points": 3.05
+          },
+          "123": {
+            "a_right_b_wrong": 36,
+            "a_wrong_b_right": 34,
+            "p_exact": 0.9049745264594623,
+            "macro_f1_a_minus_b_points": 0.86
+          },
+          "2026": {
+            "a_right_b_wrong": 48,
+            "a_wrong_b_right": 20,
+            "p_exact": 0.0009143907212875583,
+            "macro_f1_a_minus_b_points": 4.23
+          }
+        }
+      },
+      "convnext_tiny_vs_mobilenetv3_large": {
+        "seeds": [
+          "42",
+          "123",
+          "2026"
+        ],
+        "n_seeds_significant_raw_0.05": 2,
+        "mean_macro_f1_a_minus_b_points": 4.12,
+        "sign_consistent": true,
+        "per_seed": {
+          "42": {
+            "a_right_b_wrong": 46,
+            "a_wrong_b_right": 30,
+            "p_exact": 0.08464609267083592,
+            "macro_f1_a_minus_b_points": 2.65
+          },
+          "123": {
+            "a_right_b_wrong": 54,
+            "a_wrong_b_right": 30,
+            "p_exact": 0.011634454119925829,
+            "macro_f1_a_minus_b_points": 3.27
+          },
+          "2026": {
+            "a_right_b_wrong": 67,
+            "a_wrong_b_right": 24,
+            "p_exact": 7.348549184628526e-06,
+            "macro_f1_a_minus_b_points": 6.45
+          }
+        }
+      },
+      "convnext_tiny_vs_mobilenetv3_small": {
+        "seeds": [
+          "42",
+          "123",
+          "2026"
+        ],
+        "n_seeds_significant_raw_0.05": 3,
+        "mean_macro_f1_a_minus_b_points": 4.52,
+        "sign_consistent": true,
+        "per_seed": {
+          "42": {
+            "a_right_b_wrong": 61,
+            "a_wrong_b_right": 30,
+            "p_exact": 0.0015165131944572215,
+            "macro_f1_a_minus_b_points": 4.64
+          },
+          "123": {
+            "a_right_b_wrong": 61,
+            "a_wrong_b_right": 38,
+            "p_exact": 0.026525106848394427,
+            "macro_f1_a_minus_b_points": 3.79
+          },
+          "2026": {
+            "a_right_b_wrong": 59,
+            "a_wrong_b_right": 24,
+            "p_exact": 0.00015455941078329165,
+            "macro_f1_a_minus_b_points": 5.12
+          }
+        }
+      },
+      "efficientnetb0_vs_efficientnetv2b0": {
+        "seeds": [
+          "42",
+          "123",
+          "2026"
+        ],
+        "n_seeds_significant_raw_0.05": 1,
+        "mean_macro_f1_a_minus_b_points": -3.44,
+        "sign_consistent": true,
+        "per_seed": {
+          "42": {
+            "a_right_b_wrong": 43,
+            "a_wrong_b_right": 62,
+            "p_exact": 0.07848502733901777,
+            "macro_f1_a_minus_b_points": -2.64
+          },
+          "123": {
+            "a_right_b_wrong": 30,
+            "a_wrong_b_right": 68,
+            "p_exact": 0.00015615831700632916,
+            "macro_f1_a_minus_b_points": -5.41
+          },
+          "2026": {
+            "a_right_b_wrong": 36,
+            "a_wrong_b_right": 49,
+            "p_exact": 0.19276043534155876,
+            "macro_f1_a_minus_b_points": -2.28
+          }
+        }
+      },
+      "efficientnetb0_vs_mobilenetv3_large": {
+        "seeds": [
+          "42",
+          "123",
+          "2026"
+        ],
+        "n_seeds_significant_raw_0.05": 1,
+        "mean_macro_f1_a_minus_b_points": -2.03,
+        "sign_consistent": true,
+        "per_seed": {
+          "42": {
+            "a_right_b_wrong": 35,
+            "a_wrong_b_right": 62,
+            "p_exact": 0.007959455422446682,
+            "macro_f1_a_minus_b_points": -3.04
+          },
+          "123": {
+            "a_right_b_wrong": 42,
+            "a_wrong_b_right": 58,
+            "p_exact": 0.13321061920721333,
+            "macro_f1_a_minus_b_points": -3.0
+          },
+          "2026": {
+            "a_right_b_wrong": 53,
+            "a_wrong_b_right": 51,
+            "p_exact": 0.9219488276264309,
+            "macro_f1_a_minus_b_points": -0.06
+          }
+        }
+      },
+      "efficientnetb0_vs_mobilenetv3_small": {
+        "seeds": [
+          "42",
+          "123",
+          "2026"
+        ],
+        "n_seeds_significant_raw_0.05": 0,
+        "mean_macro_f1_a_minus_b_points": -1.64,
+        "sign_consistent": true,
+        "per_seed": {
+          "42": {
+            "a_right_b_wrong": 46,
+            "a_wrong_b_right": 58,
+            "p_exact": 0.28069032903417923,
+            "macro_f1_a_minus_b_points": -1.05
+          },
+          "123": {
+            "a_right_b_wrong": 48,
+            "a_wrong_b_right": 65,
+            "p_exact": 0.13192429082426071,
+            "macro_f1_a_minus_b_points": -2.48
+          },
+          "2026": {
+            "a_right_b_wrong": 44,
+            "a_wrong_b_right": 50,
+            "p_exact": 0.606295937693966,
+            "macro_f1_a_minus_b_points": -1.38
+          }
+        }
+      },
+      "efficientnetv2b0_vs_mobilenetv3_large": {
+        "seeds": [
+          "42",
+          "123",
+          "2026"
+        ],
+        "n_seeds_significant_raw_0.05": 1,
+        "mean_macro_f1_a_minus_b_points": 1.41,
+        "sign_consistent": false,
+        "per_seed": {
+          "42": {
+            "a_right_b_wrong": 44,
+            "a_wrong_b_right": 52,
+            "p_exact": 0.4751520499865724,
+            "macro_f1_a_minus_b_points": -0.4
+          },
+          "123": {
+            "a_right_b_wrong": 52,
+            "a_wrong_b_right": 30,
+            "p_exact": 0.019826915845841595,
+            "macro_f1_a_minus_b_points": 2.41
+          },
+          "2026": {
+            "a_right_b_wrong": 57,
+            "a_wrong_b_right": 42,
+            "p_exact": 0.15906965188123784,
+            "macro_f1_a_minus_b_points": 2.22
+          }
+        }
+      },
+      "efficientnetv2b0_vs_mobilenetv3_small": {
+        "seeds": [
+          "42",
+          "123",
+          "2026"
+        ],
+        "n_seeds_significant_raw_0.05": 1,
+        "mean_macro_f1_a_minus_b_points": 1.8,
+        "sign_consistent": true,
+        "per_seed": {
+          "42": {
+            "a_right_b_wrong": 64,
+            "a_wrong_b_right": 57,
+            "p_exact": 0.5856255178555001,
+            "macro_f1_a_minus_b_points": 1.59
+          },
+          "123": {
+            "a_right_b_wrong": 53,
+            "a_wrong_b_right": 32,
+            "p_exact": 0.02945636178577888,
+            "macro_f1_a_minus_b_points": 2.93
+          },
+          "2026": {
+            "a_right_b_wrong": 46,
+            "a_wrong_b_right": 39,
+            "p_exact": 0.5154257318839004,
+            "macro_f1_a_minus_b_points": 0.89
+          }
+        }
+      },
+      "mobilenetv3_large_vs_mobilenetv3_small": {
+        "seeds": [
+          "42",
+          "123",
+          "2026"
+        ],
+        "n_seeds_significant_raw_0.05": 0,
+        "mean_macro_f1_a_minus_b_points": 0.4,
+        "sign_consistent": false,
+        "per_seed": {
+          "42": {
+            "a_right_b_wrong": 45,
+            "a_wrong_b_right": 30,
+            "p_exact": 0.10534226887460488,
+            "macro_f1_a_minus_b_points": 1.99
+          },
+          "123": {
+            "a_right_b_wrong": 45,
+            "a_wrong_b_right": 46,
+            "p_exact": 1.0,
+            "macro_f1_a_minus_b_points": 0.52
+          },
+          "2026": {
+            "a_right_b_wrong": 40,
+            "a_wrong_b_right": 48,
+            "p_exact": 0.45574127943791326,
+            "macro_f1_a_minus_b_points": -1.32
+          }
+        }
+      }
+    }
+  },
+  "calibration": {
+    "temperature": 1.7661661650791607,
+    "test_uncalibrated": {
+      "nll": 0.3893760495665453,
+      "ece": 0.05865412426808693,
+      "brier": 0.15916669521587967,
+      "accuracy": 0.8988621997471555,
+      "mean_confidence": 0.9539603339661238
+    },
+    "test_calibrated": {
+      "nll": 0.30540831788986333,
+      "ece": 0.02544431809458257,
+      "brier": 0.1494762174288086,
+      "accuracy": 0.8988621997471555,
+      "mean_confidence": 0.9058886689682414
+    },
+    "abstention_threshold": 0.6984924623115578,
+    "target_selective_risk": 0.05,
+    "min_coverage": 0.7,
+    "test_coverage": 0.8748419721871049,
+    "test_selective_accuracy": 0.9479768786127167,
+    "test_full_coverage_accuracy": 0.8988621997471555,
+    "n_abstained": 99,
+    "accuracy_on_abstained": 0.5555555555555556
+  },
+  "robustness": {
+    "clean_macro_f1": 0.8744661905531471,
+    "clean_mean_confidence": 0.9539603337003397,
+    "confidence_accuracy_r": 0.8667917522501642,
+    "n_conditions": 24,
+    "graph_verification": {
+      "top1_agreement_with_stored": 1.0,
+      "max_abs_probability_deviation": 0.03803885380573924,
+      "n": 791,
+      "min_agreement_required": 0.995
+    },
+    "corruption_specs": {
+      "brightness_down": {
+        "parameter": "PIL ImageEnhance.Brightness factor",
+        "severity_1": 0.75,
+        "severity_2": 0.55,
+        "severity_3": 0.35
+      },
+      "brightness_up": {
+        "parameter": "PIL ImageEnhance.Brightness factor",
+        "severity_1": 1.3,
+        "severity_2": 1.6,
+        "severity_3": 2.0
+      },
+      "contrast_down": {
+        "parameter": "PIL ImageEnhance.Contrast factor",
+        "severity_1": 0.7,
+        "severity_2": 0.5,
+        "severity_3": 0.3
+      },
+      "gaussian_blur": {
+        "parameter": "Gaussian blur radius (px, at 224 px)",
+        "severity_1": 1.0,
+        "severity_2": 2.0,
+        "severity_3": 3.5
+      },
+      "motion_blur": {
+        "parameter": "horizontal box-blur kernel length (px)",
+        "severity_1": 5,
+        "severity_2": 9,
+        "severity_3": 15
+      },
+      "jpeg_compression": {
+        "parameter": "JPEG quality on re-encoding",
+        "severity_1": 40,
+        "severity_2": 20,
+        "severity_3": 10
+      },
+      "rotation": {
+        "parameter": "rotation (degrees, white fill)",
+        "severity_1": 8,
+        "severity_2": 15,
+        "severity_3": 25
+      },
+      "crop_zoom": {
+        "parameter": "central crop fraction, rescaled to 224 px",
+        "severity_1": 0.85,
+        "severity_2": 0.7,
+        "severity_3": 0.55
+      }
+    },
+    "drops": {
+      "brightness_down": {
+        "sev1": 2.967,
+        "sev2": 7.795,
+        "sev3": 21.724
+      },
+      "brightness_up": {
+        "sev1": 0.402,
+        "sev2": 6.161,
+        "sev3": 9.342
+      },
+      "contrast_down": {
+        "sev1": 1.591,
+        "sev2": 3.899,
+        "sev3": 12.915
+      },
+      "gaussian_blur": {
+        "sev1": 8.327,
+        "sev2": 34.757,
+        "sev3": 52.841
+      },
+      "motion_blur": {
+        "sev1": 6.191,
+        "sev2": 23.923,
+        "sev3": 44.823
+      },
+      "jpeg_compression": {
+        "sev1": 12.042,
+        "sev2": 21.301,
+        "sev3": 36.954
+      },
+      "rotation": {
+        "sev1": 2.095,
+        "sev2": 3.278,
+        "sev3": 7.488
+      },
+      "crop_zoom": {
+        "sev1": 0.03,
+        "sev2": 2.661,
+        "sev3": 5.325
+      }
+    },
+    "confidence_at_sev3": {
+      "brightness_down": 0.8928647378851235,
+      "brightness_up": 0.9194093891492396,
+      "contrast_down": 0.9074660004612558,
+      "gaussian_blur": 0.8119233697363141,
+      "motion_blur": 0.869849052160205,
+      "jpeg_compression": 0.7977962621947325,
+      "rotation": 0.9330648712709044,
+      "crop_zoom": 0.9362799972429054
+    },
+    "clean_abstention": {
+      "threshold_applied": 0.6984924623115578,
+      "coverage": 0.8748419721871049,
+      "n_answered": 692,
+      "n_abstained": 99,
+      "selective_accuracy": 0.9479768786127167,
+      "selective_risk": 0.052023121387283267,
+      "accuracy_on_abstained": 0.5555555555555556,
+      "calibrated_mean_confidence": 0.9058886689682413,
+      "risk_violated": true,
+      "coverage_violated": false,
+      "policy_violated": true,
+      "required_threshold_for_policy": 0.7185929648241206,
+      "required_threshold_reachable": true,
+      "coverage_at_required_threshold": 0.865992414664981,
+      "selective_risk_at_required_threshold": 0.04817518248175179
+    },
+    "abstention": {
+      "brightness_down": {
+        "sev1": {
+          "coverage": 0.8634639696586599,
+          "selective_accuracy": 0.931185944363104,
+          "selective_risk": 0.06881405563689602,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.8291457286432161,
+          "required_threshold_reachable": true,
+          "coverage_at_required_threshold": 0.7774968394437421
+        },
+        "sev2": {
+          "coverage": 0.8419721871049305,
+          "selective_accuracy": 0.8963963963963963,
+          "selective_risk": 0.10360360360360366,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.8442211055276382,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7041719342604298
+        },
+        "sev3": {
+          "coverage": 0.7041719342604298,
+          "selective_accuracy": 0.8132854578096947,
+          "selective_risk": 0.18671454219030525,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.6984924623115578,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7041719342604298
+        }
+      },
+      "brightness_up": {
+        "sev1": {
+          "coverage": 0.865992414664981,
+          "selective_accuracy": 0.9430656934306569,
+          "selective_risk": 0.05693430656934306,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.7437185929648241,
+          "required_threshold_reachable": true,
+          "coverage_at_required_threshold": 0.8255372945638433
+        },
+        "sev2": {
+          "coverage": 0.8141592920353983,
+          "selective_accuracy": 0.922360248447205,
+          "selective_risk": 0.07763975155279501,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.8341708542713568,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7041719342604298
+        },
+        "sev3": {
+          "coverage": 0.7762326169405815,
+          "selective_accuracy": 0.8892508143322475,
+          "selective_risk": 0.11074918566775249,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.7688442211055276,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7092288242730721
+        }
+      },
+      "contrast_down": {
+        "sev1": {
+          "coverage": 0.8647281921618205,
+          "selective_accuracy": 0.9298245614035088,
+          "selective_risk": 0.07017543859649122,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.7638190954773869,
+          "required_threshold_reachable": true,
+          "coverage_at_required_threshold": 0.8166877370417194
+        },
+        "sev2": {
+          "coverage": 0.8331226295828066,
+          "selective_accuracy": 0.9256449165402124,
+          "selective_risk": 0.07435508345978759,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.8241206030150754,
+          "required_threshold_reachable": true,
+          "coverage_at_required_threshold": 0.7408343868520859
+        },
+        "sev3": {
+          "coverage": 0.7433628318584071,
+          "selective_accuracy": 0.8707482993197279,
+          "selective_risk": 0.12925170068027214,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.7437185929648241,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7029077117572693
+        }
+      },
+      "gaussian_blur": {
+        "sev1": {
+          "coverage": 0.8242730720606827,
+          "selective_accuracy": 0.9079754601226994,
+          "selective_risk": 0.09202453987730064,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.8442211055276382,
+          "required_threshold_reachable": true,
+          "coverage_at_required_threshold": 0.7003792667509482
+        },
+        "sev2": {
+          "coverage": 0.7079646017699115,
+          "selective_accuracy": 0.6928571428571428,
+          "selective_risk": 0.30714285714285716,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.7035175879396985,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7016434892541087
+        },
+        "sev3": {
+          "coverage": 0.48166877370417194,
+          "selective_accuracy": 0.6089238845144357,
+          "selective_risk": 0.3910761154855643,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.5477386934673367,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7003792667509482
+        }
+      },
+      "motion_blur": {
+        "sev1": {
+          "coverage": 0.8179519595448799,
+          "selective_accuracy": 0.9180834621329211,
+          "selective_risk": 0.08191653786707886,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.8442211055276382,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7016434892541087
+        },
+        "sev2": {
+          "coverage": 0.7142857142857143,
+          "selective_accuracy": 0.8088495575221238,
+          "selective_risk": 0.19115044247787616,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.7185929648241206,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7003792667509482
+        },
+        "sev3": {
+          "coverage": 0.6460176991150443,
+          "selective_accuracy": 0.6653620352250489,
+          "selective_risk": 0.3346379647749511,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.6432160804020101,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7041719342604298
+        }
+      },
+      "jpeg_compression": {
+        "sev1": {
+          "coverage": 0.6814159292035398,
+          "selective_accuracy": 0.8998144712430427,
+          "selective_risk": 0.1001855287569573,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.6733668341708543,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7003792667509482
+        },
+        "sev2": {
+          "coverage": 0.5221238938053098,
+          "selective_accuracy": 0.8861985472154964,
+          "selective_risk": 0.1138014527845036,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.5376884422110553,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7003792667509482
+        },
+        "sev3": {
+          "coverage": 0.4361567635903919,
+          "selective_accuracy": 0.7536231884057971,
+          "selective_risk": 0.24637681159420288,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.5125628140703518,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7029077117572693
+        }
+      },
+      "rotation": {
+        "sev1": {
+          "coverage": 0.8217446270543616,
+          "selective_accuracy": 0.9507692307692308,
+          "selective_risk": 0.04923076923076919,
+          "policy_violated": false,
+          "required_threshold_for_policy": 0.6934673366834171,
+          "required_threshold_reachable": true,
+          "coverage_at_required_threshold": 0.8268015170670038
+        },
+        "sev2": {
+          "coverage": 0.8128950695322377,
+          "selective_accuracy": 0.9393468118195957,
+          "selective_risk": 0.06065318818040433,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.7889447236180904,
+          "required_threshold_reachable": true,
+          "coverage_at_required_threshold": 0.7547408343868521
+        },
+        "sev3": {
+          "coverage": 0.8242730720606827,
+          "selective_accuracy": 0.9340490797546013,
+          "selective_risk": 0.06595092024539873,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.7537688442211056,
+          "required_threshold_reachable": true,
+          "coverage_at_required_threshold": 0.7648546144121365
+        }
+      },
+      "crop_zoom": {
+        "sev1": {
+          "coverage": 0.8723135271807838,
+          "selective_accuracy": 0.9521739130434783,
+          "selective_risk": 0.047826086956521685,
+          "policy_violated": false,
+          "required_threshold_for_policy": 0.6934673366834171,
+          "required_threshold_reachable": true,
+          "coverage_at_required_threshold": 0.8748419721871049
+        },
+        "sev2": {
+          "coverage": 0.8748419721871049,
+          "selective_accuracy": 0.9436416184971098,
+          "selective_risk": 0.05635838150289019,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.7286432160804021,
+          "required_threshold_reachable": true,
+          "coverage_at_required_threshold": 0.8596713021491783
+        },
+        "sev3": {
+          "coverage": 0.8255372945638433,
+          "selective_accuracy": 0.9142419601837672,
+          "selective_risk": 0.08575803981623276,
+          "policy_violated": true,
+          "required_threshold_for_policy": 0.8492462311557789,
+          "required_threshold_reachable": false,
+          "coverage_at_required_threshold": 0.7041719342604298
+        }
+      }
+    },
+    "policy_summary": {
+      "conditions": 24,
+      "conditions_violating_policy": 22,
+      "risk_violations": 22,
+      "coverage_violations": 5,
+      "coverage_violating": [
+        "gaussian_blur:sev3",
+        "motion_blur:sev3",
+        "jpeg_compression:sev1",
+        "jpeg_compression:sev2",
+        "jpeg_compression:sev3"
+      ],
+      "violating": [
+        "brightness_down:sev1",
+        "brightness_down:sev2",
+        "brightness_down:sev3",
+        "brightness_up:sev1",
+        "brightness_up:sev2",
+        "brightness_up:sev3",
+        "contrast_down:sev1",
+        "contrast_down:sev2",
+        "contrast_down:sev3",
+        "gaussian_blur:sev1",
+        "gaussian_blur:sev2",
+        "gaussian_blur:sev3",
+        "motion_blur:sev1",
+        "motion_blur:sev2",
+        "motion_blur:sev3",
+        "jpeg_compression:sev1",
+        "jpeg_compression:sev2",
+        "jpeg_compression:sev3",
+        "rotation:sev2",
+        "rotation:sev3",
+        "crop_zoom:sev2",
+        "crop_zoom:sev3"
+      ]
+    }
+  },
+  "export": {
+    "keras_reference_macro_f1": 0.8744661905531471,
+    "material_thresholds": {
+      "macro_f1_points": 1.5,
+      "per_class_recall_points": 5.0,
+      "fixed_before_inspecting_results": true
+    },
+    "variants": {
+      "fp32": {
+        "mb": 11.928,
+        "macro_f1": 0.8744661905531471,
+        "drop_points": 0.0,
+        "top1_agreement": 1.0,
+        "max_abs_deviation": 0.008985580710242913,
+        "worst_class_recall_drop": 0.0,
+        "material": false,
+        "delegate": "xnnpack (default)"
+      },
+      "fp16": {
+        "mb": 6.009,
+        "macro_f1": 0.8744661905531471,
+        "drop_points": 0.0,
+        "top1_agreement": 1.0,
+        "max_abs_deviation": 0.03486701460294117,
+        "worst_class_recall_drop": 0.0,
+        "material": false,
+        "delegate": "xnnpack (default)"
+      },
+      "int8": {
+        "mb": 3.502,
+        "macro_f1": 0.6333837215818752,
+        "drop_points": 24.108,
+        "top1_agreement": 0.6561314791403287,
+        "max_abs_deviation": 0.996072124130443,
+        "worst_class_recall_drop": 63.158,
+        "material": true,
+        "delegate": "none (XNNPACK disabled)"
+      },
+      "int8_dynamic_range": {
+        "mb": 3.293,
+        "macro_f1": 0.882681674671166,
+        "drop_points": -0.822,
+        "top1_agreement": 0.9721871049304678,
+        "max_abs_deviation": 0.5050078648977462,
+        "worst_class_recall_drop": 1.587,
+        "material": false,
+        "delegate": "xnnpack (default)"
+      }
+    },
+    "paired": {
+      "fp32": {
+        "macro_f1": 0.8744661905531471,
+        "delta_points": 0.0,
+        "delta_ci95_points": [
+          0.0,
+          0.0
+        ],
+        "delta_ci_includes_zero": true,
+        "top1_agreement": 1.0,
+        "n_disagreements": 0,
+        "mcnemar": {
+          "a_right_b_wrong": 0,
+          "a_wrong_b_right": 0,
+          "discordant": 0,
+          "p_value_exact_binomial": 1.0
+        },
+        "worst_class": {
+          "name": "1. Tea algal leaf spot",
+          "reference_recall": 0.8253968253968254,
+          "variant_recall": 0.8253968253968254,
+          "recall_drop_points": 0.0,
+          "support": 63,
+          "retained": 52,
+          "where_its_images_went": {
+            "2. Brown Blight": 4,
+            "3. Gray Blight": 2,
+            "7. Healthy leaf": 2,
+            "4. Helopeltis": 1,
+            "5. Red spider": 1,
+            "6. Green mirid bug": 1
+          }
+        },
+        "per_class_recall": {
+          "1. Tea algal leaf spot": 0.8253968253968254,
+          "2. Brown Blight": 0.6710526315789473,
+          "3. Gray Blight": 0.9276315789473685,
+          "4. Helopeltis": 0.8351648351648352,
+          "5. Red spider": 0.8311688311688312,
+          "6. Green mirid bug": 0.9739583333333334,
+          "7. Healthy leaf": 1.0
+        },
+        "per_class_precision": {
+          "1. Tea algal leaf spot": 0.7761194029850746,
+          "2. Brown Blight": 0.9107142857142857,
+          "3. Gray Blight": 0.88125,
+          "4. Helopeltis": 0.95,
+          "5. Red spider": 0.8767123287671232,
+          "6. Green mirid bug": 0.9396984924623115,
+          "7. Healthy leaf": 0.8974358974358975
+        },
+        "top_transitions": {}
+      },
+      "fp16": {
+        "macro_f1": 0.8744661905531471,
+        "delta_points": 0.0,
+        "delta_ci95_points": [
+          0.0,
+          0.0
+        ],
+        "delta_ci_includes_zero": true,
+        "top1_agreement": 1.0,
+        "n_disagreements": 0,
+        "mcnemar": {
+          "a_right_b_wrong": 0,
+          "a_wrong_b_right": 0,
+          "discordant": 0,
+          "p_value_exact_binomial": 1.0
+        },
+        "worst_class": {
+          "name": "1. Tea algal leaf spot",
+          "reference_recall": 0.8253968253968254,
+          "variant_recall": 0.8253968253968254,
+          "recall_drop_points": 0.0,
+          "support": 63,
+          "retained": 52,
+          "where_its_images_went": {
+            "2. Brown Blight": 4,
+            "3. Gray Blight": 2,
+            "7. Healthy leaf": 2,
+            "4. Helopeltis": 1,
+            "5. Red spider": 1,
+            "6. Green mirid bug": 1
+          }
+        },
+        "per_class_recall": {
+          "1. Tea algal leaf spot": 0.8253968253968254,
+          "2. Brown Blight": 0.6710526315789473,
+          "3. Gray Blight": 0.9276315789473685,
+          "4. Helopeltis": 0.8351648351648352,
+          "5. Red spider": 0.8311688311688312,
+          "6. Green mirid bug": 0.9739583333333334,
+          "7. Healthy leaf": 1.0
+        },
+        "per_class_precision": {
+          "1. Tea algal leaf spot": 0.7761194029850746,
+          "2. Brown Blight": 0.9107142857142857,
+          "3. Gray Blight": 0.88125,
+          "4. Helopeltis": 0.95,
+          "5. Red spider": 0.8767123287671232,
+          "6. Green mirid bug": 0.9396984924623115,
+          "7. Healthy leaf": 0.8974358974358975
+        },
+        "top_transitions": {}
+      },
+      "int8": {
+        "macro_f1": 0.6333837215818752,
+        "delta_points": -24.108,
+        "delta_ci95_points": [
+          -28.136,
+          -20.414
+        ],
+        "delta_ci_includes_zero": false,
+        "top1_agreement": 0.6561314791403287,
+        "n_disagreements": 272,
+        "mcnemar": {
+          "a_right_b_wrong": 31,
+          "a_wrong_b_right": 216,
+          "discordant": 247,
+          "p_value_exact_binomial": 2.619504952467778e-35
+        },
+        "worst_class": {
+          "name": "3. Gray Blight",
+          "reference_recall": 0.9276315789473685,
+          "variant_recall": 0.29605263157894735,
+          "recall_drop_points": 63.158,
+          "support": 152,
+          "retained": 45,
+          "where_its_images_went": {
+            "2. Brown Blight": 91,
+            "5. Red spider": 8,
+            "6. Green mirid bug": 6,
+            "1. Tea algal leaf spot": 2
+          }
+        },
+        "per_class_recall": {
+          "1. Tea algal leaf spot": 0.42857142857142855,
+          "2. Brown Blight": 0.9078947368421053,
+          "3. Gray Blight": 0.29605263157894735,
+          "4. Helopeltis": 0.5274725274725275,
+          "5. Red spider": 0.5584415584415584,
+          "6. Green mirid bug": 0.890625,
+          "7. Healthy leaf": 0.8785714285714286
+        },
+        "per_class_precision": {
+          "1. Tea algal leaf spot": 0.627906976744186,
+          "2. Brown Blight": 0.2923728813559322,
+          "3. Gray Blight": 0.9574468085106383,
+          "4. Helopeltis": 0.8421052631578947,
+          "5. Red spider": 0.7413793103448276,
+          "6. Green mirid bug": 0.7702702702702703,
+          "7. Healthy leaf": 0.9609375
+        },
+        "top_transitions": {
+          "3. Gray Blight -> 2. Brown Blight": 100,
+          "1. Tea algal leaf spot -> 2. Brown Blight": 33,
+          "5. Red spider -> 2. Brown Blight": 24
+        }
+      },
+      "int8_dynamic_range": {
+        "macro_f1": 0.882681674671166,
+        "delta_points": 0.822,
+        "delta_ci95_points": [
+          -0.458,
+          2.15
+        ],
+        "delta_ci_includes_zero": true,
+        "top1_agreement": 0.9721871049304678,
+        "n_disagreements": 22,
+        "mcnemar": {
+          "a_right_b_wrong": 12,
+          "a_wrong_b_right": 8,
+          "discordant": 20,
+          "p_value_exact_binomial": 0.5034446716308594
+        },
+        "worst_class": {
+          "name": "1. Tea algal leaf spot",
+          "reference_recall": 0.8253968253968254,
+          "variant_recall": 0.8095238095238095,
+          "recall_drop_points": 1.587,
+          "support": 63,
+          "retained": 51,
+          "where_its_images_went": {
+            "2. Brown Blight": 4,
+            "3. Gray Blight": 2,
+            "6. Green mirid bug": 2,
+            "7. Healthy leaf": 2,
+            "4. Helopeltis": 1,
+            "5. Red spider": 1
+          }
+        },
+        "per_class_recall": {
+          "1. Tea algal leaf spot": 0.8095238095238095,
+          "2. Brown Blight": 0.7368421052631579,
+          "3. Gray Blight": 0.9539473684210527,
+          "4. Helopeltis": 0.8241758241758241,
+          "5. Red spider": 0.8181818181818182,
+          "6. Green mirid bug": 0.96875,
+          "7. Healthy leaf": 0.9928571428571429
+        },
+        "per_class_precision": {
+          "1. Tea algal leaf spot": 0.8095238095238095,
+          "2. Brown Blight": 0.9180327868852459,
+          "3. Gray Blight": 0.8950617283950617,
+          "4. Helopeltis": 0.9375,
+          "5. Red spider": 0.9,
+          "6. Green mirid bug": 0.916256157635468,
+          "7. Healthy leaf": 0.9144736842105263
+        },
+        "top_transitions": {
+          "1. Tea algal leaf spot -> 2. Brown Blight": 4,
+          "5. Red spider -> 3. Gray Blight": 3,
+          "3. Gray Blight -> 2. Brown Blight": 2
+        }
+      }
+    },
+    "reference_per_class_recall": {
+      "1. Tea algal leaf spot": 0.8253968253968254,
+      "2. Brown Blight": 0.6710526315789473,
+      "3. Gray Blight": 0.9276315789473685,
+      "4. Helopeltis": 0.8351648351648352,
+      "5. Red spider": 0.8311688311688312,
+      "6. Green mirid bug": 0.9739583333333334,
+      "7. Healthy leaf": 1.0
+    }
+  },
+  "cam": {
+    "n_test": 791,
+    "n_usable": 764,
+    "n_flagged": 27,
+    "head_reproduces_classifier_max_abs_dev": 4.501856100125323e-07,
+    "graph_verification": {
+      "top1_agreement_with_stored": 1.0,
+      "max_abs_probability_deviation": 0.03803890943527222
+    },
+    "overall": {
+      "leaf_area_median": 0.11608139349489796,
+      "mass_on_leaf_median": 0.5860543549060822,
+      "concentration_ratio_median": 5.113170407565894,
+      "fraction_peak_on_leaf": 0.9659685863874345,
+      "fraction_ratio_above_1": 0.9986910994764397
+    },
+    "by_correctness": {
+      "correct": {
+        "n": 686,
+        "concentration_ratio_median": 5.203545150924133,
+        "mass_on_leaf_median": 0.5884400904178619,
+        "fraction_peak_on_leaf": 0.9650145772594753
+      },
+      "incorrect": {
+        "n": 78,
+        "concentration_ratio_median": 4.464993327486412,
+        "mass_on_leaf_median": 0.5398194491863251,
+        "fraction_peak_on_leaf": 0.9743589743589743
+      }
+    },
+    "by_abstention": {
+      "answered": {
+        "n": 667,
+        "concentration_ratio_median": 5.191407567626864,
+        "fraction_peak_on_leaf": 0.967016491754123
+      },
+      "abstained": {
+        "n": 97,
+        "concentration_ratio_median": 4.587572626706932,
+        "fraction_peak_on_leaf": 0.9587628865979382
+      }
+    },
+    "counterfactuals": {
+      "background_only": {
+        "n": 764,
+        "prediction_survives": 0.2054973821989529,
+        "accuracy": 0.18193717277486912,
+        "accuracy_original_same_images": 0.8979057591623036,
+        "mean_calibrated_confidence": 0.5563805247678765,
+        "mean_calibrated_confidence_original": 0.9059973938006989,
+        "coverage_at_deployed_threshold": 0.19240837696335078,
+        "coverage_original": 0.8730366492146597,
+        "predicted_class_histogram": {
+          "1. Tea algal leaf spot": 111,
+          "2. Brown Blight": 0,
+          "3. Gray Blight": 6,
+          "4. Helopeltis": 4,
+          "5. Red spider": 86,
+          "6. Green mirid bug": 23,
+          "7. Healthy leaf": 534
+        }
+      },
+      "leaf_only": {
+        "n": 764,
+        "prediction_survives": 0.8743455497382199,
+        "accuracy": 0.8534031413612565,
+        "accuracy_original_same_images": 0.8979057591623036,
+        "mean_calibrated_confidence": 0.8598605058933119,
+        "mean_calibrated_confidence_original": 0.9059973938006989,
+        "coverage_at_deployed_threshold": 0.8049738219895288,
+        "coverage_original": 0.8730366492146597,
+        "predicted_class_histogram": {
+          "1. Tea algal leaf spot": 53,
+          "2. Brown Blight": 67,
+          "3. Gray Blight": 144,
+          "4. Helopeltis": 76,
+          "5. Red spider": 82,
+          "6. Green mirid bug": 193,
+          "7. Healthy leaf": 149
+        }
+      },
+      "leaf_crop": {
+        "n": 764,
+        "prediction_survives": 0.8167539267015707,
+        "accuracy": 0.8102094240837696,
+        "accuracy_original_same_images": 0.8979057591623036,
+        "mean_calibrated_confidence": 0.8411994763619441,
+        "mean_calibrated_confidence_original": 0.9059973938006989,
+        "coverage_at_deployed_threshold": 0.7643979057591623,
+        "coverage_original": 0.8730366492146597,
+        "predicted_class_histogram": {
+          "1. Tea algal leaf spot": 39,
+          "2. Brown Blight": 64,
+          "3. Gray Blight": 224,
+          "4. Helopeltis": 72,
+          "5. Red spider": 52,
+          "6. Green mirid bug": 159,
+          "7. Healthy leaf": 154
+        }
+      }
+    }
+  },
+  "device": {
+    "model": "SM-S916B",
+    "android": "16",
+    "api": 36,
+    "protocol": {
+      "warmup": 30,
+      "measured_per_repeat": 200,
+      "repeats": 3
+    },
+    "latency": {
+      "tealeaf_fp16.tflite": {
+        "mb": 6.01,
+        "delegate": "xnnpack",
+        "cold_start_ms": 33.3,
+        "median_ms": 14.291,
+        "p90_ms": 14.723,
+        "p95_ms": 15.082,
+        "stdev_ms": 0.428,
+        "per_repeat_medians": [
+          14.291,
+          14.183,
+          14.365
+        ],
+        "thermal_before": 2,
+        "thermal_after": 2
+      },
+      "tealeaf_fp16_cam.tflite": {
+        "mb": 6.0,
+        "delegate": "xnnpack",
+        "cold_start_ms": 43.5,
+        "median_ms": 14.019,
+        "p90_ms": 14.648,
+        "p95_ms": 14.942,
+        "stdev_ms": 0.769,
+        "per_repeat_medians": [
+          14.155,
+          13.925,
+          14.081
+        ],
+        "thermal_before": 2,
+        "thermal_after": 2
+      },
+      "tealeaf_fp32.tflite": {
+        "mb": 11.93,
+        "delegate": "xnnpack",
+        "cold_start_ms": 68.7,
+        "median_ms": 13.887,
+        "p90_ms": 14.672,
+        "p95_ms": 15.688,
+        "stdev_ms": 0.547,
+        "per_repeat_medians": [
+          13.946,
+          13.856,
+          13.889
+        ],
+        "thermal_before": 2,
+        "thermal_after": 2
+      },
+      "tealeaf_int8.tflite": {
+        "mb": 3.5,
+        "delegate": "none (XNNPACK failed to prepare)",
+        "cold_start_ms": 1.6,
+        "median_ms": 5.234,
+        "p90_ms": 5.383,
+        "p95_ms": 5.597,
+        "stdev_ms": 0.235,
+        "per_repeat_medians": [
+          5.234,
+          5.232,
+          5.244
+        ],
+        "thermal_before": 2,
+        "thermal_after": 2
+      },
+      "tealeaf_int8_dynamic_range.tflite": {
+        "mb": 3.29,
+        "delegate": "xnnpack",
+        "cold_start_ms": 31.5,
+        "median_ms": 9.538,
+        "p90_ms": 11.303,
+        "p95_ms": 11.829,
+        "stdev_ms": 1.476,
+        "per_repeat_medians": [
+          9.444,
+          9.399,
+          9.725
+        ],
+        "thermal_before": 2,
+        "thermal_after": 2
+      }
+    },
+    "parity": {
+      "n_cases": 8,
+      "top1_agreement": 1.0,
+      "worst_deviation": 2.6269166641945674e-07,
+      "tolerance": 0.001,
+      "within_tolerance": true
+    },
+    "soc": "QTI SM8550",
+    "ram_gb": 6.91,
+    "cores": 8,
+    "nnapi_feature_declared": false
+  }
+}

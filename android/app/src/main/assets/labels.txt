@@ -1,0 +1,7 @@
+tea_algal_leaf_spot
+brown_blight
+gray_blight
+helopeltis_damage
+red_spider_mite_damage
+green_mirid_bug_damage
+healthy_leaf

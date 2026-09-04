@@ -1,0 +1,52 @@
+path_a,path_b,label_a,label_b,cross_label,phash_hamming,dhash_hamming,ssim,exact_sha_match,confirmed_near_duplicate
+4. Helopeltis/helopeltis_00054.jpg,6. Green mirid bug/green_mirid_bug_00069.jpg,4. Helopeltis,6. Green mirid bug,True,64,44,0.94995,False,True
+4. Helopeltis/helopeltis_00064.jpg,6. Green mirid bug/green_mirid_bug_00069.jpg,4. Helopeltis,6. Green mirid bug,True,52,44,0.94885,False,True
+6. Green mirid bug/green_mirid_bug_00418.jpg,7. Healthy leaf/healthy_00195.jpg,6. Green mirid bug,7. Healthy leaf,True,54,39,0.9488,False,True
+4. Helopeltis/helopeltis_00107.jpg,7. Healthy leaf/healthy_00195.jpg,4. Helopeltis,7. Healthy leaf,True,54,47,0.94812,False,True
+4. Helopeltis/helopeltis_00107.jpg,7. Healthy leaf/healthy_00198.jpg,4. Helopeltis,7. Healthy leaf,True,60,46,0.94703,False,True
+6. Green mirid bug/green_mirid_bug_00418.jpg,7. Healthy leaf/healthy_00198.jpg,6. Green mirid bug,7. Healthy leaf,True,62,44,0.94516,False,True
+4. Helopeltis/helopeltis_00064.jpg,6. Green mirid bug/green_mirid_bug_00152.jpg,4. Helopeltis,6. Green mirid bug,True,64,46,0.94222,False,True
+4. Helopeltis/helopeltis_00107.jpg,6. Green mirid bug/green_mirid_bug_00456.jpg,4. Helopeltis,6. Green mirid bug,True,50,48,0.942,False,True
+6. Green mirid bug/green_mirid_bug_00402.jpg,7. Healthy leaf/healthy_00215.jpg,6. Green mirid bug,7. Healthy leaf,True,54,48,0.94152,False,True
+4. Helopeltis/helopeltis_00095.jpg,6. Green mirid bug/green_mirid_bug_00418.jpg,4. Helopeltis,6. Green mirid bug,True,62,44,0.94132,False,True
+4. Helopeltis/helopeltis_00070.jpg,6. Green mirid bug/green_mirid_bug_00069.jpg,4. Helopeltis,6. Green mirid bug,True,42,34,0.94126,False,True
+4. Helopeltis/helopeltis_00070.jpg,7. Healthy leaf/healthy_00217.jpg,4. Helopeltis,7. Healthy leaf,True,54,41,0.93814,False,True
+6. Green mirid bug/green_mirid_bug_00447.jpg,7. Healthy leaf/healthy_00284.jpg,6. Green mirid bug,7. Healthy leaf,True,58,45,0.93716,False,True
+4. Helopeltis/helopeltis_00107.jpg,6. Green mirid bug/green_mirid_bug_00449.jpg,4. Helopeltis,6. Green mirid bug,True,58,47,0.93677,False,True
+3. Gray Blight/gray_blight_00200.jpg,6. Green mirid bug/green_mirid_bug_00454.jpg,3. Gray Blight,6. Green mirid bug,True,52,39,0.93437,False,True
+4. Helopeltis/helopeltis_00061.jpg,7. Healthy leaf/healthy_00265.jpg,4. Helopeltis,7. Healthy leaf,True,48,46,0.93422,False,True
+4. Helopeltis/helopeltis_00106.jpg,7. Healthy leaf/healthy_00277.jpg,4. Helopeltis,7. Healthy leaf,True,44,42,0.93137,False,True
+3. Gray Blight/gray_blight_00198.jpg,6. Green mirid bug/green_mirid_bug_00407.jpg,3. Gray Blight,6. Green mirid bug,True,46,47,0.92487,False,True
+4. Helopeltis/helopeltis_00066.jpg,6. Green mirid bug/green_mirid_bug_00401.jpg,4. Helopeltis,6. Green mirid bug,True,46,48,0.92466,False,True
+6. Green mirid bug/green_mirid_bug_00107.jpg,7. Healthy leaf/healthy_00277.jpg,6. Green mirid bug,7. Healthy leaf,True,54,46,0.92356,False,True
+4. Helopeltis/helopeltis_00112.jpg,6. Green mirid bug/green_mirid_bug_00447.jpg,4. Helopeltis,6. Green mirid bug,True,60,36,0.92215,False,True
+4. Helopeltis/helopeltis_00106.jpg,7. Healthy leaf/healthy_00276.jpg,4. Helopeltis,7. Healthy leaf,True,48,38,0.91978,False,True
+1. Tea algal leaf spot/tea_algal_leaf_spot_00084.jpg,7. Healthy leaf/healthy_00283.jpg,1. Tea algal leaf spot,7. Healthy leaf,True,62,44,0.9181,False,True
+4. Helopeltis/helopeltis_00104.jpg,6. Green mirid bug/green_mirid_bug_00460.jpg,4. Helopeltis,6. Green mirid bug,True,52,46,0.91781,False,True
+4. Helopeltis/helopeltis_00110.jpg,6. Green mirid bug/green_mirid_bug_00417.jpg,4. Helopeltis,6. Green mirid bug,True,62,38,0.9171,False,True
+3. Gray Blight/gray_blight_00185.jpg,6. Green mirid bug/green_mirid_bug_00447.jpg,3. Gray Blight,6. Green mirid bug,True,48,46,0.91678,False,True
+3. Gray Blight/gray_blight_00993.jpg,5. Red spider/red_spider_00478.jpg,3. Gray Blight,5. Red spider,True,52,33,0.91673,False,True
+4. Helopeltis/helopeltis_00395.jpg,6. Green mirid bug/green_mirid_bug_00832.jpg,4. Helopeltis,6. Green mirid bug,True,58,41,0.91329,False,True
+4. Helopeltis/helopeltis_00044.jpg,6. Green mirid bug/green_mirid_bug_00283.jpg,4. Helopeltis,6. Green mirid bug,True,60,47,0.91302,False,True
+4. Helopeltis/helopeltis_00086.jpg,6. Green mirid bug/green_mirid_bug_00360.jpg,4. Helopeltis,6. Green mirid bug,True,64,43,0.91271,False,True
+5. Red spider/red_spider_00067.jpg,6. Green mirid bug/green_mirid_bug_00096.jpg,5. Red spider,6. Green mirid bug,True,54,44,0.91192,False,True
+4. Helopeltis/helopeltis_00076.jpg,6. Green mirid bug/green_mirid_bug_00324.jpg,4. Helopeltis,6. Green mirid bug,True,64,43,0.91149,False,True
+4. Helopeltis/helopeltis_00111.jpg,6. Green mirid bug/green_mirid_bug_00411.jpg,4. Helopeltis,6. Green mirid bug,True,54,42,0.91131,False,True
+2. Brown Blight/brown_blight_00258.jpg,6. Green mirid bug/green_mirid_bug_00543.jpg,2. Brown Blight,6. Green mirid bug,True,56,47,0.9103,False,True
+4. Helopeltis/helopeltis_00382.jpg,6. Green mirid bug/green_mirid_bug_00877.jpg,4. Helopeltis,6. Green mirid bug,True,54,48,0.90991,False,True
+4. Helopeltis/helopeltis_00397.jpg,6. Green mirid bug/green_mirid_bug_00832.jpg,4. Helopeltis,6. Green mirid bug,True,44,46,0.90841,False,True
+5. Red spider/red_spider_00284.jpg,7. Healthy leaf/healthy_00592.jpg,5. Red spider,7. Healthy leaf,True,64,35,0.90758,False,True
+5. Red spider/red_spider_00476.jpg,6. Green mirid bug/green_mirid_bug_00832.jpg,5. Red spider,6. Green mirid bug,True,52,47,0.90696,False,True
+3. Gray Blight/gray_blight_00185.jpg,6. Green mirid bug/green_mirid_bug_00136.jpg,3. Gray Blight,6. Green mirid bug,True,52,46,0.90511,False,True
+5. Red spider/red_spider_00484.jpg,6. Green mirid bug/green_mirid_bug_00804.jpg,5. Red spider,6. Green mirid bug,True,56,40,0.90507,False,True
+4. Helopeltis/helopeltis_00397.jpg,5. Red spider/red_spider_00463.jpg,4. Helopeltis,5. Red spider,True,58,47,0.90438,False,True
+6. Green mirid bug/green_mirid_bug_00875.jpg,7. Healthy leaf/healthy_00800.jpg,6. Green mirid bug,7. Healthy leaf,True,54,46,0.90387,False,True
+4. Helopeltis/helopeltis_00559.jpg,7. Healthy leaf/healthy_00801.jpg,4. Helopeltis,7. Healthy leaf,True,64,46,0.90349,False,True
+6. Green mirid bug/green_mirid_bug_00332.jpg,7. Healthy leaf/healthy_00271.jpg,6. Green mirid bug,7. Healthy leaf,True,62,43,0.90271,False,True
+6. Green mirid bug/green_mirid_bug_00216.jpg,7. Healthy leaf/healthy_00251.jpg,6. Green mirid bug,7. Healthy leaf,True,50,48,0.90251,False,True
+4. Helopeltis/helopeltis_00548.jpg,5. Red spider/red_spider_00484.jpg,4. Helopeltis,5. Red spider,True,62,46,0.90228,False,True
+4. Helopeltis/helopeltis_00559.jpg,7. Healthy leaf/healthy_00775.jpg,4. Helopeltis,7. Healthy leaf,True,52,30,0.90214,False,True
+3. Gray Blight/gray_blight_00945.jpg,4. Helopeltis/helopeltis_00404.jpg,3. Gray Blight,4. Helopeltis,True,60,41,0.90175,False,True
+4. Helopeltis/helopeltis_00036.jpg,6. Green mirid bug/green_mirid_bug_00411.jpg,4. Helopeltis,6. Green mirid bug,True,54,48,0.90109,False,True
+3. Gray Blight/gray_blight_00994.jpg,7. Healthy leaf/healthy_00775.jpg,3. Gray Blight,7. Healthy leaf,True,64,37,0.90099,False,True
+6. Green mirid bug/green_mirid_bug_01117.jpg,7. Healthy leaf/healthy_00775.jpg,6. Green mirid bug,7. Healthy leaf,True,64,36,0.90098,False,True

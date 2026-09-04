@@ -1,0 +1,410 @@
+{
+  "checkpoint": "<redacted-local-path>/mobilenetv3_large__primary__seed42/best.keras",
+  "checkpoint_load": {
+    "rebuilt_as_float32": true,
+    "original_policy": "<DTypePolicy \"float32\">",
+    "rebuild_max_abs_deviation": 0.005805253982543945,
+    "rebuild_top1_agreement": 1.0
+  },
+  "keras_reference": {
+    "accuracy": 0.8988621997471555,
+    "macro_f1": 0.8744661905531471,
+    "balanced_accuracy": 0.8663390050843057,
+    "per_class_recall": {
+      "1. Tea algal leaf spot": 0.8253968253968254,
+      "2. Brown Blight": 0.6710526315789473,
+      "3. Gray Blight": 0.9276315789473685,
+      "4. Helopeltis": 0.8351648351648352,
+      "5. Red spider": 0.8311688311688312,
+      "6. Green mirid bug": 0.9739583333333334,
+      "7. Healthy leaf": 1.0
+    },
+    "per_class_f1": {
+      "1. Tea algal leaf spot": 0.8,
+      "2. Brown Blight": 0.7727272727272728,
+      "3. Gray Blight": 0.9038461538461539,
+      "4. Helopeltis": 0.888888888888889,
+      "5. Red spider": 0.8533333333333334,
+      "6. Green mirid bug": 0.9565217391304348,
+      "7. Healthy leaf": 0.945945945945946
+    }
+  },
+  "representative_dataset": {
+    "source": "training partition only",
+    "n_samples": 300,
+    "seed": 42,
+    "rationale": "Calibrating quantization on validation or test images would leak held-out data into the deployed model."
+  },
+  "material_degradation_thresholds": {
+    "macro_f1_points": 1.5,
+    "per_class_recall_points": 5.0,
+    "fixed_before_inspecting_results": true
+  },
+  "variants": {
+    "fp32": {
+      "export_ok": true,
+      "file": "tealeaf_fp32.tflite",
+      "bytes": 11927532,
+      "mb": 11.928,
+      "sha256": "ff5aeaf26102489cef6761c4d427bc83bd27cfe3754df20a341793149cc95457",
+      "interpreter": {
+        "runtime": "ai_edge_litert",
+        "delegate": "xnnpack (default)",
+        "attempts": [],
+        "input_dtype": "float32",
+        "input_shape": [
+          1,
+          224,
+          224,
+          3
+        ],
+        "input_quantization": {
+          "scale": 0.0,
+          "zero_point": 0
+        },
+        "output_dtype": "float32",
+        "output_shape": [
+          1,
+          7
+        ],
+        "output_quantization": {
+          "scale": 0.0,
+          "zero_point": 0
+        },
+        "desktop_seconds_total": 1.928,
+        "desktop_ms_per_image": 2.437,
+        "num_threads": 4
+      },
+      "metrics": {
+        "accuracy": 0.8988621997471555,
+        "macro_f1": 0.8744661905531471,
+        "balanced_accuracy": 0.8663390050843057,
+        "per_class_recall": {
+          "1. Tea algal leaf spot": 0.8253968253968254,
+          "2. Brown Blight": 0.6710526315789473,
+          "3. Gray Blight": 0.9276315789473685,
+          "4. Helopeltis": 0.8351648351648352,
+          "5. Red spider": 0.8311688311688312,
+          "6. Green mirid bug": 0.9739583333333334,
+          "7. Healthy leaf": 1.0
+        },
+        "per_class_f1": {
+          "1. Tea algal leaf spot": 0.8,
+          "2. Brown Blight": 0.7727272727272728,
+          "3. Gray Blight": 0.9038461538461539,
+          "4. Helopeltis": 0.888888888888889,
+          "5. Red spider": 0.8533333333333334,
+          "6. Green mirid bug": 0.9565217391304348,
+          "7. Healthy leaf": 0.945945945945946
+        }
+      },
+      "parity": {
+        "max_abs_probability_deviation": 0.008985580710242913,
+        "mean_abs_probability_deviation": 0.000121539245109742,
+        "p99_abs_probability_deviation": 0.00326235548838867,
+        "top1_agreement_with_keras": 1.0,
+        "n_top1_disagreements": 0,
+        "per_class_flip_counts": {
+          "1. Tea algal leaf spot": 0,
+          "2. Brown Blight": 0,
+          "3. Gray Blight": 0,
+          "4. Helopeltis": 0,
+          "5. Red spider": 0,
+          "6. Green mirid bug": 0,
+          "7. Healthy leaf": 0
+        }
+      },
+      "degradation": {
+        "macro_f1_drop_points": 0.0,
+        "accuracy_drop_points": 0.0,
+        "per_class_recall_drop_points": {
+          "1. Tea algal leaf spot": 0.0,
+          "2. Brown Blight": 0.0,
+          "3. Gray Blight": 0.0,
+          "4. Helopeltis": 0.0,
+          "5. Red spider": 0.0,
+          "6. Green mirid bug": 0.0,
+          "7. Healthy leaf": 0.0
+        },
+        "worst_per_class_recall_drop_points": 0.0,
+        "material_degradation": false
+      }
+    },
+    "fp16": {
+      "export_ok": true,
+      "file": "tealeaf_fp16.tflite",
+      "bytes": 6009364,
+      "mb": 6.009,
+      "sha256": "49121f45948937d288d7187c1d756c97920f5169a8669575016a5853e2046bf6",
+      "interpreter": {
+        "runtime": "ai_edge_litert",
+        "delegate": "xnnpack (default)",
+        "attempts": [],
+        "input_dtype": "float32",
+        "input_shape": [
+          1,
+          224,
+          224,
+          3
+        ],
+        "input_quantization": {
+          "scale": 0.0,
+          "zero_point": 0
+        },
+        "output_dtype": "float32",
+        "output_shape": [
+          1,
+          7
+        ],
+        "output_quantization": {
+          "scale": 0.0,
+          "zero_point": 0
+        },
+        "desktop_seconds_total": 1.746,
+        "desktop_ms_per_image": 2.208,
+        "num_threads": 4
+      },
+      "metrics": {
+        "accuracy": 0.8988621997471555,
+        "macro_f1": 0.8744661905531471,
+        "balanced_accuracy": 0.8663390050843057,
+        "per_class_recall": {
+          "1. Tea algal leaf spot": 0.8253968253968254,
+          "2. Brown Blight": 0.6710526315789473,
+          "3. Gray Blight": 0.9276315789473685,
+          "4. Helopeltis": 0.8351648351648352,
+          "5. Red spider": 0.8311688311688312,
+          "6. Green mirid bug": 0.9739583333333334,
+          "7. Healthy leaf": 1.0
+        },
+        "per_class_f1": {
+          "1. Tea algal leaf spot": 0.8,
+          "2. Brown Blight": 0.7727272727272728,
+          "3. Gray Blight": 0.9038461538461539,
+          "4. Helopeltis": 0.888888888888889,
+          "5. Red spider": 0.8533333333333334,
+          "6. Green mirid bug": 0.9565217391304348,
+          "7. Healthy leaf": 0.945945945945946
+        }
+      },
+      "parity": {
+        "max_abs_probability_deviation": 0.03486701460294117,
+        "mean_abs_probability_deviation": 0.00042050399788689965,
+        "p99_abs_probability_deviation": 0.012034227095681235,
+        "top1_agreement_with_keras": 1.0,
+        "n_top1_disagreements": 0,
+        "per_class_flip_counts": {
+          "1. Tea algal leaf spot": 0,
+          "2. Brown Blight": 0,
+          "3. Gray Blight": 0,
+          "4. Helopeltis": 0,
+          "5. Red spider": 0,
+          "6. Green mirid bug": 0,
+          "7. Healthy leaf": 0
+        }
+      },
+      "degradation": {
+        "macro_f1_drop_points": 0.0,
+        "accuracy_drop_points": 0.0,
+        "per_class_recall_drop_points": {
+          "1. Tea algal leaf spot": 0.0,
+          "2. Brown Blight": 0.0,
+          "3. Gray Blight": 0.0,
+          "4. Helopeltis": 0.0,
+          "5. Red spider": 0.0,
+          "6. Green mirid bug": 0.0,
+          "7. Healthy leaf": 0.0
+        },
+        "worst_per_class_recall_drop_points": 0.0,
+        "material_degradation": false
+      }
+    },
+    "int8": {
+      "export_ok": true,
+      "file": "tealeaf_int8.tflite",
+      "bytes": 3502432,
+      "mb": 3.502,
+      "sha256": "e783047640d5ccdf1808f8ab395db9e943b4dff3e77d92f0e3aa9a84b69be172",
+      "interpreter": {
+        "runtime": "tf.lite",
+        "delegate": "none (XNNPACK disabled)",
+        "attempts": [
+          {
+            "config": "ai_edge_litert + default XNNPACK",
+            "error": "RuntimeError: failed to create XNNPACK runtimeNode number 124 (TfLiteXNNPackDelegate) failed to prepare."
+          },
+          {
+            "config": "tf.lite + default XNNPACK",
+            "error": "RuntimeError: failed to create XNNPACK runtimeNode number 124 (TfLiteXNNPackDelegate) failed to prepare."
+          }
+        ],
+        "input_dtype": "float32",
+        "input_shape": [
+          1,
+          224,
+          224,
+          3
+        ],
+        "input_quantization": {
+          "scale": 0.0,
+          "zero_point": 0
+        },
+        "output_dtype": "float32",
+        "output_shape": [
+          1,
+          7
+        ],
+        "output_quantization": {
+          "scale": 0.0,
+          "zero_point": 0
+        },
+        "desktop_seconds_total": 14.068,
+        "desktop_ms_per_image": 17.786,
+        "num_threads": 4
+      },
+      "metrics": {
+        "accuracy": 0.6649810366624526,
+        "macro_f1": 0.6333837215818752,
+        "balanced_accuracy": 0.6410899016397137,
+        "per_class_recall": {
+          "1. Tea algal leaf spot": 0.42857142857142855,
+          "2. Brown Blight": 0.9078947368421053,
+          "3. Gray Blight": 0.29605263157894735,
+          "4. Helopeltis": 0.5274725274725275,
+          "5. Red spider": 0.5584415584415584,
+          "6. Green mirid bug": 0.890625,
+          "7. Healthy leaf": 0.8785714285714286
+        },
+        "per_class_f1": {
+          "1. Tea algal leaf spot": 0.5094339622641509,
+          "2. Brown Blight": 0.44230769230769235,
+          "3. Gray Blight": 0.4522613065326633,
+          "4. Helopeltis": 0.6486486486486487,
+          "5. Red spider": 0.6370370370370371,
+          "6. Green mirid bug": 0.8260869565217391,
+          "7. Healthy leaf": 0.917910447761194
+        }
+      },
+      "parity": {
+        "max_abs_probability_deviation": 0.996072124130443,
+        "mean_abs_probability_deviation": 0.10944274903365224,
+        "p99_abs_probability_deviation": 0.9596659212676586,
+        "top1_agreement_with_keras": 0.6561314791403287,
+        "n_top1_disagreements": 272,
+        "per_class_flip_counts": {
+          "1. Tea algal leaf spot": 39,
+          "2. Brown Blight": 2,
+          "3. Gray Blight": 113,
+          "4. Helopeltis": 34,
+          "5. Red spider": 29,
+          "6. Green mirid bug": 24,
+          "7. Healthy leaf": 31
+        }
+      },
+      "degradation": {
+        "macro_f1_drop_points": 24.108,
+        "accuracy_drop_points": 23.388,
+        "per_class_recall_drop_points": {
+          "1. Tea algal leaf spot": 39.683,
+          "2. Brown Blight": -23.684,
+          "3. Gray Blight": 63.158,
+          "4. Helopeltis": 30.769,
+          "5. Red spider": 27.273,
+          "6. Green mirid bug": 8.333,
+          "7. Healthy leaf": 12.143
+        },
+        "worst_per_class_recall_drop_points": 63.158,
+        "material_degradation": true
+      }
+    },
+    "int8_dynamic_range": {
+      "export_ok": true,
+      "file": "tealeaf_int8_dynamic_range.tflite",
+      "bytes": 3292744,
+      "mb": 3.293,
+      "sha256": "cad162e4d2ae5b3deb9f0ca03a83cdbb38e4229439cf01ce661e2876281b1b09",
+      "interpreter": {
+        "runtime": "ai_edge_litert",
+        "delegate": "xnnpack (default)",
+        "attempts": [],
+        "input_dtype": "float32",
+        "input_shape": [
+          1,
+          224,
+          224,
+          3
+        ],
+        "input_quantization": {
+          "scale": 0.0,
+          "zero_point": 0
+        },
+        "output_dtype": "float32",
+        "output_shape": [
+          1,
+          7
+        ],
+        "output_quantization": {
+          "scale": 0.0,
+          "zero_point": 0
+        },
+        "desktop_seconds_total": 2.948,
+        "desktop_ms_per_image": 3.727,
+        "num_threads": 4
+      },
+      "metrics": {
+        "accuracy": 0.9039190897597977,
+        "macro_f1": 0.882681674671166,
+        "balanced_accuracy": 0.8720397240604008,
+        "per_class_recall": {
+          "1. Tea algal leaf spot": 0.8095238095238095,
+          "2. Brown Blight": 0.7368421052631579,
+          "3. Gray Blight": 0.9539473684210527,
+          "4. Helopeltis": 0.8241758241758241,
+          "5. Red spider": 0.8181818181818182,
+          "6. Green mirid bug": 0.96875,
+          "7. Healthy leaf": 0.9928571428571429
+        },
+        "per_class_f1": {
+          "1. Tea algal leaf spot": 0.8095238095238095,
+          "2. Brown Blight": 0.8175182481751824,
+          "3. Gray Blight": 0.9235668789808917,
+          "4. Helopeltis": 0.8771929824561403,
+          "5. Red spider": 0.8571428571428572,
+          "6. Green mirid bug": 0.9417721518987342,
+          "7. Healthy leaf": 0.952054794520548
+        }
+      },
+      "parity": {
+        "max_abs_probability_deviation": 0.5050078648977462,
+        "mean_abs_probability_deviation": 0.007652279180481125,
+        "p99_abs_probability_deviation": 0.19762504436595682,
+        "top1_agreement_with_keras": 0.9721871049304678,
+        "n_top1_disagreements": 22,
+        "per_class_flip_counts": {
+          "1. Tea algal leaf spot": 5,
+          "2. Brown Blight": 1,
+          "3. Gray Blight": 4,
+          "4. Helopeltis": 2,
+          "5. Red spider": 3,
+          "6. Green mirid bug": 2,
+          "7. Healthy leaf": 5
+        }
+      },
+      "degradation": {
+        "macro_f1_drop_points": -0.822,
+        "accuracy_drop_points": -0.506,
+        "per_class_recall_drop_points": {
+          "1. Tea algal leaf spot": 1.587,
+          "2. Brown Blight": -6.579,
+          "3. Gray Blight": -2.632,
+          "4. Helopeltis": 1.099,
+          "5. Red spider": 1.299,
+          "6. Green mirid bug": 0.521,
+          "7. Healthy leaf": 0.714
+        },
+        "worst_per_class_recall_drop_points": 1.587,
+        "material_degradation": false
+      }
+    }
+  }
+}

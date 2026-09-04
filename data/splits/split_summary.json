@@ -1,0 +1,111 @@
+{
+  "seed": 42,
+  "target_fractions": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "images_total": 5276,
+  "images_eligible": 5276,
+  "images_quarantined": 0,
+  "quarantine_reasons": {},
+  "groups_total": 5233,
+  "primary_split": {
+    "train": {
+      "n": 3694,
+      "fraction": 0.7002,
+      "per_class": {
+        "1. Tea algal leaf spot": 292,
+        "2. Brown Blight": 354,
+        "3. Gray Blight": 709,
+        "4. Helopeltis": 425,
+        "5. Red spider": 361,
+        "6. Green mirid bug": 898,
+        "7. Healthy leaf": 655
+      },
+      "n_groups": 3651
+    },
+    "validation": {
+      "n": 791,
+      "fraction": 0.1499,
+      "per_class": {
+        "1. Tea algal leaf spot": 63,
+        "2. Brown Blight": 76,
+        "3. Gray Blight": 152,
+        "4. Helopeltis": 91,
+        "5. Red spider": 77,
+        "6. Green mirid bug": 192,
+        "7. Healthy leaf": 140
+      },
+      "n_groups": 791
+    },
+    "test": {
+      "n": 791,
+      "fraction": 0.1499,
+      "per_class": {
+        "1. Tea algal leaf spot": 63,
+        "2. Brown Blight": 76,
+        "3. Gray Blight": 152,
+        "4. Helopeltis": 91,
+        "5. Red spider": 77,
+        "6. Green mirid bug": 192,
+        "7. Healthy leaf": 140
+      },
+      "n_groups": 791
+    }
+  },
+  "naive_split": {
+    "train": {
+      "n": 3692,
+      "fraction": 0.6998,
+      "per_class": {
+        "1. Tea algal leaf spot": 293,
+        "2. Brown Blight": 354,
+        "3. Gray Blight": 709,
+        "4. Helopeltis": 425,
+        "5. Red spider": 360,
+        "6. Green mirid bug": 897,
+        "7. Healthy leaf": 654
+      },
+      "n_groups": 3668
+    },
+    "validation": {
+      "n": 791,
+      "fraction": 0.1499,
+      "per_class": {
+        "1. Tea algal leaf spot": 63,
+        "2. Brown Blight": 76,
+        "3. Gray Blight": 152,
+        "4. Helopeltis": 91,
+        "5. Red spider": 77,
+        "6. Green mirid bug": 192,
+        "7. Healthy leaf": 140
+      },
+      "n_groups": 789
+    },
+    "test": {
+      "n": 793,
+      "fraction": 0.1503,
+      "per_class": {
+        "1. Tea algal leaf spot": 62,
+        "2. Brown Blight": 76,
+        "3. Gray Blight": 152,
+        "4. Helopeltis": 91,
+        "5. Red spider": 78,
+        "6. Green mirid bug": 193,
+        "7. Healthy leaf": 141
+      },
+      "n_groups": 792
+    }
+  },
+  "file_sha256": {
+    "primary_train.csv": "1faa1bffc97406e1a5727d6c7917747636adaa25de9f77dee377681e30fa61a7",
+    "primary_validation.csv": "55db40ca4b193408aae9e3084d7901ece7c1b28312288ca5da55200adff337f3",
+    "primary_test.csv": "10a18889a1313243e8581e89f6c272aced5fd79810fadaad74eae136f4e0b491",
+    "naive_train.csv": "50e1c4fd975a4e68b823c0bd669de1fbf97f2efa7befc396c82fa06c15992945",
+    "naive_validation.csv": "e575ff10777f536b455030f7e3623f0be39cd69314ca986c6b4617e49b020a1c",
+    "naive_test.csv": "3c632f400672050a7242fb5f7130b6f4d2d73a7866ed7ba558f8d09313ccca2b",
+    "quarantine_manifest.csv": "f2f9fda34cc1f7d79da613ed39418e0e25c71d5c07056b595282b6ccc7bb0198"
+  },
+  "notes": "Primary split assigns whole duplicate/near-duplicate groups, so achieved fractions deviate slightly from the 70/15/15 target; the achieved values are reported above and are the ones cited. The naive split is an image-level stratified control used solely for the leakage-sensitivity experiment (RQ1)."
+}

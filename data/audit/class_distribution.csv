@@ -1,0 +1,8 @@
+class_folder_raw,normalized_class,n_images,pct_of_dataset
+1. Tea algal leaf spot,tea_algal_leaf_spot,418,7.923
+2. Brown Blight,brown_blight,506,9.591
+3. Gray Blight,gray_blight,1013,19.2
+4. Helopeltis,helopeltis_damage,607,11.505
+5. Red spider,red_spider_mite_damage,515,9.761
+6. Green mirid bug,green_mirid_bug_damage,1282,24.299
+7. Healthy leaf,healthy_leaf,935,17.722

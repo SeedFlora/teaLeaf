@@ -1,0 +1,218 @@
+[
+  {
+    "name": "MobileNetV3Large",
+    "requested_kwargs": {
+      "include_preprocessing": "True"
+    },
+    "available": true,
+    "kwargs_accepted": true,
+    "weights_loaded": true,
+    "backbone_params": 2996352,
+    "output_shape": [
+      null,
+      7,
+      7,
+      960
+    ],
+    "activation_std_input_0_255": 1.14233,
+    "activation_std_input_0_1": 0.5995,
+    "outputs_differ_between_conventions": true,
+    "total_params": 3003079,
+    "tflite_fp32_bytes": 11943860,
+    "tflite_fp32_mb": 11.94,
+    "export_ok": true,
+    "tflite_input_shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "tflite_input_dtype": "float32",
+    "tflite_output_shape": [
+      1,
+      7
+    ],
+    "export_max_abs_deviation": 0.0005879402160644531,
+    "export_parity_ok": false
+  },
+  {
+    "name": "MobileNetV3Small",
+    "requested_kwargs": {
+      "include_preprocessing": "True"
+    },
+    "available": true,
+    "kwargs_accepted": true,
+    "weights_loaded": true,
+    "backbone_params": 939120,
+    "output_shape": [
+      null,
+      7,
+      7,
+      576
+    ],
+    "activation_std_input_0_255": 0.90136,
+    "activation_std_input_0_1": 0.45677,
+    "outputs_differ_between_conventions": true,
+    "total_params": 943159,
+    "tflite_fp32_bytes": 3766708,
+    "tflite_fp32_mb": 3.77,
+    "export_ok": true,
+    "tflite_input_shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "tflite_input_dtype": "float32",
+    "tflite_output_shape": [
+      1,
+      7
+    ],
+    "export_max_abs_deviation": 0.0001462697982788086,
+    "export_parity_ok": false
+  },
+  {
+    "name": "EfficientNetB0",
+    "requested_kwargs": {},
+    "available": true,
+    "kwargs_accepted": true,
+    "weights_loaded": true,
+    "backbone_params": 4049571,
+    "output_shape": [
+      null,
+      7,
+      7,
+      1280
+    ],
+    "activation_std_input_0_255": 0.42147,
+    "activation_std_input_0_1": 0.46852,
+    "outputs_differ_between_conventions": true,
+    "total_params": 4058538,
+    "tflite_fp32_bytes": 16091308,
+    "tflite_fp32_mb": 16.09,
+    "export_ok": true,
+    "tflite_input_shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "tflite_input_dtype": "float32",
+    "tflite_output_shape": [
+      1,
+      7
+    ],
+    "export_max_abs_deviation": 0.0004282146692276001,
+    "export_parity_ok": false
+  },
+  {
+    "name": "EfficientNetV2B0",
+    "requested_kwargs": {
+      "include_preprocessing": "True"
+    },
+    "available": true,
+    "kwargs_accepted": true,
+    "weights_loaded": true,
+    "backbone_params": 5919312,
+    "output_shape": [
+      null,
+      7,
+      7,
+      1280
+    ],
+    "activation_std_input_0_255": 0.44857,
+    "activation_std_input_0_1": 0.28007,
+    "outputs_differ_between_conventions": true,
+    "total_params": 5928279,
+    "tflite_fp32_bytes": 23471496,
+    "tflite_fp32_mb": 23.47,
+    "export_ok": true,
+    "tflite_input_shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "tflite_input_dtype": "float32",
+    "tflite_output_shape": [
+      1,
+      7
+    ],
+    "export_max_abs_deviation": 7.792562246322632e-05,
+    "export_parity_ok": true
+  },
+  {
+    "name": "ConvNeXtTiny",
+    "requested_kwargs": {},
+    "available": true,
+    "kwargs_accepted": true,
+    "weights_loaded": true,
+    "backbone_params": 27820128,
+    "output_shape": [
+      null,
+      7,
+      7,
+      768
+    ],
+    "activation_std_input_0_255": 1.0,
+    "activation_std_input_0_1": 1.0,
+    "outputs_differ_between_conventions": true,
+    "total_params": 27825511,
+    "tflite_fp32_bytes": 111498236,
+    "tflite_fp32_mb": 111.5,
+    "export_ok": true,
+    "tflite_input_shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "tflite_input_dtype": "float32",
+    "tflite_output_shape": [
+      1,
+      7
+    ],
+    "export_max_abs_deviation": 8.505582809448242e-05,
+    "export_parity_ok": true
+  },
+  {
+    "name": "MobileNetV2",
+    "requested_kwargs": {},
+    "available": true,
+    "kwargs_accepted": true,
+    "weights_loaded": true,
+    "backbone_params": 2257984,
+    "output_shape": [
+      null,
+      7,
+      7,
+      1280
+    ],
+    "activation_std_input_0_255": 1.03871,
+    "activation_std_input_0_1": 1.13075,
+    "outputs_differ_between_conventions": true,
+    "total_params": 2266951,
+    "tflite_fp32_bytes": 8919932,
+    "tflite_fp32_mb": 8.92,
+    "export_ok": true,
+    "tflite_input_shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "tflite_input_dtype": "float32",
+    "tflite_output_shape": [
+      1,
+      7
+    ],
+    "export_max_abs_deviation": 0.0017269551753997803,
+    "export_parity_ok": false
+  },
+  {
+    "name": "_mobilevit_availability",
+    "checked": "keras_cv / keras_hub MobileViT availability",
+    "keras_cv": "not installed (ModuleNotFoundError)",
+    "keras_hub": "not installed (ModuleNotFoundError)"
+  }
+]
